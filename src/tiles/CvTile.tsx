@@ -3,7 +3,7 @@ import TileWrapper from '../components/TileWrapper'
 
 const PhotoTile = () => {
   return (
-    <TileWrapper className="bg-gradient-to-tr from-slate-800 to-slate-600/40" padding>
+    <TileWrapper className="bg-gradient-to-tr from-slate-800 to-slate-700/40" padding>
       <Paragraph size="small">I am married, 38 years old, father of two kids.</Paragraph>
       <Paragraph>
         I love coding, but I also enjoy mountain biking, traveling, and spending quality time with
