@@ -6,9 +6,6 @@ export default {
       fontFamily: {
         sans: 'Sora, sans-serif',
       },
-      fontWeight: {
-        DEFAULT: 300,
-      },
     },
   },
   plugins: [],

@@ -4,10 +4,12 @@ import Paragraph from '../components/Paragraph'
 const InfoTile = () => {
   return (
     <div className="p-2">
-      <Heading size={1}>Adam Plesník</Heading>
+      <Heading size={1} className="text--300">
+        Adam Plesník
+      </Heading>
       <Paragraph size="small">Bratislava, Slovakia</Paragraph>
       <Paragraph>
-        Front-end developer specialized in creating, polishing and improving user interfaces, with a
+        As a front-end developer, I love creating, polishing and improving user interfaces, with a
         particular focus on Tailwind CSS and building reusable components.
       </Paragraph>
     </div>

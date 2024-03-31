@@ -10,7 +10,7 @@ const Paragraph = ({
       className={
         'mb-4 w-full ' +
         (size === 'regular'
-          ? 'text-base leading-7'
+          ? 'text-base font-light leading-7'
           : size === 'large'
             ? 'text-lg'
             : 'text-sm font-medium opacity-60') +

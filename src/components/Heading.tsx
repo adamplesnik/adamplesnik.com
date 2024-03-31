@@ -17,7 +17,7 @@ const Heading = ({
     )
   } else if (size === 2) {
     return (
-      <h2 className={defaultClasses + ' pb-4 text-2xl'}>
+      <h2 className={defaultClasses + ' pb-4 text-xl'}>
         {children}
         {anchor}
       </h2>

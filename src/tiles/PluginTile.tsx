@@ -1,11 +1,12 @@
 import { Github } from 'lucide-react'
 import Heading from '../components/Heading'
-import Paragraph from '../components/Paragraph'
 import Link from '../components/Link'
+import Paragraph from '../components/Paragraph'
+import TileWrapper from '../components/TileWrapper'
 
 const PluginTile = () => {
   return (
-    <div className="rounded-lg bg-gradient-to-tr from-violet-900 to-purple-500 p-4">
+    <TileWrapper className="bg-gradient-to-tr from-violet-900 to-purple-500" padding>
       <Heading size={2}>Scroll-driven Animations</Heading>
       <Paragraph size="small">
         Tailwind CSS plugin with scroll-driven animation utilities.
@@ -16,7 +17,7 @@ const PluginTile = () => {
       >
         @adamplesnik/tailwindcss-scroll-driven-animations
       </Link>
-    </div>
+    </TileWrapper>
   )
 }
 
