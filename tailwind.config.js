@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: 'Sora, sans-serif',
+        sans: 'Inter, sans-serif',
       },
     },
   },
