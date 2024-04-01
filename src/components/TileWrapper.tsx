@@ -6,17 +6,14 @@ const TileWrapper = ({
   padding = false,
 }: PropsWithChildren<TileWrapperProps>) => {
   return (
-    <div className="rounded-lg bg-gradient-to-t from-zinc-600/0 to-zinc-600/30 p-px shadow-2xl backdrop-blur">
-      <div
-        className={
-          'overflow-hidden rounded-lg bg-gradient-to-tr from-neutral-900/30 to-zinc-900 ' +
-          // 'overflow-hidden rounded-lg bg-zinc-800 '+
-          className +
-          (padding ? ' p-6 pt-8' : '')
-        }
-      >
-        {children}
-      </div>
+    <div
+      className={
+        'overflow-hidden rounded-lg border border-zinc-600/20 bg-gradient-to-tr from-zinc-800/30 to-zinc-900 shadow-2xl ' +
+        className +
+        (padding ? ' px-6 pb-2 pt-8' : '')
+      }
+    >
+      {children}
     </div>
   )
 }

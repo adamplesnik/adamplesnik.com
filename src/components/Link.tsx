@@ -14,41 +14,35 @@ const Link = ({ Icon = undefined, href, children }: PropsWithChildren<LinkProps>
       {Icon ? (
         <motion.div
           animate={{
-            scaleY: anim ? 0 : 1,
-            y: anim ? 12 : 0,
-            // opacity: anim ? 0 : 1,
+            x: anim ? -128 : 0,
             width: anim ? 0 : undefined,
           }}
-          transition={{ duration: 0.3, delay: anim ? 0 : 0.45 }}
+          transition={{ duration: 0.21, delay: anim ? 0 : 0.15 }}
         >
-          <Icon />
+          <Icon className="text-fuchsia-600" strokeWidth={1.5} />
         </motion.div>
       ) : (
         ''
       )}
-      <motion.div layout className="truncate">
-        <a href={href} target="_blank" className="truncate">
-          {children}
-        </a>
-      </motion.div>
+      <motion.a
+        layout
+        href={href}
+        target="_blank"
+        className="truncate bg-gradient-to-r from-fuchsia-500 to-indigo-600 bg-clip-text font-mono text-sm text-transparent hover:to-fuchsia-700"
+      >
+        {children}
+      </motion.a>
+
       <motion.div
         animate={{
           rotate: anim ? 0 : -45,
-          scale: anim ? 1 : 0,
-          y: anim ? 0 : 12,
+          x: anim ? 0 : 24,
           width: anim ? undefined : 0,
         }}
-        transition={{ delay: 0.48 }}
+        transition={{ duration: 0.28 }}
       >
-        <ArrowRight />
+        <ArrowRight className="text-indigo-700" />
       </motion.div>
-      <motion.div
-        animate={{ left: anim ? '88%' : 12, width: anim ? 128 : 0 }}
-        transition={{ delay: 0.27, duration: 0.56, ease: [0, 1, 0, 1] }}
-        className={
-          'absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-fuchsia-400 to-violet-800 transition-[max-width] duration-500 '
-        }
-      ></motion.div>
     </div>
   )
 }

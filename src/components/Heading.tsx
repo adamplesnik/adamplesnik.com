@@ -17,14 +17,14 @@ const Heading = ({
     )
   } else if (size === 2) {
     return (
-      <h2 className={defaultClasses + ' pb-4 text-xl'}>
+      <h2 className={defaultClasses + ' pb-1 text-xl opacity-90'}>
         {children}
         {anchor}
       </h2>
     )
   } else {
     return (
-      <h3 className={defaultClasses + ' pb-2 pt-4 text-lg'}>
+      <h3 className={defaultClasses + ' pb-6 text-sm opacity-40'}>
         {children}
         {anchor}
       </h3>

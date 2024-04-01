@@ -8,7 +8,7 @@ const WebUmeniaTile = () => {
   return (
     <TileWrapper padding>
       <Heading size={2}>Open Source Contribution</Heading>
-      <Paragraph size="small">Refactoring of the CSS for webumenia.sk</Paragraph>
+      <Heading size={3}>Refactoring of the CSS for webumenia.sk</Heading>
       <Paragraph>
         This is a huge database of almost 180k artworks. I once decided to fork their dev branch and
         started the process of removing old code, reorganizing dependencies and integrating more
