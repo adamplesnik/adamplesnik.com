@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import { PropsWithChildren } from 'react'
 
 const TileWrapper = ({
@@ -7,22 +6,18 @@ const TileWrapper = ({
   padding = false,
 }: PropsWithChildren<TileWrapperProps>) => {
   return (
-    <motion.div
-      className={
-        'overflow-hidden rounded-lg bg-gradient-to-tr from-slate-800/50 via-zinc-700/50 via-75% to-slate-700/30 backdrop-blur ' +
-        'border border-zinc-700 border-b-zinc-700 shadow-xl' +
-        className +
-        (padding ? ' p-4 pt-6' : '')
-      }
-      layout
-      whileHover={{ opacity: 0.9, scale: 1.03 }}
-      transition={{
-        duration: 0.37,
-        ease: [0.65, 0.05, 0.17, 0.99],
-      }}
-    >
-      {children}
-    </motion.div>
+    <div className="rounded-lg bg-gradient-to-t from-zinc-600/0 to-zinc-600/30 p-px shadow-2xl backdrop-blur">
+      <div
+        className={
+          'overflow-hidden rounded-lg bg-gradient-to-tr from-neutral-900/30 to-zinc-900 ' +
+          // 'overflow-hidden rounded-lg bg-zinc-800 '+
+          className +
+          (padding ? ' p-6 pt-8' : '')
+        }
+      >
+        {children}
+      </div>
+    </div>
   )
 }
 

@@ -6,7 +6,7 @@ import TileWrapper from '../components/TileWrapper'
 
 const PluginTile = () => {
   return (
-    <TileWrapper className="" padding>
+    <TileWrapper padding>
       <Heading size={2}>Scroll-driven Animations</Heading>
       <Paragraph size="small">Tailwind CSS plugin</Paragraph>
       <Paragraph>

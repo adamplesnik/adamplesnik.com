@@ -6,7 +6,7 @@ import Paragraph from '../components/Paragraph'
 
 const WebUmeniaTile = () => {
   return (
-    <TileWrapper className="bg-gradient-to-tr from-sky-800 to-cyan-500" padding>
+    <TileWrapper padding>
       <Heading size={2}>Open Source Contribution</Heading>
       <Paragraph size="small">Refactoring of the CSS for webumenia.sk</Paragraph>
       <Paragraph>
