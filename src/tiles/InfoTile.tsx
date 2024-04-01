@@ -5,7 +5,7 @@ import Photo from '../components/Photo'
 const InfoTile = () => {
   return (
     <div className="flex items-start gap-4 p-2">
-      <Photo></Photo>
+      <Photo />
       <div className="flex-1">
         <Heading size={1} className="text--300">
           Adam Plesník

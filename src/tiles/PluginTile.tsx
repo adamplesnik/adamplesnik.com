@@ -6,10 +6,11 @@ import TileWrapper from '../components/TileWrapper'
 
 const PluginTile = () => {
   return (
-    <TileWrapper className="bg-gradient-to-tr from-violet-900/50 to-purple-500/60" padding>
+    <TileWrapper className="" padding>
       <Heading size={2}>Scroll-driven Animations</Heading>
-      <Paragraph size="small">
-        Tailwind CSS plugin with scroll-driven animation utilities.
+      <Paragraph size="small">Tailwind CSS plugin</Paragraph>
+      <Paragraph>
+        A plugin for Tailwind CSS v3.4+ that provides utilities for scroll-driven animations.
       </Paragraph>
       <Link
         Icon={Github}

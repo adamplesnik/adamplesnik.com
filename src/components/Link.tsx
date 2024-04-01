@@ -14,12 +14,12 @@ const Link = ({ Icon = undefined, href, children }: PropsWithChildren<LinkProps>
       {Icon ? (
         <motion.div
           animate={{
-            rotate: anim ? 12 : 0,
+            scaleY: anim ? 0 : 1,
             y: anim ? 12 : 0,
-            opacity: anim ? 0 : 1,
+            // opacity: anim ? 0 : 1,
             width: anim ? 0 : undefined,
           }}
-          transition={{ duration: 0.3, delay: anim ? 0 : 1 }}
+          transition={{ duration: 0.3, delay: anim ? 0 : 0.45 }}
         >
           <Icon />
         </motion.div>
@@ -44,7 +44,7 @@ const Link = ({ Icon = undefined, href, children }: PropsWithChildren<LinkProps>
       </motion.div>
       <motion.div
         animate={{ left: anim ? '88%' : 12, width: anim ? 128 : 0 }}
-        transition={{ delay: 0.27, duration: 0.56 }}
+        transition={{ delay: 0.27, duration: 0.56, ease: [0, 1, 0, 1] }}
         className={
           'absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-fuchsia-400 to-violet-800 transition-[max-width] duration-500 '
         }

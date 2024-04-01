@@ -8,7 +8,12 @@ const TileWrapper = ({
 }: PropsWithChildren<TileWrapperProps>) => {
   return (
     <motion.div
-      className={'overflow-hidden rounded-lg ' + className + (padding ? ' p-4 pt-6' : '')}
+      className={
+        'overflow-hidden rounded-lg bg-gradient-to-tr from-slate-800/50 via-zinc-700/50 via-75% to-slate-700/30 backdrop-blur ' +
+        'border border-zinc-700 border-b-zinc-700 shadow-xl' +
+        className +
+        (padding ? ' p-4 pt-6' : '')
+      }
       layout
       whileHover={{ opacity: 0.9, scale: 1.03 }}
       transition={{
