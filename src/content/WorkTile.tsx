@@ -1,3 +1,4 @@
+import Em from '../components/Em'
 import Heading from '../components/Heading'
 import Paragraph from '../components/Paragraph'
 
@@ -6,12 +7,12 @@ const WorkTile = () => {
     <div>
       <Heading size={3}>Work</Heading>
       <Paragraph>
-        I specialize in the nicer parts of the frontend dev universe. I write CSS and front-end
-        components for React, Vue.js, Angular and even Vaadin. My experience ranges from
+        I specialize in the <Em>nicer parts of the frontend dev universe</Em>. I write CSS and
+        front-end components for React, Vue.js, Angular and even Vaadin. My experience ranges from
         implementing Figma-based prototypes from scratch to refactoring huge projects.
       </Paragraph>
       <Paragraph>
-        I have a passion for atomic components with atomic CSS, clean and meaningful UIs,
+        I have a <Em>passion for atomic components with atomic CSS</Em>, clean and meaningful UIs,
         microinteractions.
       </Paragraph>
       <Paragraph>
