@@ -10,9 +10,9 @@ const WebUmeniaTile = () => {
       <Heading size={2}>Open Source Contribution</Heading>
       <Heading size={3}>Refactoring of the CSS for webumenia.sk</Heading>
       <Paragraph>
-        This is a huge database of almost 180k artworks. I once decided to fork their dev branch and
-        started the process of removing old code, reorganizing dependencies and integrating more
-        Tailwind CSS.
+        Web umenia features almost 180k artworks from the collections of Slovak galleries. I forked
+        their dev branch and started the process of removing old code, reorganizing dependencies and
+        eventually creating the dark mode.
       </Paragraph>
       <Link
         href="https://github.com/adamplesnik/webumenia.sk/tree/feature/css-refactoring"

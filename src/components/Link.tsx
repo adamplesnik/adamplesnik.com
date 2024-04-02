@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, LucideIcon } from 'lucide-react'
+import { LucideIcon } from 'lucide-react'
 import { PropsWithChildren, useState } from 'react'
 
 const Link = ({ Icon = undefined, href, children }: PropsWithChildren<LinkProps>) => {
@@ -7,19 +7,20 @@ const Link = ({ Icon = undefined, href, children }: PropsWithChildren<LinkProps>
 
   return (
     <div
-      className="relative mb-2 flex gap-2"
+      className="relative mb-2 flex items-center"
       onMouseEnter={() => setAnim(true)}
       onMouseLeave={() => setAnim(false)}
     >
       {Icon ? (
         <motion.div
+          initial={{ x: -128, width: 0, paddingRight: 0 }}
           animate={{
-            x: anim ? -128 : 0,
-            width: anim ? 0 : undefined,
+            x: anim ? 0 : -128,
+            width: anim ? 'auto' : 0,
           }}
           transition={{ duration: 0.21, delay: anim ? 0 : 0.15 }}
         >
-          <Icon className="text-fuchsia-600" strokeWidth={1.5} />
+          <Icon className="size-8 pr-3 text-fuchsia-600" strokeWidth={1.5} />
         </motion.div>
       ) : (
         ''
@@ -33,7 +34,7 @@ const Link = ({ Icon = undefined, href, children }: PropsWithChildren<LinkProps>
         {children}
       </motion.a>
 
-      <motion.div
+      {/* <motion.div
         animate={{
           rotate: anim ? 0 : -45,
           x: anim ? 0 : 24,
@@ -42,7 +43,7 @@ const Link = ({ Icon = undefined, href, children }: PropsWithChildren<LinkProps>
         transition={{ duration: 0.28 }}
       >
         <ArrowRight className="text-indigo-700" />
-      </motion.div>
+      </motion.div> */}
     </div>
   )
 }

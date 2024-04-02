@@ -10,14 +10,14 @@ const Heading = ({
   const anchor = id ? <a id={id} className={'absolute -top-32'} /> : ''
   if (size === 1) {
     return (
-      <h1 className={defaultClasses + ' pb-4 text-4xl'}>
+      <h1 className={defaultClasses + ' pb-4 text-2xl leading-normal sm:text-2xl'}>
         {children}
         {anchor}
       </h1>
     )
   } else if (size === 2) {
     return (
-      <h2 className={defaultClasses + ' pb-1 text-xl opacity-90'}>
+      <h2 className={defaultClasses + ' pb-2 text-xl opacity-90'}>
         {children}
         {anchor}
       </h2>
