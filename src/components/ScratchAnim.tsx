@@ -14,7 +14,7 @@ const ScratchAnim = () => {
         stroke="#f43f5e"
         initial={{ pathLength: 0 }}
         animate={{ pathLength: 1 }}
-        transition={{ duration: 0.7, ease: 'easeOut', delay: 5.3 }}
+        transition={{ duration: 0.7, ease: 'easeOut', delay: 4.3 }}
         strokeWidth="4"
       />
     </motion.svg>

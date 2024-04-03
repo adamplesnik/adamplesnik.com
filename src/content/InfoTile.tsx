@@ -12,7 +12,7 @@ const InfoTile = () => {
         <span className="stroke relative whitespace-nowrap">
           <ScratchAnim />
           atomic <TextAnim />{' '}
-          <motion.span animate={{ color: '#ec4899' }} transition={{ delay: 6 }}>
+          <motion.span animate={{ color: '#ec4899' }} transition={{ delay: 4, duration: 0.23 }}>
             CSS
           </motion.span>
         </span>{' '}
