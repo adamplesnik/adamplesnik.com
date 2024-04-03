@@ -29,7 +29,7 @@ const Link = ({ Icon = undefined, href, children }: PropsWithChildren<LinkProps>
         layout
         href={href}
         target="_blank"
-        className="truncate bg-gradient-to-r from-fuchsia-500 to-indigo-600 bg-clip-text font-mono text-sm text-transparent hover:to-fuchsia-700"
+        className="truncate bg-gradient-to-r from-fuchsia-500 to-indigo-600 bg-clip-text text-transparent hover:to-fuchsia-700"
       >
         {children}
       </motion.a>

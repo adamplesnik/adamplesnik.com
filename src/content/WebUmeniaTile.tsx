@@ -18,7 +18,7 @@ const WebUmeniaTile = () => {
         href="https://github.com/adamplesnik/webumenia.sk/tree/feature/css-refactoring"
         Icon={Github}
       >
-        adamplesnik/webumenia.sk
+        @adamplesnik/webumenia.sk
       </Link>
     </TileWrapper>
   )
