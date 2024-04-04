@@ -7,43 +7,30 @@ const Link = ({ Icon = undefined, href, children }: PropsWithChildren<LinkProps>
 
   return (
     <div
-      className="relative mb-2 flex items-center"
+      className="relative flex items-center"
       onMouseEnter={() => setAnim(true)}
       onMouseLeave={() => setAnim(false)}
     >
       {Icon ? (
         <motion.div
-          initial={{ x: -128, width: 0, paddingRight: 0 }}
+          initial={{ scale: 1 }}
           animate={{
-            x: anim ? 0 : -128,
-            width: anim ? 'auto' : 0,
+            scale: anim ? 1.3 : 1,
           }}
-          transition={{ duration: 0.21, delay: anim ? 0 : 0.15 }}
+          transition={{ duration: 0.72, type: 'spring' }}
         >
-          <Icon className="size-8 pr-3 text-fuchsia-600" strokeWidth={1.5} />
+          <Icon className="size-7 pr-2 text-fuchsia-600 opacity-70" strokeWidth={1.8} />
         </motion.div>
       ) : (
         ''
       )}
-      <motion.a
-        layout
+      <a
         href={href}
         target="_blank"
-        className="truncate bg-gradient-to-r from-fuchsia-500 to-indigo-600 bg-clip-text text-transparent hover:to-fuchsia-700"
+        className="truncate bg-gradient-to-r from-fuchsia-500 to-indigo-400 bg-clip-text text-transparent hover:to-fuchsia-700"
       >
         {children}
-      </motion.a>
-
-      {/* <motion.div
-        animate={{
-          rotate: anim ? 0 : -45,
-          x: anim ? 0 : 24,
-          width: anim ? undefined : 0,
-        }}
-        transition={{ duration: 0.28 }}
-      >
-        <ArrowRight className="text-indigo-700" />
-      </motion.div> */}
+      </a>
     </div>
   )
 }

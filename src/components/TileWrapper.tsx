@@ -10,7 +10,7 @@ const TileWrapper = ({
       className={
         'overflow-hidden rounded-lg border border-zinc-600/20 bg-gradient-to-tr from-zinc-800/20 to-zinc-800/40 shadow-2xl ' +
         className +
-        (padding ? ' px-6 pb-2 pt-8' : '')
+        (padding ? ' px-6 pb-4 pt-8' : '')
       }
     >
       {children}

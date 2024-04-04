@@ -13,21 +13,13 @@ const WorkTile = () => {
       </Paragraph>
       <Paragraph>
         I have a <Em>passion for atomic components with atomic CSS</Em>, clean and meaningful UIs,
-        microinteractions.
+        micro interactions.
       </Paragraph>
       <Paragraph>
-        Majority of my work in the last 10 years is covered under the large blanket of the NDAs.
+        Majority of my work in the last 10 years is covered by the large layer of fintech NDAs.
         That's why I only have two projects to showcase. One is the experimental Scroll-driven
-        Animations plugin I wrote for Tailwind CSS, along with the{' '}
-        <a
-          href="https://tailwind.adamplesnik.com"
-          className="bg-gradient-to-r from-fuchsia-500 to-indigo-600 bg-clip-text text-transparent hover:to-fuchsia-700"
-          target="_blank"
-        >
-          dedicated microsite
-        </a>
-        ; and the second is the showcase of my efforts to refactor the front end of a huge
-        open-source project.
+        Animations plugin I wrote for Tailwind CSS, along with the demo site. The second project is
+        the showcase of my efforts to refactor the front end of a huge open-source project.
       </Paragraph>
     </div>
   )
