@@ -15,8 +15,8 @@ const Tile = ({
         addWithSpace(className)
       }
     >
-      <Heading size={2}>{title}</Heading>
-      <Heading size={3}>{subTitle}</Heading>
+      <Heading size={3}>{title}</Heading>
+      <Heading size={4}>{subTitle}</Heading>
       {children}
     </div>
   )

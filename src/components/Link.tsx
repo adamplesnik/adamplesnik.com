@@ -2,7 +2,12 @@ import { motion } from 'framer-motion'
 import { LucideIcon } from 'lucide-react'
 import { PropsWithChildren, useState } from 'react'
 
-const Link = ({ Icon = undefined, href, children }: PropsWithChildren<LinkProps>) => {
+const Link = ({
+  Icon = undefined,
+  href,
+  children,
+  target = '_blank',
+}: PropsWithChildren<LinkProps>) => {
   const [anim, setAnim] = useState(false)
 
   return (
@@ -26,7 +31,7 @@ const Link = ({ Icon = undefined, href, children }: PropsWithChildren<LinkProps>
       )}
       <a
         href={href}
-        target="_blank"
+        target={target}
         className="bg-gradient-to-r from-fuchsia-500 to-indigo-400 bg-clip-text text-transparent hover:to-fuchsia-700"
       >
         {children}
@@ -38,6 +43,7 @@ const Link = ({ Icon = undefined, href, children }: PropsWithChildren<LinkProps>
 export interface LinkProps {
   href: string
   children: PropsWithChildren
+  target?: string
   Icon?: LucideIcon | undefined
 }
 

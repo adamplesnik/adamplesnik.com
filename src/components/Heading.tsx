@@ -18,24 +18,31 @@ const Heading = ({
     )
   } else if (size === 2) {
     return (
-      <h2 className={defaultClasses + ' pb-2 text-xl opacity-90'}>
+      <h2 className={defaultClasses + ' pb-2 text-3xl opacity-90'}>
         {children}
         {anchor}
       </h2>
     )
-  } else {
+  } else if (size === 3) {
     return (
-      <h3 className={defaultClasses + ' pb-6 text-sm opacity-50'}>
+      <h3 className={defaultClasses + ' pb-2 text-xl opacity-90'}>
         {children}
         {anchor}
       </h3>
+    )
+  } else {
+    return (
+      <h4 className={defaultClasses + ' pb-6 text-sm opacity-50'}>
+        {children}
+        {anchor}
+      </h4>
     )
   }
 }
 
 export interface TitleProps {
   children: PropsWithChildren
-  size: 1 | 2 | 3
+  size: 1 | 2 | 3 | 4
   className?: string
   id?: string
 }
