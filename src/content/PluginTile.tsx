@@ -1,14 +1,11 @@
 import { Github, NotepadText } from 'lucide-react'
-import Heading from '../components/Heading'
 import Link from '../components/Link'
 import Paragraph from '../components/Paragraph'
-import TileWrapper from '../components/TileWrapper'
+import Tile from '../components/Tile'
 
 const PluginTile = () => {
   return (
-    <TileWrapper padding>
-      <Heading size={2}>Scroll-driven Animations</Heading>
-      <Heading size={3}>Tailwind CSS plugin</Heading>
+    <Tile title="Scroll-driven Animations" subTitle="Tailwind CSS plugin">
       <Paragraph>
         A plugin for Tailwind CSS v3.4+ that provides utilities for scroll-driven animations.
       </Paragraph>
@@ -23,7 +20,7 @@ const PluginTile = () => {
           @adamplesnik/tailwindcss-scroll-driven-animations
         </Link>
       </div>
-    </TileWrapper>
+    </Tile>
   )
 }
 

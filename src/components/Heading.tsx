@@ -1,4 +1,5 @@
 import { PropsWithChildren } from 'react'
+import { addWithSpace } from '../utils/addWithSpace'
 
 const Heading = ({
   size = 1,
@@ -6,7 +7,7 @@ const Heading = ({
   children,
   id = '',
 }: PropsWithChildren<TitleProps>) => {
-  const defaultClasses = 'relative w-full font-medium' + (className && ` ${className}`)
+  const defaultClasses = 'relative w-full font-medium' + addWithSpace(className)
   const anchor = id ? <a id={id} className={'absolute -top-32'} /> : ''
   if (size === 1) {
     return (
@@ -24,7 +25,7 @@ const Heading = ({
     )
   } else {
     return (
-      <h3 className={defaultClasses + ' pb-6 text-sm opacity-40'}>
+      <h3 className={defaultClasses + ' pb-6 text-sm opacity-50'}>
         {children}
         {anchor}
       </h3>
