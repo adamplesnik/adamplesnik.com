@@ -1,4 +1,5 @@
 @import url('./fonts/inter.css');
+@import url('./css/prism.css');
 
 @tailwind base;
 @tailwind components;

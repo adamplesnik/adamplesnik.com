@@ -41,10 +41,10 @@ const Link = ({
 }
 
 export interface LinkProps {
-  href: string
   children: PropsWithChildren
-  target?: string
+  href?: string
   Icon?: LucideIcon | undefined
+  target?: string
 }
 
 export default Link
