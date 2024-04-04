@@ -1,4 +1,4 @@
-import { HandMetal } from 'lucide-react'
+import FlowerAnim from '../components/FlowerAnim'
 import Heading from '../components/Heading'
 import Paragraph from '../components/Paragraph'
 
@@ -6,13 +6,13 @@ const CvTile = () => {
   return (
     <div>
       <Heading size={3}>About Me</Heading>
-      <Paragraph>
-        Married, 38 years old, father of two girls.{' '}
-        <HandMetal
-          className="inline size-6 text-cyan-400 transition-[transform,color] duration-1000 ease-in-out hover:rotate-[360deg] hover:text-pink-500"
-          strokeWidth={1.5}
-        />
-      </Paragraph>
+      <div className="flex items-center gap-2">
+        <div className="order-last sm:order-none">
+          <Paragraph>Married, 38 years old, father of two girls.</Paragraph>
+        </div>
+        <FlowerAnim />
+      </div>
+
       <Paragraph>
         Spending quality time with my family is my number one priority, preferably while mountain
         biking, traveling or both. I speak English and French fluently, and I am learning

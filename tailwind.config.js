@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         sans: 'Inter, sans-serif',
       },
+      transitionTimingFunction: {
+        custom: 'cubic-bezier(0.65, 0.05, 0.17, 0.99)',
+      },
     },
   },
   plugins: [],
