@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home.tsx'
 import './index.css'
 import Blog from './pages/Blog.tsx'
+import TextAppearBlogPost from './blog/2024-04-05-TextAppear.tsx'
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: '/blog',
     element: <Blog />,
+  },
+  {
+    path: '/blog/test',
+    element: <TextAppearBlogPost />,
   },
 ])
 
