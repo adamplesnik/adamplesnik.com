@@ -1,23 +1,23 @@
-import { Repeat } from 'lucide-react'
+import { LucideIcon } from 'lucide-react'
 import { MouseEventHandler } from 'react'
 
-const ActionButton = ({ onClick }: ReplayButtonProps) => {
+const ActionButton = ({ onClick, Icon, tooltip = '' }: ReplayButtonProps) => {
   return (
-    <div
-      onClick={onClick}
-      title="Replay"
-      className="ease-custom group flex size-7 cursor-pointer items-center justify-center rounded-full bg-gradient-to-tr from-fuchsia-500 to-indigo-400 shadow-lg
-          transition-[transform,background] delay-100 duration-500 hover:rotate-[180deg] hover:scale-110 hover:text-white
-          "
-    >
-      <Repeat className="size-4" />
-      <div className="absolute -z-10 size-full rounded-full bg-indigo-800 opacity-0 transition-opacity duration-700 group-hover:opacity-45"></div>
+    <div onClick={onClick} title={tooltip} className="group cursor-pointer p-1">
+      <div
+        className="ease-custom flex size-6 items-center justify-center rounded-full bg-gradient-to-tr from-slate-400 to-indigo-500 text-zinc-100 opacity-80
+          transition-[transform,color,opacity] duration-300 group-hover:scale-125 group-hover:opacity-100"
+      >
+        <Icon className="ease-custom size-3 delay-75 duration-300 group-hover:rotate-[180deg]" />
+      </div>
     </div>
   )
 }
 
 export interface ReplayButtonProps {
   onClick: MouseEventHandler
+  Icon: LucideIcon
+  tooltip: string
 }
 
 export default ActionButton
