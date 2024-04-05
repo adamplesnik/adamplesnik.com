@@ -1,7 +1,7 @@
+import { Repeat, StepForward } from 'lucide-react'
 import { PropsWithChildren } from 'react'
 import { addWithSpace } from '../utils/addWithSpace'
 import ActionButton from './ActionButton'
-import { Repeat } from 'lucide-react'
 
 const replayButtonClick = () => {
   const wrapper = document.getElementById('demo-wrapper')
@@ -27,7 +27,12 @@ const DemoWrapper = ({
       {children}
       {actionButton && (
         <div className="absolute right-3 top-3">
-          <ActionButton Icon={Repeat} onClick={() => replayButtonClick()} tooltip="Replay" />{' '}
+          <ActionButton
+            Icon={Repeat}
+            IconOnClick={StepForward}
+            clickAction={() => replayButtonClick()}
+            tooltip="Replay"
+          />{' '}
         </div>
       )}
     </div>

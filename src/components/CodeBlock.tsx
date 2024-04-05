@@ -31,7 +31,7 @@ const CodeBlock = ({
         <div className="absolute right-3 top-3">
           <ActionButton
             Icon={Copy}
-            onClick={() => copyButtonClick(codeToCopy)}
+            clickAction={() => copyButtonClick(codeToCopy)}
             tooltip="Copy to Clipboard"
           />{' '}
         </div>
