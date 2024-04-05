@@ -24,6 +24,7 @@ jobs:
       - name: SFTP-Deploy-Action
         uses: milanmk/actions-file-deployer@master
         with:
+          local-path: /dist
           remote-protocol: sftp
           remote-host: ${{ secrets.FTP_HOST }}
           remote-user: ${{ secrets.FTP_USER }}
