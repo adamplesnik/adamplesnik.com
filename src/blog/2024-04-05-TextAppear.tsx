@@ -28,7 +28,6 @@ const exampleDelay = `const text = Array.from('Knock, knock, Neo.')
 ))}`
 
 const text = Array.from('Knock, knock, Neo.')
-const textLength = text.length
 
 const TextAppearBlogPost = () => {
   return (
