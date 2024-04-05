@@ -15,20 +15,16 @@ const CodeBlock = ({
   }, [])
 
   return (
-    <div
-      className={
-        'mb-4 rounded-lg border border-zinc-300 bg-zinc-100 dark:border-zinc-700 dark:bg-slate-800 dark:text-zinc-300'
-      }
-    >
+    <div className={'mb-4 rounded-lg border border-zinc-700 bg-slate-800 text-zinc-300'}>
       <code
-        className={`language-${language} block overflow-y-auto whitespace-pre rounded-lg bg-transparent p-4 text-sm dark:text-zinc-300`}
+        className={`language-${language} block overflow-y-auto whitespace-pre rounded-lg bg-transparent p-4 text-sm text-zinc-300`}
       >
         {children}
       </code>
       {linkHref && (
         <div
           className={
-            'flex items-center gap-1 border-t border-t-zinc-300 bg-zinc-200/10 px-4 py-2 text-xs dark:border-t-slate-700 dark:bg-zinc-800/10 '
+            'flex items-center gap-1 border-t border-t-slate-700 bg-zinc-800/10 px-4 py-2 text-xs '
           }
         >
           {Icon && <Icon size={14} strokeWidth={2} />}
@@ -44,7 +40,7 @@ const CodeBlock = ({
 export interface CodeProps {
   children: PropsWithChildren
   Icon?: LucideIcon | undefined
-  language?: 'javascript' | 'css' | 'html'
+  language?: 'javascript' | 'css' | 'html' | 'tsx'
   linkHref?: string | undefined
   linkText?: string | undefined
 }

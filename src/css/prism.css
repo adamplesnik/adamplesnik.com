@@ -1,7 +1,7 @@
 .function,
 .tag,
 .atrule {
-  @apply text-fuchsia-700 dark:text-fuchsia-300;
+  @apply text-fuchsia-300;
 }
 
 .literal-property,
@@ -9,7 +9,7 @@
 .string-property,
 .attr-value,
 .property {
-  @apply text-sky-700 dark:text-sky-300;
+  @apply text-sky-300;
 }
 
 .operator,
