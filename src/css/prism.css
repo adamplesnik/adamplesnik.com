@@ -1,6 +1,7 @@
 .function,
 .tag,
-.atrule {
+.atrule,
+.keyword {
   @apply text-fuchsia-300;
 }
 
