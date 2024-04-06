@@ -11,7 +11,7 @@ const Heading = ({
   const anchor = id ? <a id={id} className={'absolute -top-32'} /> : ''
   if (size === 1) {
     return (
-      <h1 className={defaultClasses + ' pb-4 text-2xl leading-normal sm:text-2xl'}>
+      <h1 className={defaultClasses + ' pb-4 text-2xl leading-normal'}>
         {children}
         {anchor}
       </h1>
