@@ -10,7 +10,7 @@ const InfoTile = () => {
       <Photo />
       <div>
         <Heading size={1} className="text-slate-300">
-          Adam Plesník, front-end engineer based in Bratislava, Slovakia.
+          Adam Plesník, design engineer based in Bratislava, Slovakia.
         </Heading>
         <Heading size={1} className="text-slate-300">
           I love creating, polishing and improving user interfaces, with focus on{' '}
