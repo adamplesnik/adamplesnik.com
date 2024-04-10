@@ -5,6 +5,7 @@ import Home from './pages/Home.tsx'
 import './index.css'
 import Blog from './pages/Blog.tsx'
 import TextAppearBlogPost from './blog/2024-04-05-TextAppear.tsx'
+import { Analytics } from '@vercel/analytics/react'
 
 const router = createBrowserRouter([
   {
@@ -25,5 +26,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <Analytics />
   </React.StrictMode>
 )
