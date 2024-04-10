@@ -23,7 +23,7 @@ const exampleDelay = `const text = Array.from('Knock, knock, Neo.')
     }}
     key={index}
   >
-    {letter === ' ' ? '\u00A0' : letter}
+    {letter === ' ' ? '\\u00A0' : letter}
   </span>
 ))}`
 
