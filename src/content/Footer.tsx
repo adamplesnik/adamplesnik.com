@@ -6,6 +6,7 @@ const Footer = () => {
       <span className="font-medium">Adam Plesník, Bratislava, Slovakia</span>
       <div className="flex flex-col gap-2 sm:items-end">
         <Link href="https://github.com/adamplesnik">github.com/adamplesnik</Link>
+        <Link href="https://www.linkedin.com/in/adamplesnik/">linkedin.com/in/adamplesnik</Link>
         <Link href="mailto:adam@adamplesnik.com">adam@adamplesnik.com</Link>
       </div>
     </div>

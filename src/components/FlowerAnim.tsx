@@ -11,14 +11,14 @@ const FlowerAnim = () => {
     >
       <Flower2
         className={
-          'ease-custom absolute left-0 top-0 size-6 text-cyan-400 transition-[transform,opacity] duration-700' +
+          'absolute left-0 top-0 size-6 text-indigo-400 transition-[transform,opacity] duration-700 ease-custom' +
           (anim ? ' rotate-[360deg] opacity-0' : ' delay-200')
         }
         strokeWidth={1.3}
       />
       <HandMetal
         className={
-          'ease-custom absolute right-0 top-0 size-6 text-pink-600 transition-[transform,opacity] delay-100 duration-700' +
+          'absolute right-0 top-0 size-6 text-pink-600 transition-[transform,opacity] delay-100 duration-700 ease-custom' +
           (anim ? ' rotate-[360deg]' : ' opacity-0')
         }
         strokeWidth={1.3}
