@@ -32,7 +32,7 @@ const Link = ({
       <a
         href={href}
         target={target}
-        className="bg-gradient-to-r from-fuchsia-500 to-indigo-400 bg-clip-text text-transparent hover:to-fuchsia-700"
+        className="bg-gradient-to-r from-fuchsia-500 to-indigo-400 bg-clip-text text-transparent hover:to-fuchsia-700 print:bg-transparent print:text-gray-700"
       >
         {children}
       </a>

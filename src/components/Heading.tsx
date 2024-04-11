@@ -7,7 +7,7 @@ const Heading = ({
   children,
   id = '',
 }: PropsWithChildren<TitleProps>) => {
-  const defaultClasses = 'relative w-full font-medium' + addWithSpace(className)
+  const defaultClasses = 'relative w-full font-medium text-zinc-200' + addWithSpace(className)
   const anchor = id ? <a id={id} className={'absolute -top-32'} /> : ''
   if (size === 1) {
     return (
@@ -25,7 +25,7 @@ const Heading = ({
     )
   } else if (size === 3) {
     return (
-      <h3 className={defaultClasses + ' pb-2 text-xl opacity-90'}>
+      <h3 className={defaultClasses + ' pb-4 text-xl opacity-90'}>
         {children}
         {anchor}
       </h3>
