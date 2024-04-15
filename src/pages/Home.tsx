@@ -1,3 +1,4 @@
+import MediumTile from '@/content/MediumTile'
 import CvTile from '../content/CvTile'
 import InfoTile from '../content/InfoTile'
 import PluginTile from '../content/PluginTile'
@@ -14,6 +15,7 @@ const Home = () => {
       <SkillsTile />
       <WorkTile />
       <PluginTile />
+      <MediumTile />
       <WebUmeniaTile />
     </Page>
   )
