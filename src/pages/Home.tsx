@@ -15,8 +15,8 @@ const Home = () => {
       <SkillsTile />
       <WorkTile />
       <PluginTile />
-      <MediumTile />
       <WebUmeniaTile />
+      <MediumTile />
     </Page>
   )
 }

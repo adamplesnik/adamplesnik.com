@@ -7,9 +7,9 @@ const MediumTile = () => {
   return (
     <Tile title="Blog on Medium" subTitle="Series of articles about atomic CSS and microcomponents">
       <Paragraph>
-        I write about front-end development from the perspective of the atomic enthusiast. I am
-        going to publish several posts about atomization, testing, component composition, and
-        Tailwind CSS.
+        I write about breaking down the front-end development into its atomic parts. I plan to
+        publish posts where I'll dive into atomization, testing, component composition, and making
+        the most of Tailwind CSS.
       </Paragraph>
       <div className="flex flex-col gap-2 pt-2">
         <Link Icon={SunMedium} href="https://medium.com/@adamplesnik">
