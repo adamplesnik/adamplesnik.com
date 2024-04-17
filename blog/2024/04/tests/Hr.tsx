@@ -2,7 +2,8 @@ import { addWithSpace } from '@/utils/addWithSpace'
 import { HTMLAttributes } from 'react'
 
 const Hr = ({ text, textOrientation = 'start', className, ...rest }: HrProps) => {
-  const flexOrderClassName = textOrientation === 'end' && ' order-last'
+  const flexOrderClassName = textOrientation === 'end' ? ' order-last' : ''
+
   return (
     <div
       className={

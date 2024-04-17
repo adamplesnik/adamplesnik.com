@@ -1,7 +1,7 @@
 import renderer from 'react-test-renderer'
 import { expect, test } from 'vitest'
 import Hr from './Hr'
-import { toJson } from './utils'
+import { toJson } from './toJson'
 
 test('Add class name to the component', () => {
   const component = renderer.create(<Hr className="test-class" />)

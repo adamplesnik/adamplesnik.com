@@ -30,7 +30,7 @@ exports[`Render separator with text in the beginning 1`] = `
   className="my-4 flex items-center gap-2 text-gray-700 dark:text-gray-300"
 >
   <span
-    className="text-xs font-mediumfalse"
+    className="text-xs font-medium"
   >
     End of Section 1
   </span>
