@@ -17,7 +17,7 @@ exports[`Render separator with text at the end 1`] = `
   <span
     className="text-xs font-medium order-last"
   >
-    We end there
+    End of Section 2
   </span>
   <hr
     className="h-px flex-1 border-none bg-current"
@@ -32,7 +32,7 @@ exports[`Render separator with text in the beginning 1`] = `
   <span
     className="text-xs font-mediumfalse"
   >
-    We begin here
+    End of Section 1
   </span>
   <hr
     className="h-px flex-1 border-none bg-current"

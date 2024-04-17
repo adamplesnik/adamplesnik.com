@@ -16,13 +16,13 @@ test('Render simple separator', () => {
 })
 
 test('Render separator with text in the beginning', () => {
-  const component = renderer.create(<Hr text="We begin here" />)
+  const component = renderer.create(<Hr text="End of Section 1" />)
   let tree = toJson(component)
   expect(tree).toMatchSnapshot()
 })
 
 test('Render separator with text at the end', () => {
-  const component = renderer.create(<Hr text="We end there" textOrientation="end" />)
+  const component = renderer.create(<Hr text="End of Section 2" textOrientation="end" />)
   let tree = toJson(component)
   expect(tree).toMatchSnapshot()
 })
