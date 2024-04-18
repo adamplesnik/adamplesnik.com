@@ -1,0 +1,37 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Tile 1`] = `
+<div
+  className="overflow-hidden rounded-lg border border-zinc-600/20 bg-gradient-to-tr from-zinc-800/20 to-zinc-800/40 px-6 pb-4 pt-8 shadow-2xl"
+>
+  <h3
+    className="relative w-full font-medium text-zinc-200 pb-4 text-xl opacity-90"
+  >
+    Test Title
+  </h3>
+  <h4
+    className="relative w-full font-medium text-zinc-200 pb-6 text-sm opacity-50"
+  >
+    Test Subtitle
+  </h4>
+  Tile
+</div>
+`;
+
+exports[`Tile with class name 1`] = `
+<div
+  className="overflow-hidden rounded-lg border border-zinc-600/20 bg-gradient-to-tr from-zinc-800/20 to-zinc-800/40 px-6 pb-4 pt-8 shadow-2xl test-class"
+>
+  <h3
+    className="relative w-full font-medium text-zinc-200 pb-4 text-xl opacity-90"
+  >
+    Test Title
+  </h3>
+  <h4
+    className="relative w-full font-medium text-zinc-200 pb-6 text-sm opacity-50"
+  >
+    Test Subtitle
+  </h4>
+  Tile with class name
+</div>
+`;
