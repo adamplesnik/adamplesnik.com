@@ -1,0 +1,33 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Large paragraph 1`] = `
+<p
+  className="mb-4 w-full text-lg"
+>
+  Large paragraph
+</p>
+`;
+
+exports[`Regular paragraph 1`] = `
+<p
+  className="mb-4 w-full text-base leading-7"
+>
+  Regular paragraph
+</p>
+`;
+
+exports[`Regular paragraph with class name 1`] = `
+<p
+  className="mb-4 w-full text-base leading-7 test-class"
+>
+  Regular paragraph with class name
+</p>
+`;
+
+exports[`Small paragraph 1`] = `
+<p
+  className="mb-4 w-full text-sm font-medium opacity-60"
+>
+  Small paragraph
+</p>
+`;
