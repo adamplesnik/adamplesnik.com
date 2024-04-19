@@ -13,11 +13,8 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.2.2",
-    "babel-plugin-prismjs": "^2.1.0",
     "framer-motion": "^11.0.24",
-    "localforage": "^1.10.0",
     "lucide-react": "^0.363.0",
-    "match-sorter": "^6.3.4",
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
