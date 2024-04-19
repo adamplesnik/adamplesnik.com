@@ -1,0 +1,51 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Add class name to the component 1`] = `
+<div
+  className="my-4 flex items-center gap-2 text-gray-700 dark:text-gray-300 test-class"
+>
+  <hr
+    className="h-px flex-1 border-none bg-current"
+  />
+</div>
+`;
+
+exports[`Render separator with text at the end 1`] = `
+<div
+  className="my-4 flex items-center gap-2 text-gray-700 dark:text-gray-300"
+>
+  <span
+    className="text-xs font-medium order-last"
+  >
+    End of Section 2
+  </span>
+  <hr
+    className="h-px flex-1 border-none bg-current"
+  />
+</div>
+`;
+
+exports[`Render separator with text in the beginning 1`] = `
+<div
+  className="my-4 flex items-center gap-2 text-gray-700 dark:text-gray-300"
+>
+  <span
+    className="text-xs font-medium"
+  >
+    End of Section 1
+  </span>
+  <hr
+    className="h-px flex-1 border-none bg-current"
+  />
+</div>
+`;
+
+exports[`Render simple separator 1`] = `
+<div
+  className="my-4 flex items-center gap-2 text-gray-700 dark:text-gray-300"
+>
+  <hr
+    className="h-px flex-1 border-none bg-current"
+  />
+</div>
+`;
