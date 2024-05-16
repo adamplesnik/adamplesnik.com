@@ -9,12 +9,7 @@ const Tile = ({
   subTitle,
 }: PropsWithChildren<TileWrapperProps>) => {
   return (
-    <div
-      className={
-        'overflow-hidden rounded-lg border border-zinc-600/20 bg-gradient-to-tr from-zinc-800/20 to-zinc-800/40 px-6 pb-4 pt-8 shadow-2xl' +
-        addWithSpace(className)
-      }
-    >
+    <div className={'' + addWithSpace(className)}>
       <Heading size={3}>{title}</Heading>
       <Heading size={4}>{subTitle}</Heading>
       {children}

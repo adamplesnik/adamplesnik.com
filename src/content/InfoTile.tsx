@@ -9,10 +9,8 @@ const InfoTile = () => {
     <div className="flex flex-col items-start gap-4 p-2 sm:flex-row">
       <Photo />
       <div>
-        <Heading size={1} className="text-slate-300">
-          Adam Plesník, design engineer based in Bratislava, Slovakia.
-        </Heading>
-        <Heading size={1} className="text-slate-300">
+        <Heading size={1}>Adam Plesník, design engineer based in Bratislava, Slovakia.</Heading>
+        <Heading size={1}>
           I love creating, polishing and improving user interfaces, with focus on{' '}
           <span className="stroke relative whitespace-nowrap">
             <ScratchAnim />
