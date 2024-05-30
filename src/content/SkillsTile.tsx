@@ -5,6 +5,7 @@ import Paragraph from '../components/Paragraph'
 const SkillsTile = () => {
   return (
     <div>
+      <div className="flex"></div>
       <Heading size={3}>Skills</Heading>
       <Paragraph>
         I specialize in <Em>nicer parts of the front end universe</Em>. I write CSS and front end
@@ -13,7 +14,7 @@ const SkillsTile = () => {
       </Paragraph>
       <Paragraph>
         I have a <Em>passion for atomic components with atomic CSS</Em>, clean and meaningful UIs,
-        micro interactions.
+        refactoring.
       </Paragraph>
     </div>
   )

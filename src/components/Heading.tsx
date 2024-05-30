@@ -7,18 +7,18 @@ const Heading = ({
   children,
   id = '',
 }: PropsWithChildren<TitleProps>) => {
-  const defaultClasses = 'relative w-full font-medium text-zinc-950' + addWithSpace(className)
+  const defaultClasses = 'relative w-full text-zinc-950' + addWithSpace(className)
   const anchor = id ? <a id={id} className={'absolute -top-32'} /> : ''
   if (size === 1) {
     return (
-      <h1 className={defaultClasses + ' pb-4 text-2xl leading-normal'}>
+      <h1 className={defaultClasses + '  pb-8 text-xl font-medium leading-normal'}>
         {children}
         {anchor}
       </h1>
     )
   } else if (size === 2) {
     return (
-      <h2 className={defaultClasses + ' py-6 text-3xl opacity-90'}>
+      <h2 className={defaultClasses + '  pb-4 text-2xl font-medium opacity-90'}>
         {children}
         {anchor}
       </h2>
@@ -32,7 +32,7 @@ const Heading = ({
     )
   } else {
     return (
-      <h4 className={defaultClasses + ' pb-4 font-serif text-sm italic opacity-50'}>
+      <h4 className={defaultClasses + ' pb-4 text-sm opacity-50'}>
         {children}
         {anchor}
       </h4>
