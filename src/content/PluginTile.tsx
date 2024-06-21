@@ -5,13 +5,13 @@ import Tile from '../components/Tile'
 
 const PluginTile = () => {
   return (
-    <Tile title="Scroll-driven Animations" subTitle="Tailwind CSS plugin">
+    <Tile title="Scroll-driven animations" subTitle="Tailwind CSS plugin">
       <Paragraph>
         A plugin for Tailwind CSS v3.4+ that provides utilities for scroll-driven animations.
       </Paragraph>
       <div className="flex flex-col gap-2 pt-2">
-        <Link Icon={NotepadText} href="https://tailwind.adamplesnik.com">
-          tailwind.adamplesnik.com
+        <Link Icon={NotepadText} href="https://scrolldriven.dev">
+          scrolldriven.dev
         </Link>
         <Link
           Icon={Github}
