@@ -5,12 +5,12 @@ exports[`Tile 1`] = `
   className=""
 >
   <h3
-    className="relative w-full font-medium text-zinc-950 pb-4 text-xl opacity-90"
+    className="relative w-full text-zinc-950 pb-4 text-lg opacity-90"
   >
     Test Title
   </h3>
   <h4
-    className="relative w-full font-medium text-zinc-950 pb-4 font-serif text-sm italic opacity-50"
+    className="relative w-full text-zinc-950 pb-4 text-sm opacity-50"
   >
     Test Subtitle
   </h4>
@@ -23,12 +23,12 @@ exports[`Tile with class name 1`] = `
   className=" test-class"
 >
   <h3
-    className="relative w-full font-medium text-zinc-950 pb-4 text-xl opacity-90"
+    className="relative w-full text-zinc-950 pb-4 text-lg opacity-90"
   >
     Test Title
   </h3>
   <h4
-    className="relative w-full font-medium text-zinc-950 pb-4 font-serif text-sm italic opacity-50"
+    className="relative w-full text-zinc-950 pb-4 text-sm opacity-50"
   >
     Test Subtitle
   </h4>
