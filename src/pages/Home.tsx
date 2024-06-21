@@ -1,4 +1,3 @@
-import MediumTile from '@/content/MediumTile'
 import CvTile from '../content/CvTile'
 import InfoTile from '../content/InfoTile'
 import PluginTile from '../content/PluginTile'
@@ -11,12 +10,11 @@ const Home = () => {
   return (
     <Page>
       <InfoTile />
-      <CvTile />
       <SkillsTile />
+      <CvTile />
       <WorkTile />
       <PluginTile />
       <WebUmeniaTile />
-      <MediumTile />
     </Page>
   )
 }

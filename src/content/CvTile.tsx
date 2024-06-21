@@ -12,12 +12,11 @@ const CvTile = () => {
         </div>
         <FlowerAnim />
       </div>
-
       <Paragraph>
         Spending quality time with my family is my number one priority, preferably while mountain
-        biking, traveling or both. I speak English and French fluently, and I am learning
-        Portuguese.
+        biking, traveling or both. I also take lot of pictures and I love to read.
       </Paragraph>
+      <Paragraph>I speak English and French fluently, and I am learning Portuguese.</Paragraph>
     </div>
   )
 }
