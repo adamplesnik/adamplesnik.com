@@ -2,7 +2,7 @@ import FlowerAnim from '../components/FlowerAnim'
 import Heading from '../components/Heading'
 import Paragraph from '../components/Paragraph'
 
-const CvTile = () => {
+const Cv = () => {
   return (
     <div>
       <Heading size={3}>About Me</Heading>
@@ -21,4 +21,4 @@ const CvTile = () => {
   )
 }
 
-export default CvTile
+export default Cv

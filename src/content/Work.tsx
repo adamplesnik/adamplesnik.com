@@ -1,7 +1,7 @@
 import Heading from '../components/Heading'
 import Paragraph from '../components/Paragraph'
 
-const WorkTile = () => {
+const Work = () => {
   return (
     <div>
       <Heading size={3}>Work</Heading>
@@ -13,4 +13,4 @@ const WorkTile = () => {
   )
 }
 
-export default WorkTile
+export default Work

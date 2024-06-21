@@ -4,7 +4,7 @@ import ScratchAnim from '../components/ScratchAnim'
 import TextAnim from '../components/TextAnim'
 import Photo from '../components/Photo'
 
-const InfoTile = () => {
+const Info = () => {
   return (
     <div className="flex flex-col items-start gap-4 p-2 sm:flex-row">
       <Photo />
@@ -26,4 +26,4 @@ const InfoTile = () => {
   )
 }
 
-export default InfoTile
+export default Info

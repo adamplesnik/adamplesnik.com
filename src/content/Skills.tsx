@@ -2,7 +2,7 @@ import Em from '../components/Em'
 import Heading from '../components/Heading'
 import Paragraph from '../components/Paragraph'
 
-const SkillsTile = () => {
+const Skills = () => {
   return (
     <div className="flex-1">
       <Heading size={3}>Skills</Heading>
@@ -19,4 +19,4 @@ const SkillsTile = () => {
   )
 }
 
-export default SkillsTile
+export default Skills
