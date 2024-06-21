@@ -5,7 +5,6 @@ import Paragraph from '../components/Paragraph'
 const SkillsTile = () => {
   return (
     <div>
-      <div className="flex"></div>
       <Heading size={3}>Skills</Heading>
       <Paragraph>
         I specialize in <Em>nicer parts of the front end universe</Em>. I write CSS and front end

@@ -1,7 +1,7 @@
 import { PropsWithChildren } from 'react'
 
 const Em = ({ children }: PropsWithChildren<EmProps>) => {
-  return <span>{children}</span>
+  return <span className="font-medium">{children}</span>
 }
 
 export interface EmProps {
