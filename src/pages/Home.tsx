@@ -1,3 +1,4 @@
+import LoveToDo from '@/content/LoveToDo'
 import CvTile from '../content/CvTile'
 import InfoTile from '../content/InfoTile'
 import PluginTile from '../content/PluginTile'
@@ -11,6 +12,7 @@ const Home = () => {
     <Page>
       <InfoTile />
       <SkillsTile />
+      <LoveToDo />
       <CvTile />
       <WorkTile />
       <PluginTile />
