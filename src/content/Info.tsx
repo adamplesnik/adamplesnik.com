@@ -8,8 +8,8 @@ const Info = () => {
     <div>
       <Heading size={1}>Adam Plesník</Heading>
       <Heading size={2}>Design engineer based in Bratislava, Slovakia.</Heading>
-      <Heading size={2}>
-        I love creating, polishing and improving user interfaces, with focus on{' '}
+      <p className="pb-4 text-2xl font-medium text-zinc-950">
+        I love creating, polishing and improving user interfaces in Figma and React, with focus on{' '}
         <span className="stroke relative whitespace-nowrap">
           <ScratchAnim />
           atomic <TextAnim />{' '}
@@ -18,7 +18,7 @@ const Info = () => {
           </motion.span>
         </span>
         , refactoring and building reusable components.
-      </Heading>
+      </p>
     </div>
   )
 }
