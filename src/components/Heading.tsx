@@ -5,7 +5,7 @@ const Heading = ({ size = 1, className = '', children }: PropsWithChildren<Title
   const defaultClasses = clsx('relative text-zinc-950 font-semibold', className)
 
   if (size === 1) {
-    return <h1 className={clsx(defaultClasses, 'pb-8 text-xl leading-normal')}>{children}</h1>
+    return <h1 className={clsx(defaultClasses, 'text-xl leading-normal')}>{children}</h1>
   } else if (size === 2) {
     return <h2 className={clsx(defaultClasses, 'pb-12 text-3xl opacity-90')}>{children}</h2>
   } else if (size === 3) {

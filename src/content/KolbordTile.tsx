@@ -1,4 +1,3 @@
-import { Github } from 'lucide-react'
 import Link from '../components/Link'
 import Paragraph from '../components/Paragraph'
 import Tile from '../components/Tile'
@@ -17,10 +16,8 @@ const KolbordTile = () => {
         Opinionated, free to use, and open source app for one-click reservation of anything.
       </Paragraph>
       <Paragraph>Built in React, Payload CMS with user management in Clerk.</Paragraph>
-      <Link href="https://github.com/adamplesnik/kolbord" Icon={Github}>
-        @adamplesnik/kolbord
-      </Link>
-      <Link href="https://github.com/adamplesnik/kolbord-payload" Icon={Github}>
+      <Link href="https://github.com/adamplesnik/kolbord">@adamplesnik/kolbord</Link>
+      <Link href="https://github.com/adamplesnik/kolbord-payload">
         @adamplesnik/kolbord-payload
       </Link>
     </Tile>

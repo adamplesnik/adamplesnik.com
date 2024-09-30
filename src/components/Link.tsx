@@ -24,12 +24,12 @@ const Link = ({
           }}
           transition={{ duration: 0.72, type: 'spring' }}
         >
-          <Icon className="size-7 pr-2 text-fuchsia-600 opacity-70" strokeWidth={1.8} />
+          <Icon className="size-7 pr-2 text-pink-600 opacity-70" strokeWidth={1.8} />
         </motion.div>
       ) : (
         ''
       )}
-      <a href={href} target={target} className="hover:text-fuchsia-700 print:text-gray-700">
+      <a href={href} target={target} className="hover:text-pink-700 print:text-gray-700">
         {children}
       </a>
     </div>
