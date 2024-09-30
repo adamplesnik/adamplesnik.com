@@ -5,10 +5,10 @@ exports[`Tile 1`] = `
   className=""
 >
   <div
-    className="flex justify-between"
+    className="flex gap-4"
   >
     <h4
-      className="relative w-full text-zinc-950 text-md pb-4 font-semibold"
+      className="relative w-full text-zinc-950text-md pb-4 font-semibold"
     >
       Test Title
     </h4>
@@ -22,10 +22,10 @@ exports[`Tile with class name 1`] = `
   className=" test-class"
 >
   <div
-    className="flex justify-between"
+    className="flex gap-4"
   >
     <h4
-      className="relative w-full text-zinc-950 text-md pb-4 font-semibold"
+      className="relative w-full text-zinc-950text-md pb-4 font-semibold"
     >
       Test Title
     </h4>

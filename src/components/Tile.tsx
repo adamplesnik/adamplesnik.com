@@ -5,7 +5,7 @@ import Heading from './Heading'
 const Tile = ({ children, className, title, badge }: PropsWithChildren<TileWrapperProps>) => {
   return (
     <div className={'' + addWithSpace(className)}>
-      <div className="flex justify-between">
+      <div className="flex gap-4">
         <Heading size={4}>{title}</Heading>
         {badge && badge}
       </div>
