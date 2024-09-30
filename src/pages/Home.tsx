@@ -1,4 +1,3 @@
-import Heading from '@/components/Heading'
 import KolbordTile from '@/content/KolbordTile'
 import LoveToDo from '@/content/LoveToDo'
 import Cv from '../content/Cv'
@@ -14,11 +13,10 @@ const Home = () => {
       <Info />
       <Skills />
       <LoveToDo />
-      <Cv />
-      <Heading size={3}>Work</Heading>
       <KolbordTile />
       <PluginTile />
       <WebUmeniaTile />
+      <Cv />
     </Page>
   )
 }

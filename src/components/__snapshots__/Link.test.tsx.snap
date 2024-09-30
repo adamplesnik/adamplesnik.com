@@ -7,7 +7,7 @@ exports[`Link with href 1`] = `
   onMouseLeave={[Function]}
 >
   <a
-    className=" hover:text-fuchsia-700 print:text-gray-700"
+    className="hover:text-fuchsia-700 print:text-gray-700"
     href="url/"
     target="_blank"
   >
@@ -23,7 +23,7 @@ exports[`Link with href and custom target 1`] = `
   onMouseLeave={[Function]}
 >
   <a
-    className=" hover:text-fuchsia-700 print:text-gray-700"
+    className="hover:text-fuchsia-700 print:text-gray-700"
     href="url/"
     target="_self"
   >
@@ -103,7 +103,7 @@ exports[`Link with href, custom target and icon 1`] = `
     </svg>
   </div>
   <a
-    className=" hover:text-fuchsia-700 print:text-gray-700"
+    className="hover:text-fuchsia-700 print:text-gray-700"
     href="url/"
     target="_self"
   >
