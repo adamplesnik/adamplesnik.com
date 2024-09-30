@@ -5,10 +5,10 @@ exports[`Tile 1`] = `
   className=""
 >
   <div
-    className="flex gap-4"
+    className="flex gap-1"
   >
     <h4
-      className="relative w-full text-zinc-950 font-semiboldtext-md pb-4"
+      className="relative text-zinc-950 font-semibold pb-8 text-lg"
     >
       Test Title
     </h4>
@@ -22,10 +22,10 @@ exports[`Tile with class name 1`] = `
   className=" test-class"
 >
   <div
-    className="flex gap-4"
+    className="flex gap-1"
   >
     <h4
-      className="relative w-full text-zinc-950 font-semiboldtext-md pb-4"
+      className="relative text-zinc-950 font-semibold pb-8 text-lg"
     >
       Test Title
     </h4>
