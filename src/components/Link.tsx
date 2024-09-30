@@ -29,7 +29,11 @@ const Link = ({
       ) : (
         ''
       )}
-      <a href={href} target={target} className="hover:text-pink-700 print:text-gray-700">
+      <a
+        href={href}
+        target={target}
+        className="text-cyan-700 hover:text-zinc-700 print:text-gray-700"
+      >
         {children}
       </a>
     </div>
