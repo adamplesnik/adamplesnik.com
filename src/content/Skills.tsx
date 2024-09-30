@@ -8,8 +8,8 @@ const Skills = () => {
       <Heading size={3}>Skills</Heading>
       <Paragraph>
         I specialize in <Em>nicer parts of the front end universe</Em>. I write CSS and front end
-        components for React, Vue.js, Angular and even Vaadin. My experience ranges from
-        implementing Figma-based prototypes from scratch to refactoring huge projects.
+        components for React. My experience ranges from implementing Figma-based prototypes from
+        scratch to refactoring huge projects.
       </Paragraph>
       <Paragraph>
         I have a <Em>passion for atomic components with atomic CSS</Em>, clean and meaningful UIs,

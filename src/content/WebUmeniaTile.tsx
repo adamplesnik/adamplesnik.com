@@ -5,7 +5,7 @@ import Tile from '../components/Tile'
 
 const WebUmeniaTile = () => {
   return (
-    <Tile title="Open source contribution" subTitle="Refactoring of the CSS for webumenia.sk">
+    <Tile title="CSS refactoring for webumenia.sk">
       <Paragraph>
         Web umenia features almost 180k artworks from the collections of Slovak galleries. I forked
         their dev branch and started the process of removing old code, reorganizing dependencies and

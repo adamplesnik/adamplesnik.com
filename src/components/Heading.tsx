@@ -25,14 +25,14 @@ const Heading = ({
     )
   } else if (size === 3) {
     return (
-      <h3 className={defaultClasses + ' pb-4 text-lg opacity-90'}>
+      <h3 className={defaultClasses + ' pb-4 text-lg font-semibold opacity-90'}>
         {children}
         {anchor}
       </h3>
     )
   } else {
     return (
-      <h4 className={defaultClasses + ' pb-4 text-sm opacity-50'}>
+      <h4 className={defaultClasses + ' text-md pb-4 font-semibold'}>
         {children}
         {anchor}
       </h4>

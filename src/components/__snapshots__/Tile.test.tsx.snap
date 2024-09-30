@@ -4,16 +4,15 @@ exports[`Tile 1`] = `
 <div
   className=""
 >
-  <h3
-    className="relative w-full text-zinc-950 pb-4 text-lg opacity-90"
+  <div
+    className="flex justify-between"
   >
-    Test Title
-  </h3>
-  <h4
-    className="relative w-full text-zinc-950 pb-4 text-sm opacity-50"
-  >
-    Test Subtitle
-  </h4>
+    <h4
+      className="relative w-full text-zinc-950 text-md pb-4 font-semibold"
+    >
+      Test Title
+    </h4>
+  </div>
   Tile
 </div>
 `;
@@ -22,16 +21,15 @@ exports[`Tile with class name 1`] = `
 <div
   className=" test-class"
 >
-  <h3
-    className="relative w-full text-zinc-950 pb-4 text-lg opacity-90"
+  <div
+    className="flex justify-between"
   >
-    Test Title
-  </h3>
-  <h4
-    className="relative w-full text-zinc-950 pb-4 text-sm opacity-50"
-  >
-    Test Subtitle
-  </h4>
+    <h4
+      className="relative w-full text-zinc-950 text-md pb-4 font-semibold"
+    >
+      Test Title
+    </h4>
+  </div>
   Tile with class name
 </div>
 `;

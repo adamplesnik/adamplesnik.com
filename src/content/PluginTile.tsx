@@ -5,7 +5,7 @@ import Tile from '../components/Tile'
 
 const PluginTile = () => {
   return (
-    <Tile title="Scroll-driven animations" subTitle="Tailwind CSS plugin">
+    <Tile title="Scroll-driven animations plugin for Tailwind CSS">
       <Paragraph>
         A plugin for Tailwind CSS v3.4+ that provides utilities for scroll-driven animations.
       </Paragraph>
