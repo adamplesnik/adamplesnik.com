@@ -3,7 +3,7 @@ import Heading from '../components/Heading'
 import ScratchAnim from '../components/ScratchAnim'
 import TextAnim from '../components/TextAnim'
 
-const InfoTile = () => {
+const Info = () => {
   return (
     <div>
       <Heading size={1}>Adam Plesník</Heading>
@@ -23,4 +23,4 @@ const InfoTile = () => {
   )
 }
 
-export default InfoTile
+export default Info

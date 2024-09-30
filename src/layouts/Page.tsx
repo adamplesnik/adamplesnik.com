@@ -4,7 +4,7 @@ import Footer from '../content/Footer'
 const Page = ({ children }: PropsWithChildren<PageProps>) => {
   return (
     <div className="flex w-screen justify-center">
-      <div className="relative mb-12 flex w-full max-w-screen-md flex-col gap-8 overflow-hidden p-8 pt-12 md:gap-12">
+      <div className="relative mb-12 flex w-full max-w-screen-md flex-col gap-8 overflow-hidden p-8 pt-12 md:gap-16">
         {children}
         <Footer />
       </div>

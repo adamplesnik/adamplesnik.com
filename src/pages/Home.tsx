@@ -1,20 +1,22 @@
-import CvTile from '../content/CvTile'
-import InfoTile from '../content/InfoTile'
+import LoveToDo from '@/content/LoveToDo'
+import Cv from '../content/Cv'
+import Info from '../content/Info'
 import PluginTile from '../content/PluginTile'
-import SkillsTile from '../content/SkillsTile'
+import Skills from '../content/Skills'
 import WebUmeniaTile from '../content/WebUmeniaTile'
-import WorkTile from '../content/WorkTile'
+import Work from '../content/Work'
 import Page from '../layouts/Page'
 
 const Home = () => {
   return (
     <Page>
-      <InfoTile />
-      <SkillsTile />
-      <WorkTile />
+      <Info />
+      <Skills />
+      <LoveToDo />
+      <Cv />
+      <Work />
       <PluginTile />
       <WebUmeniaTile />
-      <CvTile />
     </Page>
   )
 }
