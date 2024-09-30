@@ -2,13 +2,22 @@ import FlowerAnim from '../components/FlowerAnim'
 import Heading from '../components/Heading'
 import Paragraph from '../components/Paragraph'
 
+const MyAge = () => {
+  const myBirth = new Date('1985-06-22T12:00Z').getTime()
+  const now = new Date().getTime()
+  const myAge = (now - myBirth) / 1000 / 60 / 60 / 24 / 365.25
+  return Math.floor(myAge)
+}
+
 const Cv = () => {
   return (
     <div>
       <Heading size={3}>About me</Heading>
       <div className="flex items-center gap-2">
         <div className="order-last sm:order-none">
-          <Paragraph>Married, 38 years old, father of two girls.</Paragraph>
+          <Paragraph>
+            Married, <MyAge /> years old, father of two girls.
+          </Paragraph>
         </div>
         <FlowerAnim />
       </div>
