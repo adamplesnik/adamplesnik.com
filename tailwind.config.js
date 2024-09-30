@@ -3,9 +3,6 @@ export default {
   content: ['index.html', './src/**/*.{html,tsx,jsx,ts,js}', './blog/**/*.{html,tsx,jsx,ts,js}'],
   theme: {
     extend: {
-      animation: {
-        appear: 'appear 0s linear forwards',
-      },
       fontFamily: {
         sans: 'Inter, sans-serif',
       },
