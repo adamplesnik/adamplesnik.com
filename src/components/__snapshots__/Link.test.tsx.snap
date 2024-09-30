@@ -42,6 +42,7 @@ exports[`Link with href, custom target and icon 1`] = `
     style={
       {
         "transform": "none",
+        "willChange": "transform",
       }
     }
   >
