@@ -13,7 +13,7 @@ const Tile = ({
   return (
     <div className={clsx('mb-12', className)}>
       <div className="flex gap-1">
-        {title && <Heading size={sub ? 4 : 3}>{title}</Heading>}
+        {title && <Heading size={sub ? 3 : 2}>{title}</Heading>}
         {badge && badge}
       </div>
       {children}
