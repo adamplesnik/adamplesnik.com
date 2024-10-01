@@ -2,7 +2,7 @@
 
 exports[`Add class name to the component 1`] = `
 <div
-  className="my-4 flex items-center gap-2 text-gray-700 dark:text-gray-300 test-class"
+  className="my-4 flex items-center gap-2 text-zinc-700 dark:text-zinc-300 test-class"
 >
   <hr
     className="h-px flex-1 border-none bg-current"
@@ -12,7 +12,7 @@ exports[`Add class name to the component 1`] = `
 
 exports[`Render separator with text at the end 1`] = `
 <div
-  className="my-4 flex items-center gap-2 text-gray-700 dark:text-gray-300"
+  className="my-4 flex items-center gap-2 text-zinc-700 dark:text-zinc-300"
 >
   <span
     className="text-xs font-medium order-last"
@@ -27,7 +27,7 @@ exports[`Render separator with text at the end 1`] = `
 
 exports[`Render separator with text in the beginning 1`] = `
 <div
-  className="my-4 flex items-center gap-2 text-gray-700 dark:text-gray-300"
+  className="my-4 flex items-center gap-2 text-zinc-700 dark:text-zinc-300"
 >
   <span
     className="text-xs font-medium"
@@ -42,7 +42,7 @@ exports[`Render separator with text in the beginning 1`] = `
 
 exports[`Render simple separator 1`] = `
 <div
-  className="my-4 flex items-center gap-2 text-gray-700 dark:text-gray-300"
+  className="my-4 flex items-center gap-2 text-zinc-700 dark:text-zinc-300"
 >
   <hr
     className="h-px flex-1 border-none bg-current"

@@ -1,21 +1,17 @@
-import Em from '../components/Em'
-import Heading from '../components/Heading'
+import Em from '@/components/Em'
+import Tile from '@/components/Tile'
 import Paragraph from '../components/Paragraph'
 
 const Skills = () => {
   return (
-    <div className="flex-1">
-      <Heading size={3}>Skills</Heading>
+    <Tile>
+      <Paragraph>Design engineer, Bratislava, Slovakia.</Paragraph>
       <Paragraph>
-        I specialize in <Em>nicer parts of the front end universe</Em>. I write CSS and front end
-        components for React, Vue.js, Angular and even Vaadin. My experience ranges from
-        implementing Figma-based prototypes from scratch to refactoring huge projects.
+        I create, polish, and improve user interfaces by clicking in <Em>Figma</Em> and coding in{' '}
+        <Em>React</Em>. I have a passion for atomic components with <Em>Tailwind CSS</Em>, clean and
+        meaningful UIs, and refactoring.
       </Paragraph>
-      <Paragraph>
-        I have a <Em>passion for atomic components with atomic CSS</Em>, clean and meaningful UIs,
-        micro interactions.
-      </Paragraph>
-    </div>
+    </Tile>
   )
 }
 

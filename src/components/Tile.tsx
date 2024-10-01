@@ -1,32 +1,39 @@
-import { PropsWithChildren } from 'react'
+import { clsx } from 'clsx'
+import { MousePointerClick } from 'lucide-react'
+import { HTMLAttributes, PropsWithChildren, ReactNode } from 'react'
 import Heading from './Heading'
-import { addWithSpace } from '../utils/addWithSpace'
 
 const Tile = ({
+  sub,
   children,
-  className = '',
   title,
-  subTitle,
+  badge,
+  links,
+  className,
 }: PropsWithChildren<TileWrapperProps>) => {
   return (
-    <div
-      className={
-        'overflow-hidden rounded-lg border border-zinc-600/20 bg-gradient-to-tr from-zinc-800/20 to-zinc-800/40 px-6 pb-4 pt-8 shadow-2xl' +
-        addWithSpace(className)
-      }
-    >
-      <Heading size={3}>{title}</Heading>
-      <Heading size={4}>{subTitle}</Heading>
+    <div className={clsx('mb-24', className)}>
+      <div className="flex gap-1">
+        {title && <Heading size={sub ? 3 : 2}>{title}</Heading>}
+        {badge && badge}
+      </div>
       {children}
+      {links && (
+        <div className="flex items-baseline gap-2">
+          <MousePointerClick className="size-4" />
+          <div className="flex flex-col gap-1">{links}</div>
+        </div>
+      )}
     </div>
   )
 }
 
-export interface TileWrapperProps {
+export type TileWrapperProps = {
   children: PropsWithChildren
-  title: string
-  subTitle: string
-  className?: string | '' | undefined
-}
+  sub?: boolean
+  title?: string
+  badge?: ReactNode
+  links?: ReactNode
+} & HTMLAttributes<HTMLDivElement>
 
 export default Tile

@@ -7,7 +7,7 @@ const Hr = ({ text, textOrientation = 'start', className, ...rest }: HrProps) =>
   return (
     <div
       className={
-        'my-4 flex items-center gap-2 text-gray-700 dark:text-gray-300' + addWithSpace(className)
+        'my-4 flex items-center gap-2 text-zinc-700 dark:text-zinc-300' + addWithSpace(className)
       }
       {...rest}
     >

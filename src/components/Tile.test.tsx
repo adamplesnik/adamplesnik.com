@@ -4,21 +4,23 @@ import { expect, test } from 'vitest'
 import Tile from './Tile'
 
 test('Tile', () => {
-  const component = renderer.create(
-    <Tile title="Test Title" subTitle="Test Subtitle">
-      Tile
-    </Tile>
-  )
-  let tree = toJson(component)
+  const component = renderer.create(<Tile title="Test Title">Tile</Tile>)
+  const tree = toJson(component)
   expect(tree).toMatchSnapshot()
 })
 
-test('Tile with class name', () => {
+test('Tile without title', () => {
+  const component = renderer.create(<Tile>Tile without title</Tile>)
+  const tree = toJson(component)
+  expect(tree).toMatchSnapshot()
+})
+
+test('Tile with badge', () => {
   const component = renderer.create(
-    <Tile title="Test Title" subTitle="Test Subtitle" className="test-class">
-      Tile with class name
+    <Tile title="Test Title" badge={<span />}>
+      Tile with badge
     </Tile>
   )
-  let tree = toJson(component)
+  const tree = toJson(component)
   expect(tree).toMatchSnapshot()
 })
