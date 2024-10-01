@@ -1,14 +1,6 @@
 import Tile from '@/components/Tile'
 
-const skills = [
-  'React',
-  'Tailwind CSS',
-  'CSS + Sass',
-  'Theme refactoring',
-  'Figma',
-  'Framer motion',
-  'Vue.js',
-]
+const skills = ['React', 'Tailwind CSS', 'CSS + Sass', 'Theme refactoring', 'Figma']
 
 const LoveToDo = () => {
   return (

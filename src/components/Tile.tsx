@@ -1,4 +1,5 @@
 import { clsx } from 'clsx'
+import { MousePointerClick } from 'lucide-react'
 import { HTMLAttributes, PropsWithChildren, ReactNode } from 'react'
 import Heading from './Heading'
 
@@ -11,13 +12,18 @@ const Tile = ({
   className,
 }: PropsWithChildren<TileWrapperProps>) => {
   return (
-    <div className={clsx('mb-12', className)}>
+    <div className={clsx('mb-24', className)}>
       <div className="flex gap-1">
         {title && <Heading size={sub ? 3 : 2}>{title}</Heading>}
         {badge && badge}
       </div>
       {children}
-      {links && <div className="flex flex-col gap-2">{links}</div>}
+      {links && (
+        <div className="flex items-baseline gap-2">
+          <MousePointerClick className="size-4" />
+          <div className="flex flex-col gap-1">{links}</div>
+        </div>
+      )}
     </div>
   )
 }
