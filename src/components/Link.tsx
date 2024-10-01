@@ -32,7 +32,7 @@ const Link = ({
       <a
         href={href}
         target={target}
-        className="text-cyan-700 hover:text-zinc-700 print:text-gray-700"
+        className="text-zinc-500 hover:text-zinc-700 print:text-zinc-700"
       >
         {children}
       </a>
