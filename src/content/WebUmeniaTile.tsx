@@ -12,7 +12,7 @@ const Links = () => {
 
 const WebUmeniaTile = () => {
   return (
-    <Tile title="CSS refactoring for webumenia.sk" links={<Links />}>
+    <Tile title="CSS refactoring for webumenia.sk" links={<Links />} sub>
       <Paragraph>
         Web umenia features almost 180k artworks from the collections of Slovak galleries. I forked
         their dev branch and started the process of removing old code, reorganizing dependencies and

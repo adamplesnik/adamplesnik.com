@@ -1,11 +1,19 @@
+import { clsx } from 'clsx'
 import { HTMLAttributes, PropsWithChildren, ReactNode } from 'react'
 import Heading from './Heading'
 
-const Tile = ({ children, title, badge, links }: PropsWithChildren<TileWrapperProps>) => {
+const Tile = ({
+  sub,
+  children,
+  title,
+  badge,
+  links,
+  className,
+}: PropsWithChildren<TileWrapperProps>) => {
   return (
-    <div className="mb-12">
+    <div className={clsx('mb-12', className)}>
       <div className="flex gap-1">
-        {title && <Heading size={4}>{title}</Heading>}
+        {title && <Heading size={sub ? 4 : 3}>{title}</Heading>}
         {badge && badge}
       </div>
       {children}
@@ -16,6 +24,7 @@ const Tile = ({ children, title, badge, links }: PropsWithChildren<TileWrapperPr
 
 export type TileWrapperProps = {
   children: PropsWithChildren
+  sub?: boolean
   title?: string
   badge?: ReactNode
   links?: ReactNode

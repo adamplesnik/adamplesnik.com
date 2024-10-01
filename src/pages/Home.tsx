@@ -13,11 +13,15 @@ const Home = () => {
     <Page>
       <Info />
       <Skills />
-      <LoveToDo />
-      <Work />
-      <KolbordTile />
-      <PluginTile />
-      <WebUmeniaTile />
+      <div className="flex flex-col md:flex-row md:gap-16">
+        <LoveToDo />
+        <div>
+          <Work />
+          <KolbordTile />
+          <PluginTile />
+          <WebUmeniaTile />
+        </div>
+      </div>
       <Cv />
     </Page>
   )

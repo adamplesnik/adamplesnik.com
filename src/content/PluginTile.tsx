@@ -15,7 +15,7 @@ const Links = () => {
 
 const PluginTile = () => {
   return (
-    <Tile title="Scroll-driven animations plugin for Tailwind CSS" links={<Links />}>
+    <Tile title="Scroll-driven animations plugin for Tailwind CSS" links={<Links />} sub>
       <Paragraph>
         A plugin for Tailwind CSS v3.4+ that provides utilities for scroll-driven animations.
       </Paragraph>
