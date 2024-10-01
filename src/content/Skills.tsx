@@ -1,22 +1,15 @@
+import Em from '@/components/Em'
 import Tile from '@/components/Tile'
-import Em from '../components/Em'
 import Paragraph from '../components/Paragraph'
 
 const Skills = () => {
   return (
     <Tile>
+      <Paragraph>Design engineer, Bratislava, Slovakia</Paragraph>
       <Paragraph>
-        I love creating, polishing and improving user interfaces in Figma and React, with focus on
-        Tailwind CSS, refactoring and building reusable components.
-      </Paragraph>
-      <Paragraph>
-        I specialize in <Em>nicer parts of the front end universe</Em>. I write CSS and front end
-        components for React. My experience ranges from implementing Figma-based prototypes from
-        scratch to refactoring huge projects.
-      </Paragraph>
-      <Paragraph>
-        I have a <Em>passion for atomic components with atomic CSS</Em>, clean and meaningful UIs,
-        refactoring.
+        I create, polish, and improve user interfaces by clicking in <Em>Figma</Em> and coding in{' '}
+        <Em>React</Em>. I have a passion for atomic components with <Em>Tailwind CSS</Em>, clean and
+        meaningful UIs, and refactoring.
       </Paragraph>
     </Tile>
   )

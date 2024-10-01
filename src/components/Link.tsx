@@ -5,7 +5,7 @@ const Link = ({ href, children, target = '_blank' }: PropsWithChildren<LinkProps
     <a
       href={href}
       target={target}
-      className="flex items-center text-zinc-500 underline decoration-zinc-400 hover:text-zinc-900 hover:decoration-zinc-800 print:text-zinc-700"
+      className="flex items-center text-zinc-700 underline decoration-zinc-600 hover:text-black hover:decoration-zinc-800"
     >
       {children}
     </a>

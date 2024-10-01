@@ -17,7 +17,7 @@ const Home = () => {
       <Page>
         <Skills />
         <Cv />
-        <div className="flex flex-col md:flex-row md:gap-16">
+        <div className="flex flex-col md:flex-row md:gap-24">
           <LoveToDo />
           <div>
             <Work />
