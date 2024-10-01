@@ -9,6 +9,12 @@ test('Tile', () => {
   expect(tree).toMatchSnapshot()
 })
 
+test('Tile without title', () => {
+  const component = renderer.create(<Tile>Tile without title</Tile>)
+  const tree = toJson(component)
+  expect(tree).toMatchSnapshot()
+})
+
 test('Tile with badge', () => {
   const component = renderer.create(
     <Tile title="Test Title" badge={<span />}>

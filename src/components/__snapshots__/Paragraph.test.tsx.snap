@@ -2,7 +2,7 @@
 
 exports[`Large paragraph 1`] = `
 <p
-  className="mb-6 w-full text-base leading-7"
+  className="mb-5 w-full text-base leading-7 last:mb-0"
 >
   Large paragraph
 </p>
@@ -10,7 +10,7 @@ exports[`Large paragraph 1`] = `
 
 exports[`Regular paragraph 1`] = `
 <p
-  className="mb-6 w-full text-base leading-7"
+  className="mb-5 w-full text-base leading-7 last:mb-0"
 >
   Regular paragraph
 </p>
@@ -18,7 +18,7 @@ exports[`Regular paragraph 1`] = `
 
 exports[`Regular paragraph with class name 1`] = `
 <p
-  className="mb-6 w-full text-base leading-7 test-class"
+  className="mb-5 w-full text-base leading-7 last:mb-0 test-class"
 >
   Regular paragraph with class name
 </p>
@@ -26,7 +26,7 @@ exports[`Regular paragraph with class name 1`] = `
 
 exports[`Small paragraph 1`] = `
 <p
-  className="mb-6 w-full text-base leading-7"
+  className="mb-5 w-full text-base leading-7 last:mb-0"
 >
   Small paragraph
 </p>

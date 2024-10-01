@@ -3,9 +3,9 @@ import Heading from './Heading'
 
 const Tile = ({ children, title, badge, links }: PropsWithChildren<TileWrapperProps>) => {
   return (
-    <div>
+    <div className="mb-12">
       <div className="flex gap-1">
-        <Heading size={4}>{title}</Heading>
+        {title && <Heading size={4}>{title}</Heading>}
         {badge && badge}
       </div>
       {children}
@@ -16,7 +16,7 @@ const Tile = ({ children, title, badge, links }: PropsWithChildren<TileWrapperPr
 
 export type TileWrapperProps = {
   children: PropsWithChildren
-  title: string
+  title?: string
   badge?: ReactNode
   links?: ReactNode
 } & HTMLAttributes<HTMLDivElement>

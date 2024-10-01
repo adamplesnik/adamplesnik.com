@@ -1,9 +1,10 @@
+import Tile from '@/components/Tile'
 import Em from '../components/Em'
 import Paragraph from '../components/Paragraph'
 
 const Skills = () => {
   return (
-    <>
+    <Tile>
       <Paragraph>
         I love creating, polishing and improving user interfaces in Figma and React, with focus on
         Tailwind CSS, refactoring and building reusable components.
@@ -17,7 +18,7 @@ const Skills = () => {
         I have a <Em>passion for atomic components with atomic CSS</Em>, clean and meaningful UIs,
         refactoring.
       </Paragraph>
-    </>
+    </Tile>
   )
 }
 
