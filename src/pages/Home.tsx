@@ -11,11 +11,12 @@ import Page from '../layouts/Page'
 const Home = () => {
   return (
     <>
-      <div className="to-white-0 sticky -top-4 z-10 mx-auto w-full max-w-screen-md bg-gradient-to-b from-white to-80% p-8 pt-12">
+      <div className="to-white-0 sticky top-0 z-10 mx-auto w-full max-w-screen-md bg-gradient-to-b from-slate-100 p-8 pt-12">
         <Header />
       </div>
       <Page>
         <Skills />
+        <Cv />
         <div className="flex flex-col md:flex-row md:gap-16">
           <LoveToDo />
           <div>
@@ -25,7 +26,6 @@ const Home = () => {
             <WebUmeniaTile />
           </div>
         </div>
-        <Cv />
       </Page>
     </>
   )
