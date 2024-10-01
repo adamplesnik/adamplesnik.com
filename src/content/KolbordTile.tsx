@@ -13,6 +13,7 @@ const Badge = () => {
 const Links = () => {
   return (
     <>
+      <Link href="https://kolbord.com">kolbord.com</Link>
       <Link href="https://github.com/adamplesnik/kolbord">@adamplesnik/kolbord</Link>
       <Link href="https://github.com/adamplesnik/kolbord-payload">
         @adamplesnik/kolbord-payload
@@ -25,9 +26,9 @@ const KolbordTile = () => {
   return (
     <Tile title="Kolbord: the smoothest space booking" badge={<Badge />} links={<Links />}>
       <Paragraph>
-        Opinionated, free to use, and open source app for one-click reservation of anything.
+        Opinionated, free to use, and open source app for one-click reservation of anything. Built
+        in React, Payload CMS with user management in Clerk.
       </Paragraph>
-      <Paragraph>Built in React, Payload CMS with user management in Clerk.</Paragraph>
     </Tile>
   )
 }

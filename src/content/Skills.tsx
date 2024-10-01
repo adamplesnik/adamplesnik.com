@@ -1,11 +1,13 @@
 import Em from '../components/Em'
-import Heading from '../components/Heading'
 import Paragraph from '../components/Paragraph'
 
 const Skills = () => {
   return (
-    <div className="flex-1">
-      <Heading size={3}>Skills</Heading>
+    <>
+      <Paragraph>
+        I love creating, polishing and improving user interfaces in Figma and React, with focus on
+        Tailwind CSS, refactoring and building reusable components.
+      </Paragraph>
       <Paragraph>
         I specialize in <Em>nicer parts of the front end universe</Em>. I write CSS and front end
         components for React. My experience ranges from implementing Figma-based prototypes from
@@ -15,7 +17,7 @@ const Skills = () => {
         I have a <Em>passion for atomic components with atomic CSS</Em>, clean and meaningful UIs,
         refactoring.
       </Paragraph>
-    </div>
+    </>
   )
 }
 

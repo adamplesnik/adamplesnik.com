@@ -19,7 +19,6 @@ const PluginTile = () => {
       <Paragraph>
         A plugin for Tailwind CSS v3.4+ that provides utilities for scroll-driven animations.
       </Paragraph>
-      <div className="flex flex-col gap-2 pt-2"></div>
     </Tile>
   )
 }

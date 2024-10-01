@@ -9,10 +9,10 @@ test('Tile', () => {
   expect(tree).toMatchSnapshot()
 })
 
-test('Tile with class name', () => {
+test('Tile with badge', () => {
   const component = renderer.create(
-    <Tile title="Test Title" className="test-class">
-      Tile with class name
+    <Tile title="Test Title" badge={<span />}>
+      Tile with badge
     </Tile>
   )
   const tree = toJson(component)

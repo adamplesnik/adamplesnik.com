@@ -1,14 +1,12 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Tile 1`] = `
-<div
-  className=""
->
+<div>
   <div
     className="flex gap-1"
   >
     <h4
-      className="relative text-zinc-950 font-semibold pb-4 text-lg"
+      className="relative text-zinc-950 font-semibold mb-4 text-lg"
     >
       Test Title
     </h4>
@@ -17,19 +15,18 @@ exports[`Tile 1`] = `
 </div>
 `;
 
-exports[`Tile with class name 1`] = `
-<div
-  className=" test-class"
->
+exports[`Tile with badge 1`] = `
+<div>
   <div
     className="flex gap-1"
   >
     <h4
-      className="relative text-zinc-950 font-semibold pb-4 text-lg"
+      className="relative text-zinc-950 font-semibold mb-4 text-lg"
     >
       Test Title
     </h4>
+    <span />
   </div>
-  Tile with class name
+  Tile with badge
 </div>
 `;

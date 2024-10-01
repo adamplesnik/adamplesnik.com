@@ -14,9 +14,9 @@ const skills = [
 
 const LoveToDo = () => {
   return (
-    <div>
+    <>
       <Heading size={3}>What I love to do</Heading>
-      <ul className="grid gap-3 sm:grid-flow-col sm:grid-rows-5">
+      <ul className="mb-6 grid gap-3 sm:grid-flow-col sm:grid-rows-5">
         {skills.map((skill, i) => (
           <li key={i} className="flex items-center gap-2">
             <span className="block h-px w-6 bg-zinc-600" />
@@ -24,7 +24,7 @@ const LoveToDo = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </>
   )
 }
 
