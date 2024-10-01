@@ -7,11 +7,11 @@ exports[`Tile 1`] = `
   <div
     className="flex gap-1"
   >
-    <h4
-      className="relative text-zinc-950 font-semibold mb-4 text-lg"
+    <h3
+      className="text-zinc-950 font-semibold mb-6 text-xl opacity-90"
     >
       Test Title
-    </h4>
+    </h3>
   </div>
   Tile
 </div>
@@ -24,11 +24,11 @@ exports[`Tile with badge 1`] = `
   <div
     className="flex gap-1"
   >
-    <h4
-      className="relative text-zinc-950 font-semibold mb-4 text-lg"
+    <h3
+      className="text-zinc-950 font-semibold mb-6 text-xl opacity-90"
     >
       Test Title
-    </h4>
+    </h3>
     <span />
   </div>
   Tile with badge

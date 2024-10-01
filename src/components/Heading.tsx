@@ -2,7 +2,7 @@ import clsx from 'clsx'
 import { PropsWithChildren } from 'react'
 
 const Heading = ({ size = 1, className = '', children }: PropsWithChildren<TitleProps>) => {
-  const defaultClasses = clsx('relative text-zinc-950 font-semibold', className)
+  const defaultClasses = clsx('text-zinc-950 font-semibold', className)
 
   if (size === 1) {
     return <h1 className={clsx(defaultClasses, 'text-xl leading-normal')}>{children}</h1>

@@ -1,8 +1,8 @@
 import Heading from '../components/Heading'
 
-const Info = () => {
+const Header = () => {
   return (
-    <div className="mb-6 flex items-center justify-between">
+    <div className="flex items-center justify-between">
       <Heading size={1}>Adam Plesník</Heading>
       <a href="https://github.com/adamplesnik" className="text-zinc-700 hover:text-pink-500">
         <svg
@@ -19,4 +19,4 @@ const Info = () => {
   )
 }
 
-export default Info
+export default Header
