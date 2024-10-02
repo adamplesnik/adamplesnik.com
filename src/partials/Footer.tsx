@@ -1,5 +1,5 @@
 import Em from '@/components/Em'
-import Link from '../components/Link'
+import Link from '@/components/Link'
 
 const Footer = () => {
   return (

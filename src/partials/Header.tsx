@@ -1,5 +1,5 @@
+import Heading from '@/components/Heading'
 import Link from '@/components/Link'
-import Heading from '../components/Heading'
 
 const Header = () => {
   return (

@@ -1,6 +1,6 @@
-import Link from '../components/Link'
-import Paragraph from '../components/Paragraph'
-import Tile from '../components/Tile'
+import Link from '@/components/Link'
+import Paragraph from '@/components/Paragraph'
+import Tile from '@/components/Tile'
 
 const Links = () => {
   return (

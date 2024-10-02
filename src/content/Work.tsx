@@ -1,4 +1,4 @@
-import Heading from '../components/Heading'
+import Heading from '@/components/Heading'
 
 const Work = () => {
   return <Heading size={2}>Work</Heading>

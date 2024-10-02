@@ -1,5 +1,5 @@
+import Paragraph from '@/components/Paragraph'
 import Tile from '@/components/Tile'
-import Paragraph from '../components/Paragraph'
 
 const MyAge = () => {
   const myBirth = new Date('1985-06-22T12:00Z').getTime()
