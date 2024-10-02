@@ -1,12 +1,12 @@
-import WorkWebUmenia from '@/content/WorkWebumenia'
+import AboutMe from '@/content/AboutMe'
+import Intro from '@/content/Intro'
+import Tech from '@/content/Tech'
+import Work from '@/content/Work'
+import WorkKolbord from '@/content/WorkKolbord'
+import WorkScrollDriven from '@/content/WorkScrollDriven'
+import WorkWebUmenia from '@/content/WorkWebUmenia'
 import Footer from '@/partials/Footer'
-import AboutMe from '../content/AboutMe'
-import Intro from '../content/Intro'
-import Tech from '../content/Tech'
-import Work from '../content/Work'
-import WorkKolbord from '../content/WorkKolbord'
-import WorkScrollDriven from '../content/WorkScrollDriven'
-import Header from '../partials/Header'
+import Header from '@/partials/Header'
 
 const Home = () => {
   return (
