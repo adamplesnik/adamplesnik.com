@@ -4,7 +4,7 @@ import Tile from '@/components/Tile'
 
 const Badge = () => {
   return (
-    <span className="flex h-fit -rotate-6 rounded bg-zinc-800 p-1 text-xs text-white dark:border dark:border-zinc-500 dark:bg-gray-700">
+    <span className="flex h-fit -rotate-6 rounded bg-zinc-800 p-1 text-xs text-white dark:border dark:border-zinc-500 dark:bg-gray-700 print:bg-zinc-800">
       Beta
     </span>
   )
