@@ -1,8 +1,9 @@
 # adamplesnik.com
 
-Personal page, kind fof CV as well of Adam Plesnik.
+!['License'](https://badgen.net/github/license/adamplesnik/adamplesnik.com)
+!['Checks'](https://badgen.net/github/checks/adamplesnik/adamplesnik.com)
 
-<img src='https://badgen.net/badge/github/license/adamplesnik/adamplesnik.com'/>
+Personal page both as a portfolio and a digital CV for Adam Plesnik, design engineer from Bratislava, Slovakia.
 
 ## Tech stack
 
