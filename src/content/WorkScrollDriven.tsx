@@ -1,6 +1,6 @@
-import Link from '../components/Link'
-import Paragraph from '../components/Paragraph'
-import Tile from '../components/Tile'
+import Link from '@/components/Link'
+import Paragraph from '@/components/Paragraph'
+import Tile from '@/components/Tile'
 
 const Links = () => {
   return (
@@ -13,7 +13,7 @@ const Links = () => {
   )
 }
 
-const PluginTile = () => {
+const WorkScrollDriven = () => {
   return (
     <Tile title="Scroll-driven animations plugin for Tailwind CSS" links={<Links />} sub>
       <Paragraph>
@@ -23,4 +23,4 @@ const PluginTile = () => {
   )
 }
 
-export default PluginTile
+export default WorkScrollDriven

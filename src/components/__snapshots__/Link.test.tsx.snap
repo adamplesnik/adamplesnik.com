@@ -2,7 +2,7 @@
 
 exports[`Link with href 1`] = `
 <a
-  className="flex items-center text-zinc-700 underline decoration-zinc-600 hover:text-black hover:decoration-zinc-800"
+  className="flex items-center text-zinc-700 underline decoration-zinc-600 hover:text-black hover:decoration-zinc-800 dark:text-zinc-300 dark:decoration-zinc-500 dark:hover:text-zinc-50 dark:hover:decoration-zinc-100"
   href="url/"
   target="_blank"
 >
@@ -12,7 +12,7 @@ exports[`Link with href 1`] = `
 
 exports[`Link with href and custom target 1`] = `
 <a
-  className="flex items-center text-zinc-700 underline decoration-zinc-600 hover:text-black hover:decoration-zinc-800"
+  className="flex items-center text-zinc-700 underline decoration-zinc-600 hover:text-black hover:decoration-zinc-800 dark:text-zinc-300 dark:decoration-zinc-500 dark:hover:text-zinc-50 dark:hover:decoration-zinc-100"
   href="url/"
   target="_self"
 >
@@ -22,7 +22,7 @@ exports[`Link with href and custom target 1`] = `
 
 exports[`Link with href, custom target and icon 1`] = `
 <a
-  className="flex items-center text-zinc-700 underline decoration-zinc-600 hover:text-black hover:decoration-zinc-800"
+  className="flex items-center text-zinc-700 underline decoration-zinc-600 hover:text-black hover:decoration-zinc-800 dark:text-zinc-300 dark:decoration-zinc-500 dark:hover:text-zinc-50 dark:hover:decoration-zinc-100"
   href="url/"
   target="_self"
 >

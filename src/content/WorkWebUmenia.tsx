@@ -1,6 +1,6 @@
 import Link from '@/components/Link'
-import Paragraph from '../components/Paragraph'
-import Tile from '../components/Tile'
+import Paragraph from '@/components/Paragraph'
+import Tile from '@/components/Tile'
 
 const Links = () => {
   return (
@@ -10,7 +10,7 @@ const Links = () => {
   )
 }
 
-const WebUmeniaTile = () => {
+const WorkWebUmenia = () => {
   return (
     <Tile title="CSS refactoring for webumenia.sk" links={<Links />} sub>
       <Paragraph>
@@ -22,4 +22,4 @@ const WebUmeniaTile = () => {
   )
 }
 
-export default WebUmeniaTile
+export default WorkWebUmenia

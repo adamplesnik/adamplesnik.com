@@ -1,21 +1,15 @@
-import { PropsWithChildren } from 'react'
+import { AnchorHTMLAttributes } from 'react'
 
-const Link = ({ href, children, target = '_blank' }: PropsWithChildren<LinkProps>) => {
+const Link = ({ href, children, target = '_blank' }: AnchorHTMLAttributes<HTMLAnchorElement>) => {
   return (
     <a
       href={href}
       target={target}
-      className="flex items-center text-zinc-700 underline decoration-zinc-600 hover:text-black hover:decoration-zinc-800"
+      className="flex items-center text-zinc-700 underline decoration-zinc-600 hover:text-black hover:decoration-zinc-800 dark:text-zinc-300 dark:decoration-zinc-500 dark:hover:text-zinc-50 dark:hover:decoration-zinc-100"
     >
       {children}
     </a>
   )
-}
-
-export interface LinkProps {
-  children: PropsWithChildren
-  href?: string
-  target?: string
 }
 
 export default Link

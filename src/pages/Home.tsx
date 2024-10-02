@@ -1,32 +1,29 @@
-import Cv from '../content/Cv'
-import Header from '../content/Header'
-import KolbordTile from '../content/KolbordTile'
-import LoveToDo from '../content/LoveToDo'
-import PluginTile from '../content/PluginTile'
-import Skills from '../content/Skills'
-import WebUmeniaTile from '../content/WebUmeniaTile'
-import Work from '../content/Work'
-import Page from '../layouts/Page'
+import AboutMe from '@/content/AboutMe'
+import Intro from '@/content/Intro'
+import Tech from '@/content/Tech'
+import Work from '@/content/Work'
+import WorkKolbord from '@/content/WorkKolbord'
+import WorkScrollDriven from '@/content/WorkScrollDriven'
+import WorkWebUmenia from '@/content/WorkWebUmenia'
+import Footer from '@/partials/Footer'
+import Header from '@/partials/Header'
 
 const Home = () => {
   return (
     <>
-      <div className="to-white-0 sticky top-0 z-10 mx-auto w-full max-w-screen-md bg-gradient-to-b from-slate-50 p-8 pt-12">
+      <div className="sticky top-0 z-10 mx-auto w-full max-w-screen-md bg-gradient-to-b from-slate-50 p-8 pt-12 dark:from-gray-900 print:max-w-screen-sm print:bg-none">
         <Header />
       </div>
-      <Page>
-        <Skills />
-        <Cv />
-        <div className="flex flex-col md:flex-row md:gap-24">
-          <LoveToDo />
-          <div>
-            <Work />
-            <KolbordTile />
-            <PluginTile />
-            <WebUmeniaTile />
-          </div>
-        </div>
-      </Page>
+      <div className="mx-auto mb-12 flex w-full max-w-screen-md flex-col overflow-hidden p-8 print:max-w-screen-sm">
+        <Intro />
+        <AboutMe />
+        <Tech />
+        <Work />
+        <WorkKolbord />
+        <WorkScrollDriven />
+        <WorkWebUmenia />
+        <Footer />
+      </div>
     </>
   )
 }

@@ -1,8 +1,8 @@
 import Em from '@/components/Em'
+import Paragraph from '@/components/Paragraph'
 import Tile from '@/components/Tile'
-import Paragraph from '../components/Paragraph'
 
-const Skills = () => {
+const Intro = () => {
   return (
     <Tile>
       <Paragraph>Design engineer, Bratislava, Slovakia.</Paragraph>
@@ -15,4 +15,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default Intro
