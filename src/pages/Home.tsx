@@ -11,7 +11,7 @@ import Page from '../layouts/Page'
 const Home = () => {
   return (
     <>
-      <div className="to-white-0 sticky top-0 z-10 mx-auto w-full max-w-screen-md bg-gradient-to-b from-slate-50 p-8 pt-12">
+      <div className="to-white-0 sticky top-0 z-10 mx-auto w-full max-w-screen-md bg-gradient-to-b from-slate-50 p-8 pt-12 dark:from-gray-900">
         <Header />
       </div>
       <Page>
