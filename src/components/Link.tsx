@@ -1,6 +1,6 @@
-import { PropsWithChildren } from 'react'
+import { AnchorHTMLAttributes } from 'react'
 
-const Link = ({ href, children, target = '_blank' }: PropsWithChildren<LinkProps>) => {
+const Link = ({ href, children, target = '_blank' }: AnchorHTMLAttributes<HTMLAnchorElement>) => {
   return (
     <a
       href={href}
@@ -10,12 +10,6 @@ const Link = ({ href, children, target = '_blank' }: PropsWithChildren<LinkProps
       {children}
     </a>
   )
-}
-
-export interface LinkProps {
-  children: PropsWithChildren
-  href?: string
-  target?: string
 }
 
 export default Link

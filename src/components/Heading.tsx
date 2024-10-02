@@ -1,7 +1,7 @@
 import clsx from 'clsx'
-import { PropsWithChildren } from 'react'
+import { HTMLAttributes } from 'react'
 
-const Heading = ({ size = 1, className = '', children }: PropsWithChildren<TitleProps>) => {
+const Heading = ({ size = 1, className, children }: TitleProps) => {
   const defaultClasses = clsx('font-semibold', className)
 
   if (size === 1) {
@@ -25,10 +25,8 @@ const Heading = ({ size = 1, className = '', children }: PropsWithChildren<Title
   }
 }
 
-export interface TitleProps {
-  children: PropsWithChildren
+type TitleProps = {
   size: 1 | 2 | 3
-  className?: string
-}
+} & HTMLAttributes<HTMLHeadingElement>
 
 export default Heading
