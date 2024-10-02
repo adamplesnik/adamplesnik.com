@@ -8,7 +8,7 @@ const MyAge = () => {
   return Math.floor(myAge)
 }
 
-const Cv = () => {
+const AboutMe = () => {
   return (
     <Tile title="About me">
       <Paragraph>
@@ -23,4 +23,4 @@ const Cv = () => {
   )
 }
 
-export default Cv
+export default AboutMe

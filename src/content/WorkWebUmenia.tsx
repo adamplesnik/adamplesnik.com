@@ -10,7 +10,7 @@ const Links = () => {
   )
 }
 
-const WebUmeniaTile = () => {
+const WorkWebUmenia = () => {
   return (
     <Tile title="CSS refactoring for webumenia.sk" links={<Links />} sub>
       <Paragraph>
@@ -22,4 +22,4 @@ const WebUmeniaTile = () => {
   )
 }
 
-export default WebUmeniaTile
+export default WorkWebUmenia

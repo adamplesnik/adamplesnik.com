@@ -13,7 +13,7 @@ const Links = () => {
   )
 }
 
-const PluginTile = () => {
+const WorkScrollDriven = () => {
   return (
     <Tile title="Scroll-driven animations plugin for Tailwind CSS" links={<Links />} sub>
       <Paragraph>
@@ -23,4 +23,4 @@ const PluginTile = () => {
   )
 }
 
-export default PluginTile
+export default WorkScrollDriven

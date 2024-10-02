@@ -22,7 +22,7 @@ const Links = () => {
   )
 }
 
-const KolbordTile = () => {
+const WorkKolbord = () => {
   return (
     <Tile title="Kolbord: the smoothest space booking" badge={<Badge />} links={<Links />} sub>
       <Paragraph>
@@ -33,4 +33,4 @@ const KolbordTile = () => {
   )
 }
 
-export default KolbordTile
+export default WorkKolbord

@@ -17,7 +17,7 @@ const skills: { tech: string; description: string }[] = [
   { tech: '...and more', description: 'Payload CMS, Angular, Vue.js, Vaadin + Java' },
 ]
 
-const LoveToDo = () => {
+const Tech = () => {
   return (
     <Tile title="Tech" className="shrink-0">
       <ul className="grid gap-4 md:grid-flow-col-dense md:grid-rows-3">
@@ -35,4 +35,4 @@ const LoveToDo = () => {
   )
 }
 
-export default LoveToDo
+export default Tech
