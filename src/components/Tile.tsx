@@ -2,6 +2,7 @@ import { clsx } from 'clsx'
 import { MousePointerClick } from 'lucide-react'
 import { HTMLAttributes, PropsWithChildren, ReactNode } from 'react'
 import Heading from './Heading'
+import Icon from './Icon'
 
 const Tile = ({
   sub,
@@ -20,7 +21,7 @@ const Tile = ({
       {children}
       {links && (
         <div className="flex items-baseline gap-2">
-          <MousePointerClick className="size-4" />
+          <Icon Icon={MousePointerClick} />
           <div className="flex flex-col gap-1">{links}</div>
         </div>
       )}
