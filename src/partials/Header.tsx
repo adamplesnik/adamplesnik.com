@@ -6,6 +6,7 @@ const Header = () => {
     <div className="flex items-center justify-between">
       <Heading size={1}>Adam Plesník</Heading>
       <Link href="https://github.com/adamplesnik" className="print:hidden">
+        <span className="hidden">Github</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 98 96"
