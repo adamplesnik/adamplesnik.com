@@ -11,7 +11,7 @@ import Header from '@/partials/Header'
 const Home = () => {
   return (
     <>
-      <div className="sticky top-0 z-10 mx-auto w-full max-w-screen-md bg-gradient-to-b from-slate-50 p-8 pt-12 dark:from-gray-900 print:max-w-screen-sm print:bg-none">
+      <div className="sticky top-0 z-10 mx-auto w-full max-w-screen-md bg-gradient-to-b from-slate-50 p-8 pt-12 dark:from-zinc-900 print:max-w-screen-sm print:bg-none">
         <Header />
       </div>
       <div
