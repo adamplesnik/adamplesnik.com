@@ -15,9 +15,6 @@ const Links = () => {
     <>
       <Link href="https://kolbord.com">kolbord.com</Link>
       <Link href="https://github.com/adamplesnik/kolbord">@adamplesnik/kolbord</Link>
-      <Link href="https://github.com/adamplesnik/kolbord-payload">
-        @adamplesnik/kolbord-payload
-      </Link>
     </>
   )
 }
