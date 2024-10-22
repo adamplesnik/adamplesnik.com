@@ -4,6 +4,7 @@ import Tech from '@/content/Tech'
 import Work from '@/content/Work'
 import WorkKolbord from '@/content/WorkKolbord'
 import WorkScrollDriven from '@/content/WorkScrollDriven'
+import WorkScrollDrivenShowcase from '@/content/WorkScrolldrivenShowcase'
 import WorkWebUmenia from '@/content/WorkWebUmenia'
 import Footer from '@/partials/Footer'
 import Header from '@/partials/Header'
@@ -24,6 +25,7 @@ const Home = () => {
         <Work />
         <WorkKolbord />
         <WorkScrollDriven />
+        <WorkScrollDrivenShowcase />
         <WorkWebUmenia />
         <Footer />
       </div>
