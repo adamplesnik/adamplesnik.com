@@ -1,17 +1,10 @@
 import { clsx } from 'clsx'
 import { MousePointerClick } from 'lucide-react'
-import { HTMLAttributes, PropsWithChildren, ReactNode } from 'react'
+import { HTMLAttributes, ReactNode } from 'react'
 import Heading from './Heading'
 import Icon from './Icon'
 
-const Tile = ({
-  sub,
-  children,
-  title,
-  badge,
-  links,
-  className,
-}: PropsWithChildren<TileWrapperProps>) => {
+const Tile = ({ sub, children, title, badge, links, className }: TileWrapperProps) => {
   return (
     <div className={clsx('mb-24', className)}>
       <div className="flex gap-1">
@@ -29,12 +22,11 @@ const Tile = ({
   )
 }
 
-export type TileWrapperProps = {
-  children: PropsWithChildren
-  sub?: boolean
-  title?: string
+type TileWrapperProps = {
   badge?: ReactNode
   links?: ReactNode
+  sub?: boolean
+  title?: string
 } & HTMLAttributes<HTMLDivElement>
 
 export default Tile
