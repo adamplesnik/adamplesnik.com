@@ -5,7 +5,7 @@ import { Trees } from 'lucide-react'
 
 const Footer = () => {
   return (
-    <div className="mt-4 flex w-full items-baseline gap-3 border-t border-t-zinc-300 pt-8 text-sm">
+    <div className="mt-4 flex w-full items-baseline gap-3 border-t border-t-zinc-300 pt-8 text-sm print:hidden">
       <Icon Icon={Trees} className="text-zinc-800 dark:text-zinc-300" />
       <div>
         <Em className="block pb-6">Adam Plesník, Bratislava, Slovakia</Em>

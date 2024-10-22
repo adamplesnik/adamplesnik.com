@@ -20,7 +20,7 @@ const skills: { tech: string; description: string }[] = [
 
 const Tech = () => {
   return (
-    <Tile title="Tech" className="shrink-0">
+    <Tile title="Tech" className="shrink-0 print:break-after-page">
       <ul className="grid gap-4 md:grid-flow-col-dense md:grid-rows-3">
         {skills.map((skill, i) => (
           <li key={i} className="group flex items-baseline gap-2">

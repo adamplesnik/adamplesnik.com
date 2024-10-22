@@ -6,7 +6,9 @@ const Heading = ({ size = 1, className, children }: TitleProps) => {
 
   if (size === 1) {
     return (
-      <h1 className={clsx(defaultClasses, 'text-2xl text-zinc-800 dark:text-zinc-200')}>
+      <h1
+        className={clsx(defaultClasses, 'text-2xl text-zinc-800 dark:text-zinc-200 print:text-4xl')}
+      >
         {children}
       </h1>
     )
