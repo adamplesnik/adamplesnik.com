@@ -23,8 +23,8 @@ const WorkKolbord = () => {
   return (
     <Tile title="Kolbord: the smoothest space booking" badge={<Badge />} links={<Links />} sub>
       <Paragraph>
-        Opinionated, free to use, and open source app for two-click reservation of anything. Built
-        in React, Payload CMS, with user management in Clerk.
+        Opinionated, free to use, and open source app for two-click reservation of anything.
+        Prototyped in Figma, coded in React, Payload CMS, with user management in Clerk.
       </Paragraph>
     </Tile>
   )
