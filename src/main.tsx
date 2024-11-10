@@ -4,13 +4,23 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import Home from './pages/Home.tsx'
+import Layout from './partials/Layout.tsx'
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <Home />,
-    errorElement: <Home />,
+    element: <Layout />,
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+        errorElement: <Home />,
+      },
+      {
+        path: '/figma',
+      },
+    ],
   },
+  {},
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
