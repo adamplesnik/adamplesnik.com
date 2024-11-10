@@ -1,13 +1,24 @@
-import Em from '@/components/Em'
-import Icon from '@/components/Icon'
 import Tile from '@/components/Tile'
-import { DraftingCompass, LucideIcon, Sparkles } from 'lucide-react'
+import clsx from 'clsx'
+import { ArrowRight, DraftingCompass, LucideIcon, Sparkles } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import TechContent from './TechContent'
 
-const skills: { tech: string; description: string; skillIcon?: LucideIcon }[] = [
+export type SkillType = {
+  tech: string
+  description: string
+  skillIcon?: LucideIcon
+  link?: string
+  linkIcon?: LucideIcon
+}
+
+const skills: SkillType[] = [
   {
     tech: 'Figma',
     description: 'Mockups and prototypes, design systems, modes.',
     skillIcon: DraftingCompass,
+    link: '/figma',
+    linkIcon: ArrowRight,
   },
   {
     tech: 'React',
@@ -25,15 +36,17 @@ const skills: { tech: string; description: string; skillIcon?: LucideIcon }[] = 
 
 const Tech = () => {
   return (
-    <Tile title="Tech" className="shrink-0 print:break-after-page">
+    <Tile title="Skills & tech" className="shrink-0 print:break-after-page">
       <ul className="grid gap-5 md:grid-flow-col-dense md:grid-rows-3">
         {skills.map((skill, i) => (
-          <li key={i} className="group flex items-baseline gap-2">
-            <div className="w-6">{skill.skillIcon && <Icon Icon={skill.skillIcon} />}</div>
-            <span className="flex flex-col gap-1">
-              <Em>{skill.tech}</Em>
-              <span className="block text-sm text-zinc-500">{skill.description}</span>
-            </span>
+          <li key={i} className={clsx('group flex items-baseline gap-2')}>
+            {skill.link ? (
+              <Link to={skill.link} className="flex items-baseline gap-2">
+                <TechContent skill={skill} />
+              </Link>
+            ) : (
+              <TechContent skill={skill} />
+            )}
           </li>
         ))}
       </ul>
