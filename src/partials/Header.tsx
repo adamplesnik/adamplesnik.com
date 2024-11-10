@@ -7,7 +7,7 @@ const Header = () => {
       <Heading size={1}>Adam Plesník</Heading>
       <Link
         href="https://github.com/adamplesnik"
-        className="print:hidden"
+        className="transition-transform hover:scale-110 active:scale-95 print:hidden"
         aria-label="Open my Github page"
       >
         <svg
