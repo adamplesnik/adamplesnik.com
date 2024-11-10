@@ -3,6 +3,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
+import Figma from './pages/Figma.tsx'
 import Home from './pages/Home.tsx'
 import Layout from './partials/Layout.tsx'
 
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/figma',
+        element: <Figma />,
       },
     ],
   },
