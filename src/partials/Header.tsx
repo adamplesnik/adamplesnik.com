@@ -1,13 +1,49 @@
 import Heading from '@/components/Heading'
 import Link from '@/components/Link'
+import clsx from 'clsx'
+import { MoveLeft } from 'lucide-react'
+import { NavLink, useLocation } from 'react-router-dom'
 
 const Header = () => {
+  const location = useLocation()
+  const isFigma = location.pathname === '/figma'
+
   return (
-    <div className="flex items-center justify-between">
-      <Heading size={1}>Adam Plesník</Heading>
+    <div className="relative flex items-center justify-end">
+      <NavLink
+        to="/"
+        aria-label="Go back home"
+        className={clsx(
+          'absolute left-0 z-10 flex size-8 items-center transition-[transform,opacity] duration-700 hover:-translate-x-1 active:scale-95',
+          isFigma ? 'opacity-100' : 'pointer-events-none opacity-0'
+        )}
+      >
+        <MoveLeft strokeWidth={1.5} />
+      </NavLink>
+      <Heading
+        size={1}
+        className={clsx(
+          'absolute left-0 transition-[transform,opacity] duration-500',
+          isFigma ? 'pointer-events-none -translate-x-4 opacity-0' : 'translate-x-0 opacity-100'
+        )}
+      >
+        Adam Plesník
+      </Heading>
+      <Heading
+        size={1}
+        className={clsx(
+          'absolute left-8 transition-[transform,opacity] duration-500',
+          isFigma ? 'translate-x-0 opacity-100' : 'translate-x-6 opacity-0'
+        )}
+      >
+        Figma
+      </Heading>
       <Link
         href="https://github.com/adamplesnik"
-        className="transition-transform hover:scale-110 active:scale-95 print:hidden"
+        className={clsx(
+          'transition-[opacity,transform] hover:scale-110 active:scale-95 print:hidden',
+          isFigma ? 'pointer-events-none opacity-0' : 'opacity-100'
+        )}
         aria-label="Open my Github page"
       >
         <svg
