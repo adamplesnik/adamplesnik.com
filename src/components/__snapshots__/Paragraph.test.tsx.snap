@@ -2,7 +2,7 @@
 
 exports[`Regular paragraph 1`] = `
 <p
-  className="mb-4 w-full text-base leading-7 last:mb-0"
+  className="mb-4 w-full leading-7 last:mb-0"
 >
   Regular paragraph
 </p>
@@ -10,7 +10,7 @@ exports[`Regular paragraph 1`] = `
 
 exports[`Regular paragraph with class name 1`] = `
 <p
-  className="mb-4 w-full text-base leading-7 last:mb-0 test-class"
+  className="mb-4 w-full leading-7 last:mb-0 test-class"
 >
   Paragraph with class name
 </p>
