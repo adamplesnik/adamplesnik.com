@@ -1,6 +1,6 @@
+import Em from '@/components/Em'
+import Icon from '@/components/Icon'
 import clsx from 'clsx'
-import Em from '../components/Em'
-import Icon from '../components/Icon'
 import { TechType } from './Tech'
 
 const TechContent = ({ tech }: { tech: TechType }) => {
