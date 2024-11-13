@@ -7,7 +7,7 @@ const Intro = () => {
     <Tile>
       <Paragraph className="max-w-xl text-3xl">
         I create, polish, and improve user interfaces by clicking in <Em>Figma</Em> and coding in{' '}
-        <Em>React</Em>
+        <Em>React</Em>.
       </Paragraph>
     </Tile>
   )
