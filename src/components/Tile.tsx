@@ -6,7 +6,7 @@ import Icon from './Icon'
 
 const Tile = ({ sub, children, title, badge, links, className }: TileWrapperProps) => {
   return (
-    <div className={clsx('mb-24 print:mb-12', className)}>
+    <div className={clsx('px-12', className)}>
       <div className="flex gap-1">
         {title && <Heading size={sub ? 3 : 2}>{title}</Heading>}
         {badge && badge}
