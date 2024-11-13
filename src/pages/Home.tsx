@@ -1,5 +1,6 @@
 import Heading from '@/components/Heading'
 import AboutMe from '@/content/AboutMe'
+import Chart from '@/content/Chart'
 import Intro from '@/content/Intro'
 import Tech from '@/content/Tech'
 import WorkKolbord from '@/content/WorkKolbord'
@@ -12,6 +13,7 @@ const Home = () => {
   return (
     <>
       <Intro />
+      <Chart />
       <AboutMe />
       <Tech />
       <Heading size={2} className="print:mt-12">
