@@ -16,8 +16,8 @@ const Home = () => {
       <WorkScrollDriven />
       <WorkScrollDrivenShowcase />
       <WorkWebUmenia />
-      <Footer />
       <AboutMe />
+      <Footer />
     </div>
   )
 }
