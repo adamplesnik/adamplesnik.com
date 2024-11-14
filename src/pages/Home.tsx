@@ -2,7 +2,6 @@ import AboutMe from '@/content/AboutMe'
 import Chart from '@/content/Chart'
 import Footer from '@/content/Footer'
 import Intro from '@/content/Intro'
-import Tech from '@/content/Tech'
 import WorkKolbord from '@/content/WorkKolbord'
 import WorkScrollDriven from '@/content/WorkScrollDriven'
 import WorkScrollDrivenShowcase from '@/content/WorkScrolldrivenShowcase'
@@ -14,7 +13,7 @@ const Home = () => {
       <Intro />
       <Chart />
       <AboutMe />
-      <Tech />
+
       <WorkKolbord />
       <WorkScrollDriven />
       <WorkScrollDrivenShowcase />
