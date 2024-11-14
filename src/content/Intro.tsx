@@ -15,7 +15,7 @@ const Intro = () => {
       </Paragraph>
       <div className="flex flex-col items-end gap-4 sm:flex-row">
         <div className="w-full flex-1">
-          <Link>adam@adamplesnik.com</Link>
+          <Link href="mailto:adam@adamplesnik.com">adam@adamplesnik.com</Link>
           <span className="block pt-2">Bratislava, Slovakia</span>
         </div>
         <ChevronsDown className="animate-bounce" strokeWidth={1.5} />

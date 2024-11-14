@@ -12,13 +12,12 @@ const Home = () => {
     <div className="flex flex-col gap-48">
       <Intro />
       <Chart />
-      <AboutMe />
-
       <WorkKolbord />
       <WorkScrollDriven />
       <WorkScrollDrivenShowcase />
       <WorkWebUmenia />
       <Footer />
+      <AboutMe />
     </div>
   )
 }
