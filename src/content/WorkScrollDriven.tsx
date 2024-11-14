@@ -1,6 +1,6 @@
 import Link from '@/components/Link'
 import Paragraph from '@/components/Paragraph'
-import Tile from '@/components/Tile'
+import WorkTile from '@/components/WorkTile'
 
 const Links = () => {
   return (
@@ -15,11 +15,11 @@ const Links = () => {
 
 const WorkScrollDriven = () => {
   return (
-    <Tile title="Scroll-driven animations plugin for Tailwind CSS" links={<Links />} sub>
+    <WorkTile title="Scroll-driven animations plugin for Tailwind CSS" links={<Links />}>
       <Paragraph>
         A plugin for Tailwind CSS v3.4+ that provides utilities for scroll-driven animations.
       </Paragraph>
-    </Tile>
+    </WorkTile>
   )
 }
 
