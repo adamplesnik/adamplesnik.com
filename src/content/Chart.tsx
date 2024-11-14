@@ -10,15 +10,7 @@ type CircleType = {
   z: number
   title: string
   desc: string
-}
-
-type ActiveItemsType = {
-  ux: boolean
-  ui: boolean
-  dev: boolean
-  paper: boolean
-  figma: boolean
-  react: boolean
+  for: string
 }
 
 const circles: CircleType[] = [
@@ -30,6 +22,7 @@ const circles: CircleType[] = [
     z: 6,
     title: 'UX',
     desc: 'Painting the large picture, maps and wireframes, user research and feedback.',
+    for: 'ux',
   },
   {
     size: '700px',
@@ -39,6 +32,7 @@ const circles: CircleType[] = [
     z: 3,
     title: 'UI design',
     desc: 'Clean layouts, strong typography, visual clarity, and a touch of happiness.',
+    for: 'ui',
   },
   {
     size: '500px',
@@ -48,6 +42,7 @@ const circles: CircleType[] = [
     z: 2,
     title: 'Frontend dev',
     desc: 'Micro-sites to large scale applications, strive for reusability, simplicity.',
+    for: 'dev',
   },
   {
     size: '350px',
@@ -57,6 +52,7 @@ const circles: CircleType[] = [
     z: 5,
     title: 'Pen & paper',
     desc: 'Sketching, brain dumps, diagrams, schemas.',
+    for: 'paper',
   },
   {
     size: '600px',
@@ -66,6 +62,7 @@ const circles: CircleType[] = [
     z: 4,
     title: 'Figma',
     desc: 'Mockups and prototypes, design systems, variables, modes.',
+    for: 'figma',
   },
   {
     size: '500px',
@@ -75,11 +72,12 @@ const circles: CircleType[] = [
     z: 1,
     title: 'React',
     desc: 'TSX, state, queries, micro components, API.',
+    for: 'react',
   },
 ]
 
 const Chart = () => {
-  const [activeItems, setActiveItems] = useState<ActiveItemsType>({
+  const [activeItems, setActiveItems] = useState<{ [key: string]: boolean }>({
     ux: true,
     ui: true,
     dev: true,
@@ -91,38 +89,62 @@ const Chart = () => {
   const skills = circles.slice(0, 3)
   const tech = circles.slice(3, 6)
 
+  const toggleActive = (item: string) => {
+    setActiveItems((prevItems) => ({
+      ...prevItems,
+      [item]: !prevItems[item],
+    }))
+  }
+
   return (
     <div className="h-[200vh]">
       <div className="sticky top-0 min-h-svh w-full">
         <div className="absolute inset-0 z-10 bg-white/30 backdrop-blur-[60px]"></div>
         <div className="absolute inset-0 overflow-hidden">
-          {circles.map((circle) => (
-            <div
-              className={clsx(
-                'absolute scale-75 rounded-full opacity-80 sm:scale-90 md:scale-100 lg:scale-110'
-              )}
-              style={{
-                width: circle.size,
-                height: circle.size,
-                background: circle.color,
-                top: circle.top,
-                left: circle.left,
-                zIndex: circle.z,
-              }}
-            ></div>
-          ))}
+          {circles.map((circle, i) => {
+            const isActive = activeItems[circle.for] === true
+            return (
+              <div
+                key={`circle_${i}`}
+                className={clsx(
+                  'absolute scale-75 rounded-full sm:scale-90 md:scale-100 lg:scale-110',
+                  isActive ? 'opacity-80' : 'opacity-0'
+                )}
+                style={{
+                  width: circle.size,
+                  height: circle.size,
+                  background: circle.color,
+                  top: circle.top,
+                  left: circle.left,
+                  zIndex: circle.z,
+                }}
+              ></div>
+            )
+          })}
         </div>
         <div className="relative z-20 flex min-h-screen w-full flex-col justify-between p-12">
           <div className="flex max-w-56 flex-col items-baseline gap-12 md:max-w-full md:flex-row">
-            {skills.map((skill) => (
-              <ChartItem title={skill.title} desc={skill.desc} item={0} />
+            {skills.map((skill, i) => (
+              <ChartItem
+                onClick={() => toggleActive(skill.for)}
+                title={skill.title}
+                desc={skill.desc}
+                key={`skill_${i}`}
+                isActive={activeItems[skill.for] === true}
+              />
             ))}
             <div className="hidden flex-1 lg:block"></div>
           </div>
           <div className="mt-32 flex max-w-56 flex-col items-baseline justify-end gap-12 md:max-w-full md:flex-row">
             <div className="hidden flex-1 lg:block"></div>
-            {tech.map((t) => (
-              <ChartItem title={t.title} desc={t.desc} item={0} />
+            {tech.map((t, i) => (
+              <ChartItem
+                onClick={() => toggleActive(t.for)}
+                title={t.title}
+                desc={t.desc}
+                key={`skill_${i + 3}`}
+                isActive={activeItems[t.for] === true}
+              />
             ))}
           </div>
         </div>
