@@ -107,8 +107,10 @@ const Chart = () => {
               <div
                 key={`circle_${i}`}
                 className={clsx(
-                  'absolute scale-75 rounded-full sm:scale-90 md:scale-100 lg:scale-110',
-                  isActive ? 'opacity-80' : 'opacity-0'
+                  'absolute -translate-x-1/3 rounded-full transition-[opacity,transform] duration-700 ease-in-out sm:-translate-x-1/4',
+                  isActive
+                    ? 'scale-75 opacity-80 sm:scale-90 md:scale-100 lg:scale-110'
+                    : 'scale-50 opacity-0'
                 )}
                 style={{
                   width: circle.size,
