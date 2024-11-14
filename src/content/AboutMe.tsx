@@ -4,7 +4,7 @@ import TimelineItem from '@/components/TimelineItem'
 const AboutMe = () => {
   return (
     <div className="flex min-h-screen flex-col gap-12 bg-gradient-to-bl from-[#EBAF25] to-[#FEC84B] to-30% p-12 md:flex-row">
-      <Paragraph className="flex-1 md:sticky md:top-12">
+      <Paragraph className="h-fit flex-1 md:sticky md:top-12">
         I spend lot of quality time with my family—or alone if needed—preferably while mountain
         biking, traveling or both. I also shoot pictures and I love to read.
       </Paragraph>
