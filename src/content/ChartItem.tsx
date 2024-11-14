@@ -14,14 +14,15 @@ const ChartItem = ({
   onClick: () => void
 }) => {
   return (
-    <div
-      className={clsx(
-        'group flex-1 transition-opacity',
-        !isActive && 'opacity-70 hover:opacity-95'
-      )}
-    >
+    <div className={clsx('flex-1')}>
       <div onClick={onClick} className="inline-block cursor-pointer">
-        <Heading size={2} className="relative mb-2 inline-block text-nowrap">
+        <Heading
+          size={2}
+          className={clsx(
+            'group relative mb-2 inline-block text-nowrap transition-transform hover:scale-105 active:scale-95',
+            !isActive && 'opacity-60 hover:opacity-100'
+          )}
+        >
           {title}
           <div
             className={clsx(
