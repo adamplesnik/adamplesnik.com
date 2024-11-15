@@ -4,7 +4,7 @@ import Heading from './Heading'
 
 const WorkTile = ({ children, title, links, className }: WorkTileWrapperProps) => {
   return (
-    <div className={clsx('flex min-h-svh w-full flex-col gap-12 p-12', className)}>
+    <div className={clsx('flex min-h-svh w-full flex-col gap-8 p-12', className)}>
       {title && (
         <Heading size={2} className="sticky top-8">
           {title}
