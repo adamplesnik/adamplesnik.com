@@ -140,7 +140,7 @@ const Chart = () => {
             ))}
             <div className="hidden flex-1 lg:block"></div>
           </div>
-          <div className="flex flex-row justify-center gap-6 text-white md:items-center md:gap-12 dark:text-zinc-900">
+          <div className="flex flex-row justify-center gap-6 text-white/80 md:items-center md:gap-12 dark:text-zinc-900/80">
             <div className="hidden flex-1 lg:block"></div>
             <div className="my-12 flex flex-1 items-center gap-2">
               <ArrowUp strokeWidth={1.5} className="-rotate-45" />
