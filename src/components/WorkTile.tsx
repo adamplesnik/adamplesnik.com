@@ -6,7 +6,7 @@ const WorkTile = ({ children, title, links, className }: WorkTileWrapperProps) =
   return (
     <div className={clsx('flex min-h-screen w-full flex-col gap-12 p-12', className)}>
       {title && (
-        <Heading size={2} className="sticky top-6">
+        <Heading size={2} className="sticky top-8">
           {title}
         </Heading>
       )}
