@@ -100,7 +100,7 @@ const Chart = () => {
   return (
     <div className="h-[200vh]">
       <div className="sticky top-0 min-h-svh w-full">
-        <div className="absolute inset-0 z-10 bg-white/30 backdrop-blur-[60px]"></div>
+        <div className="absolute inset-0 z-10 bg-white/10 backdrop-blur-[60px] dark:bg-zinc-900/30"></div>
         <div className="absolute inset-0 overflow-hidden">
           {circles.map((circle, i) => {
             const isActive = activeItems[circle.for] === true
