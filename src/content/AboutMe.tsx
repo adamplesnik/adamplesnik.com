@@ -4,7 +4,7 @@ import TimelineItem from '@/components/TimelineItem'
 
 const AboutMe = () => {
   return (
-    <div className="min-h-screen gap-12 bg-gradient-to-bl from-[#EBAF25] to-[#FEC84B] to-30% p-12">
+    <div className="min-h-dvh gap-12 bg-gradient-to-bl from-[#EBAF25] to-[#FEC84B] to-30% p-12">
       <Heading size={2} className="sticky top-8">
         CV
       </Heading>

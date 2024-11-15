@@ -6,7 +6,7 @@ import { ChevronsDown } from 'lucide-react'
 
 const Intro = () => {
   return (
-    <div className="flex min-h-screen flex-col gap-16 p-12">
+    <div className="flex min-h-dvh flex-col gap-16 p-12">
       <Heading size={1}>Adam Plesník</Heading>
       <Heading size={2}>Design engineer.</Heading>
       <Paragraph className="flex-1 text-2xl">
