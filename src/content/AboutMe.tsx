@@ -21,13 +21,13 @@ const AboutMe = () => {
           className="mb-16"
           right
         />
-        <TimelineItem year={'2008–2010'} desc="Freelance web designer" bold />
+        <TimelineItem year={'2008\u20132010'} desc="Freelance web designer" em />
         <TimelineItem year={2010} desc="Master of Architecture" />
-        <TimelineItem year={'2011–2012'} desc="Web designer in Websupport" bold />
-        <TimelineItem year={'2013–now'} desc="Design engineer in Expersoft Technologies" bold />
+        <TimelineItem year={'2011\u20132012'} desc="Web designer in Websupport" em />
+        <TimelineItem year={'2013\u2013now'} desc="Design engineer in Expersoft Technologies" em />
         <TimelineItem year={2014} desc="Married" />
         <TimelineItem year={'2015 & 2021'} desc="Kids" />
-        <TimelineItem year={'Occasionally'} desc="Portrait photographer" className="mb-80" bold />
+        <TimelineItem year={'Occasionally'} desc="Portrait photographer" className="mb-80" em />
         <TimelineItem year={12067} desc="Hari will develop psychohistory" className="mb-80" right />
         <TimelineItem year={23354} desc="Paul will become overly sensitive" right />
       </div>
