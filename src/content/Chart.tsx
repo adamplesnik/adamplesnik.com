@@ -100,7 +100,7 @@ const Chart = () => {
   return (
     <div className="md:h-[200vh]">
       <div className="sticky top-0 min-h-svh w-full">
-        <div className="absolute inset-0 z-10 bg-white/10 backdrop-blur-[60px] dark:bg-zinc-900/30"></div>
+        <div className="absolute inset-0 z-10 bg-white/10 backdrop-blur-[60px] dark:bg-zinc-900/20"></div>
         <div className="absolute inset-0 overflow-hidden">
           {circles.map((circle, i) => {
             const isActive = activeItems[circle.for] === true
@@ -111,7 +111,9 @@ const Chart = () => {
                   'absolute -translate-x-1/3 rounded-full transition-[opacity,transform] duration-700 ease-in-out sm:-translate-x-1/4',
                   isActive
                     ? 'scale-75 opacity-80 sm:scale-90 md:scale-100 lg:scale-110'
-                    : 'scale-50 opacity-0'
+                    : 'scale-50 opacity-0',
+                  i === 2 && 'translate-y-1/4 sm:translate-y-[15%] md:translate-y-0',
+                  i === 5 && 'translate-y-1/3 sm:translate-y-[15%] md:translate-y-0'
                 )}
                 style={{
                   width: circle.size,
@@ -126,7 +128,7 @@ const Chart = () => {
           })}
         </div>
         <div className="relative z-20 flex min-h-svh w-full flex-col justify-between gap-8 p-12">
-          <div className="flex max-w-56 flex-col items-baseline gap-12 md:max-w-full md:flex-row">
+          <div className="flex max-w-80 flex-col items-baseline gap-12 md:max-w-full md:flex-row">
             {skills.map((skill, i) => (
               <ChartItem
                 onClick={() => toggleActive(skill.for)}
@@ -138,7 +140,7 @@ const Chart = () => {
             ))}
             <div className="hidden flex-1 lg:block"></div>
           </div>
-          <div className="flex flex-row justify-center gap-6 text-white md:items-center md:gap-12">
+          <div className="flex flex-row justify-center gap-6 text-white md:items-center md:gap-12 dark:text-zinc-900">
             <div className="hidden flex-1 lg:block"></div>
             <div className="my-12 flex flex-1 items-center gap-2">
               <ArrowUp strokeWidth={1.5} className="-rotate-45" />
@@ -151,17 +153,20 @@ const Chart = () => {
             </div>
             <div className="hidden flex-1 lg:block"></div>
           </div>
-          <div className="flex max-w-56 flex-col items-baseline justify-end gap-12 md:mt-0 md:max-w-full md:flex-row">
-            <div className="hidden flex-1 lg:block"></div>
-            {tech.map((t, i) => (
-              <ChartItem
-                onClick={() => toggleActive(t.for)}
-                title={t.title}
-                desc={t.desc}
-                key={`skill_${i + 3}`}
-                isActive={activeItems[t.for] === true}
-              />
-            ))}
+          <div className="flex gap-6">
+            <div className="hidden sm:block sm:flex-1 md:hidden"></div>
+            <div className="flex max-w-80 flex-col items-baseline justify-end gap-12 sm:flex-1 md:mt-0 md:max-w-full md:flex-auto md:flex-row">
+              <div className="hidden flex-1 lg:block"></div>
+              {tech.map((t, i) => (
+                <ChartItem
+                  onClick={() => toggleActive(t.for)}
+                  title={t.title}
+                  desc={t.desc}
+                  key={`skill_${i + 3}`}
+                  isActive={activeItems[t.for] === true}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
