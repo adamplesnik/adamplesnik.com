@@ -98,7 +98,7 @@ const Chart = () => {
   }
 
   return (
-    <div className="h-[200vh]">
+    <div className="md:h-[200vh]">
       <div className="sticky top-0 min-h-svh w-full">
         <div className="absolute inset-0 z-10 bg-white/10 backdrop-blur-[60px] dark:bg-zinc-900/30"></div>
         <div className="absolute inset-0 overflow-hidden">
@@ -125,7 +125,7 @@ const Chart = () => {
             )
           })}
         </div>
-        <div className="relative z-20 flex min-h-dvh w-full flex-col justify-between gap-8 p-12">
+        <div className="relative z-20 flex min-h-svh w-full flex-col justify-between gap-8 p-12">
           <div className="flex max-w-56 flex-col items-baseline gap-12 md:max-w-full md:flex-row">
             {skills.map((skill, i) => (
               <ChartItem
@@ -140,7 +140,7 @@ const Chart = () => {
           </div>
           <div className="flex flex-row justify-center gap-6 text-white md:items-center md:gap-12">
             <div className="hidden flex-1 lg:block"></div>
-            <div className="flex flex-1 items-center gap-2">
+            <div className="my-12 flex flex-1 items-center gap-2">
               <ArrowUp strokeWidth={1.5} className="-rotate-45" />
               My skills
             </div>

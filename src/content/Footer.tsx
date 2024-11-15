@@ -3,7 +3,7 @@ import Link from '@/components/Link'
 
 const Footer = () => {
   return (
-    <div className="flex h-dvh flex-col justify-end gap-1 p-12">
+    <div className="flex h-svh flex-col justify-end gap-1 p-12">
       <Heading size={2}>Adam Plesník</Heading>
       <span className="mb-12">Design engineer</span>
       Bratislava, Slovakia
