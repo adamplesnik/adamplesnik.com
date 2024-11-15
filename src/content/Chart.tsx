@@ -1,6 +1,7 @@
 import clsx from 'clsx'
+import { ArrowDown, ArrowUp } from 'lucide-react'
 import { useState } from 'react'
-import ChartItem from './ChartItem'
+import ChartItem from '../components/ChartItem'
 
 type CircleType = {
   size: string
@@ -124,7 +125,7 @@ const Chart = () => {
             )
           })}
         </div>
-        <div className="relative z-20 flex min-h-screen w-full flex-col justify-between p-12">
+        <div className="relative z-20 flex min-h-screen w-full flex-col justify-between gap-8 p-12">
           <div className="flex max-w-56 flex-col items-baseline gap-12 md:max-w-full md:flex-row">
             {skills.map((skill, i) => (
               <ChartItem
@@ -137,7 +138,20 @@ const Chart = () => {
             ))}
             <div className="hidden flex-1 lg:block"></div>
           </div>
-          <div className="mt-32 flex max-w-56 flex-col items-baseline justify-end gap-12 md:max-w-full md:flex-row">
+          <div className="flex flex-row justify-center gap-6 text-white md:items-center md:gap-12">
+            <div className="hidden flex-1 lg:block"></div>
+            <div className="flex flex-1 items-center gap-2">
+              <ArrowUp strokeWidth={1.5} className="-rotate-45" />
+              My skills
+            </div>
+            <div className="hidden flex-1 md:block lg:hidden"></div>
+            <div className="flex flex-1 items-center gap-2">
+              Tech
+              <ArrowDown strokeWidth={1.5} className="-rotate-45" />
+            </div>
+            <div className="hidden flex-1 lg:block"></div>
+          </div>
+          <div className="flex max-w-56 flex-col items-baseline justify-end gap-12 md:mt-0 md:max-w-full md:flex-row">
             <div className="hidden flex-1 lg:block"></div>
             {tech.map((t, i) => (
               <ChartItem
