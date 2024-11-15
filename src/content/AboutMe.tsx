@@ -18,7 +18,7 @@ const AboutMe = () => {
         <TimelineItem year={1985} desc="Born" className="mb-12" />
         <TimelineItem
           year={1999}
-          desc="Star Wars will never be a trilogy anymore"
+          desc="Star Wars is not a trilogy anymore"
           className="mb-16"
           right
         />
