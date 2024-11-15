@@ -2,7 +2,7 @@
 
 exports[`Regular paragraph 1`] = `
 <p
-  className="w-full leading-relaxed"
+  className="w-full max-w-xl leading-relaxed"
 >
   Regular paragraph
 </p>
@@ -10,7 +10,7 @@ exports[`Regular paragraph 1`] = `
 
 exports[`Regular paragraph with class name 1`] = `
 <p
-  className="w-full leading-relaxed test-class"
+  className="w-full max-w-xl leading-relaxed test-class"
 >
   Paragraph with class name
 </p>
