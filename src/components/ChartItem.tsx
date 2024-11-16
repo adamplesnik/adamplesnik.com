@@ -21,7 +21,7 @@ const ChartItem = ({
       )}
       onClick={onClick}
     >
-      <Heading size={2} className={clsx('relative mb-2 inline-block text-nowrap')}>
+      <Heading size={3} className={clsx('relative mb-2 inline-block text-nowrap')}>
         {title}
         <div
           className={clsx(
