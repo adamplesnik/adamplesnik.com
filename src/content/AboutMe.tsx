@@ -12,7 +12,9 @@ const AboutMe = () => {
         Lot of quality time with my family—or alone if needed; preferably in nature, mountain
         biking, traveling, or just around town.
       </Paragraph>
-      <Paragraph className="mb-24">I shoot photos and I love to read.</Paragraph>
+      <Paragraph className="mb-24">
+        I shoot photos, play (hobby) piano, and I love to read.
+      </Paragraph>
       <div className="flex flex-col">
         <TimelineItem year={'A long time ago'} desc="Han shot first!" className="mb-72" right />
         <TimelineItem year={1985} desc="Born" className="mb-12" />
