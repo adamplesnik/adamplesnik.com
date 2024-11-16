@@ -17,7 +17,7 @@ const TimelineItem = ({
   return (
     <div
       className={clsx(
-        'flex flex-col items-baseline gap-1 border-b border-b-black/20 py-4 sm:flex-row sm:gap-4',
+        'flex flex-col items-baseline gap-1 border-b border-b-black/10 py-3 sm:flex-row sm:gap-4',
         className,
         right && 'justify-between'
       )}
