@@ -1,8 +1,9 @@
 import { clsx } from 'clsx'
 import { HTMLAttributes, ReactNode } from 'react'
 import Heading from './Heading'
+import Paragraph from './Paragraph'
 
-const WorkTile = ({ children, title, links, className }: WorkTileWrapperProps) => {
+const WorkTile = ({ children, title, links, className, text }: WorkTileWrapperProps) => {
   return (
     <div className={clsx('flex min-h-svh w-full flex-col gap-8 p-12', className)}>
       {title && (
@@ -10,7 +11,10 @@ const WorkTile = ({ children, title, links, className }: WorkTileWrapperProps) =
           {title}
         </Heading>
       )}
-      {children}
+      <div className="flex max-w-screen-lg flex-col gap-8">
+        <Paragraph>{text}</Paragraph>
+        <div className="flex flex-col gap-4 md:flex-1">{children}</div>
+      </div>
       {links && <div className="flex flex-col gap-1">{links}</div>}
     </div>
   )
@@ -19,6 +23,7 @@ const WorkTile = ({ children, title, links, className }: WorkTileWrapperProps) =
 type WorkTileWrapperProps = {
   links?: ReactNode
   title?: string
+  text?: string
 } & HTMLAttributes<HTMLDivElement>
 
 export default WorkTile
