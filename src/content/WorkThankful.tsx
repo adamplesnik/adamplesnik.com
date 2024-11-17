@@ -12,7 +12,7 @@ const Thankful = () => {
       <MasonryWrapper>
         <img src={thankfulMain} className="mb-4" />
         <div className="overflow-hidden">
-          <video loop autoPlay playsInline className="-mt-[2px]">
+          <video loop autoPlay playsInline muted className="-mt-[2px]">
             <source src={thankfulVideo} type="video/mp4"></source>
           </video>
         </div>

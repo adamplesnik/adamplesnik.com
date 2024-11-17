@@ -12,7 +12,7 @@ const WorkComparator = () => {
         <div className="relative">
           <img src={macbook} alt="" />
           <div className="absolute left-[21%] top-[13%] w-[58%] overflow-hidden">
-            <video loop autoPlay playsInline className="-mt-[2px]">
+            <video loop autoPlay playsInline muted className="-mt-[2px]">
               <source src={comparator} type="video/mp4"></source>
             </video>
           </div>

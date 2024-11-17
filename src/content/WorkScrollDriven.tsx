@@ -29,7 +29,7 @@ const WorkScrollDriven = () => {
         <div className="relative">
           <img src={mockWindow} alt="" />
           <div className="absolute bottom-[5.6%] left-[2.6%] right-[2.6%] top-[4.8%] overflow-hidden rounded-b sm:rounded-b-md md:rounded-b-xl">
-            <video loop autoPlay playsInline className="-mt-px">
+            <video loop autoPlay playsInline muted className="-mt-px">
               <source src={scrollMain} type="video/mp4"></source>
             </video>
           </div>
@@ -46,7 +46,7 @@ const WorkScrollDriven = () => {
         </div>
         <div className="flex aspect-square items-center bg-slate-200 p-4 sm:p-6 md:p-8 dark:bg-slate-700">
           <div className="overflow-hidden">
-            <video loop autoPlay playsInline className="-mt-px">
+            <video loop autoPlay playsInline muted className="-mt-px">
               <source src={scrollPreview3} type="video/mp4"></source>
             </video>
           </div>
