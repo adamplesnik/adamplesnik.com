@@ -5,9 +5,9 @@ import Intro from '@/content/Intro'
 import WorkAndy from '@/content/WorkAndy'
 import WorkComparator from '@/content/WorkComparator'
 import WorkKolbord from '@/content/WorkKolbord'
+import WorkPhoto from '@/content/WorkPhoto'
 import WorkScrollDriven from '@/content/WorkScrollDriven'
 import WorkThankful from '@/content/WorkThankful'
-import WorkWebUmenia from '@/content/WorkWebUmenia'
 
 const Home = () => {
   return (
@@ -19,7 +19,7 @@ const Home = () => {
       <WorkThankful />
       <WorkComparator />
       <WorkAndy />
-      <WorkWebUmenia />
+      <WorkPhoto />
       <AboutMe />
       <Footer />
     </div>
