@@ -42,7 +42,7 @@ const WorkScrollDriven = () => {
             <img src={scrollImage} />
           </div>
         </div>
-        <div className="bg-red-500">
+        <div className="overflow-hidden">
           <video loop autoPlay playsInline className="-mt-px">
             <source src={scrollPreview3} type="video/mp4"></source>
           </video>

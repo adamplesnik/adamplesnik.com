@@ -7,14 +7,15 @@ const Thankful = () => {
   return (
     <WorkTile
       title="Simple gratitude journal"
-      className="bg-amber-50 dark:bg-transparent"
       text="This app concept aims to find a simple, lean, and nice gratitude journaling experience."
     >
       <MasonryWrapper>
         <img src={thankfulMain} className="mb-4" />
-        <video loop autoPlay playsInline className="border-none">
-          <source src={thankfulVideo} type="video/mp4"></source>
-        </video>
+        <div className="overflow-hidden">
+          <video loop autoPlay playsInline className="-mt-[2px]">
+            <source src={thankfulVideo} type="video/mp4"></source>
+          </video>
+        </div>
       </MasonryWrapper>
     </WorkTile>
   )
