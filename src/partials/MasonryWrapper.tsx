@@ -11,7 +11,7 @@ const MasonryWrapper = ({ children }: PropsWithChildren) => {
     <Masonry
       breakpointCols={breakpointColumnsObj}
       className="-ml-4 flex w-auto"
-      columnClassName="pl-4 bg-clip-padding *:pb-4"
+      columnClassName="pl-4 bg-clip-padding"
     >
       {children}
     </Masonry>
