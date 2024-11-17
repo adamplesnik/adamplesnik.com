@@ -15,7 +15,7 @@ const AboutMe = () => {
       <Paragraph className="mb-24">
         I shoot photos, play (hobby) piano, and I love to read.
       </Paragraph>
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-2">
         <TimelineItem year={'A long time ago'} desc="Han shot first!" className="mb-72" right />
         <TimelineItem year={1985} desc="Born" className="mb-12" />
         <TimelineItem
