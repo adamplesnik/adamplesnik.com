@@ -1,5 +1,4 @@
 import Link from '@/components/Link'
-import Paragraph from '@/components/Paragraph'
 import WorkTile from '@/components/WorkTile'
 
 const Links = () => {
@@ -12,13 +11,13 @@ const Links = () => {
 
 const WorkWebUmenia = () => {
   return (
-    <WorkTile title="CSS refactoring for webumenia.sk" links={<Links />}>
-      <Paragraph>
-        Web umenia features almost 180k artworks from the collections of Slovak galleries. I forked
+    <WorkTile
+      title="CSS refactoring for webumenia.sk"
+      links={<Links />}
+      text="Web umenia features almost 180k artworks from the collections of Slovak galleries. I forked
         their dev branch and started the process of removing old code, reorganizing dependencies and
-        eventually creating the dark mode.
-      </Paragraph>
-    </WorkTile>
+        eventually creating the dark mode. Still work in progress."
+    ></WorkTile>
   )
 }
 

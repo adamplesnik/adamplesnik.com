@@ -5,9 +5,9 @@ import Paragraph from './Paragraph'
 
 const WorkTile = ({ children, title, links, className, text }: WorkTileWrapperProps) => {
   return (
-    <div className={clsx('flex min-h-svh w-full flex-col gap-8 p-12', className)}>
+    <div className={clsx('flex w-full flex-col gap-8 p-12', className)}>
       {title && (
-        <Heading size={2} className="sticky top-8">
+        <Heading size={2} className="sticky top-8 z-20">
           {title}
         </Heading>
       )}
