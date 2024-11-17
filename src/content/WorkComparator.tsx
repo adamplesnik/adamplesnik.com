@@ -1,4 +1,3 @@
-import PreviewWrapper from '@/components/PreviewWrapper'
 import WorkTile from '@/components/WorkTile'
 import comparator from './images/comparator.mp4'
 
@@ -8,11 +7,11 @@ const WorkComparator = () => {
       title="Photo comparator interface"
       text="A conceptual UI for an application dedicated to displaying before and after photographs of various spaces and places within our cities and nature."
     >
-      <PreviewWrapper>
-        <video loop autoPlay playsInline className="-mt-px">
+      <div className="overflow-hidden">
+        <video loop autoPlay playsInline className="-mt-[2px]">
           <source src={comparator} type="video/mp4"></source>
         </video>
-      </PreviewWrapper>
+      </div>
     </WorkTile>
   )
 }

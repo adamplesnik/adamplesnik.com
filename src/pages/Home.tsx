@@ -6,6 +6,7 @@ import WorkAndy from '@/content/WorkAndy'
 import WorkComparator from '@/content/WorkComparator'
 import WorkKolbord from '@/content/WorkKolbord'
 import WorkScrollDriven from '@/content/WorkScrollDriven'
+import WorkThankful from '@/content/WorkThankful'
 import WorkWebUmenia from '@/content/WorkWebUmenia'
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <Chart />
       <WorkKolbord />
       <WorkScrollDriven />
+      <WorkThankful />
       <WorkComparator />
       <WorkAndy />
       <WorkWebUmenia />
