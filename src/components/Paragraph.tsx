@@ -1,8 +1,8 @@
 import clsx from 'clsx'
 import { HTMLAttributes } from 'react'
 
-const Paragraph = ({ children, className = '' }: HTMLAttributes<HTMLParagraphElement>) => {
-  return <p className={clsx('mb-4 w-full leading-7 last:mb-0', className)}>{children}</p>
+const Paragraph = ({ children, className }: HTMLAttributes<HTMLParagraphElement>) => {
+  return <p className={clsx('w-full max-w-xl leading-relaxed', className)}>{children}</p>
 }
 
 export default Paragraph

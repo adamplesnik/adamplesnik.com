@@ -13,7 +13,7 @@ const Link = ({
       href={href}
       target={target}
       className={clsx(
-        'flex items-center text-zinc-700 underline decoration-zinc-600 hover:text-black hover:decoration-zinc-800 dark:text-zinc-300 dark:decoration-zinc-500 dark:hover:text-zinc-50 dark:hover:decoration-zinc-100',
+        'inline-block w-fit underline decoration-zinc-400 decoration-1 underline-offset-[3px] hover:decoration-current dark:decoration-zinc-500',
         className
       )}
       {...props}

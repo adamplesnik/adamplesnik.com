@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: 'Inter, sans-serif',
+        sans: 'Aktiv Grotesk, sans-serif',
+        serif: 'Libre Baskerville, serif',
       },
       transitionTimingFunction: {
         custom: 'cubic-bezier(0.65, 0.05, 0.17, 0.99)',
