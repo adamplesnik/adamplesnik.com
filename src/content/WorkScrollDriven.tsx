@@ -22,16 +22,17 @@ const WorkScrollDriven = () => {
   return (
     <WorkTile
       title="Scroll-driven animations plugin for Tailwind CSS"
-      className="bg-teal-50"
       links={<Links />}
       text="Explore the possibilities of CSS scroll-driven animations. Powered by my own Tailwind CSS plugin, no animation JS libs used. Some browsers might have been harmed during the process."
     >
-      <div className="relative">
-        <img src={mockWindow} alt="" />
-        <div className="absolute bottom-[6%] left-[2.7%] right-[2.6%] top-[4.8%] overflow-hidden rounded-b-xl">
-          <video loop autoPlay playsInline className="-mt-px">
-            <source src={scrollMain} type="video/mp4"></source>
-          </video>
+      <div className="bg-slate-200 p-8 dark:bg-slate-700">
+        <div className="relative">
+          <img src={mockWindow} alt="" />
+          <div className="absolute bottom-[5.8%] left-[2.6%] right-[2.6%] top-[4.8%] overflow-hidden rounded-b-xl">
+            <video loop autoPlay playsInline className="-mt-px">
+              <source src={scrollMain} type="video/mp4"></source>
+            </video>
+          </div>
         </div>
       </div>
       <MasonryWrapper>
