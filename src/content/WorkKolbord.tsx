@@ -1,6 +1,9 @@
 import Link from '@/components/Link'
-import Paragraph from '@/components/Paragraph'
 import WorkTile from '@/components/WorkTile'
+import MasonryWrapper from '@/partials/MasonryWrapper'
+import kolbordFashion from './images/kolbord-fashion.jpg'
+import kolbordIpad from './images/kolbord-ipad.png'
+import kolbordMacbook from './images/kolbord-macbook.jpg'
 
 const Links = () => {
   return (
@@ -13,18 +16,19 @@ const Links = () => {
 
 const WorkKolbord = () => {
   return (
-    <WorkTile title="Kolbord: the smoothest space booking" links={<Links />}>
-      <Paragraph>
-        Opinionated, free to use, and open source app for two-click reservation of anything.
-        Prototyped in Figma, coded in React, Payload CMS, with user management in Clerk.
-      </Paragraph>
-      <div className="flex flex-col gap-8 md:flex-row">
-        <div className="aspect-[4_/_3] bg-red-100 md:flex-[2]">h</div>
-        <div className="flex flex-col gap-8 md:flex-1">
-          <div className="aspect-square bg-red-200"></div>
-          <div className="aspect-square bg-red-200"></div>
-        </div>
+    <WorkTile
+      title="Kolbord: the smoothest space booking"
+      links={<Links />}
+      text="Opinionated, free to use, and open source app reservation of anything. This is a one-man-project: I take care of everything from brand to code.
+        Drawn and prototyped in Figma, coded in React, Payload CMS, with user management in Clerk. WIP as of November 2024."
+    >
+      <div className="bg-fuchsia-100 p-4 sm:p-8">
+        <img src={kolbordIpad} alt="" />
       </div>
+      <MasonryWrapper>
+        <img src={kolbordFashion} alt="" />
+        <img src={kolbordMacbook} alt="" />
+      </MasonryWrapper>
     </WorkTile>
   )
 }
