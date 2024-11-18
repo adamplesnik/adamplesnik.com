@@ -30,7 +30,7 @@ const WorkKolbord = () => {
         </div>
       </div>
       <MasonryWrapper>
-        <img src={kolbordFashion} alt="" />
+        <img src={kolbordFashion} className="mb-4" alt="" />
         <img src={kolbordMacbook} alt="" />
       </MasonryWrapper>
     </WorkTile>
