@@ -110,7 +110,7 @@ const Chart = () => {
                 className={clsx(
                   'absolute -translate-x-1/3 rounded-full transition-[opacity,transform] duration-700 ease-in-out sm:-translate-x-1/4',
                   isActive
-                    ? 'scale-75 opacity-80 sm:scale-90 md:scale-100 lg:scale-110'
+                    ? 'scale-75 opacity-80 sm:scale-90 md:scale-100 lg:scale-125 xl:scale-150'
                     : 'scale-50 opacity-0',
                   i === 2 && 'translate-y-1/4 sm:translate-y-[15%] md:translate-y-0',
                   i === 5 && 'translate-y-1/3 sm:translate-y-[15%] md:translate-y-0'

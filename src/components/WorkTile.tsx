@@ -18,7 +18,7 @@ const WorkTile = ({ children, title, links, className, text }: WorkTileWrapperPr
         </Heading>
       )}
       {text && <Paragraph>{text}</Paragraph>}
-      <div className="flex max-w-screen-lg flex-col gap-4 md:flex-1">{children}</div>
+      <div className="flex flex-col gap-4 md:flex-1">{children}</div>
       {links && <div className="flex flex-col gap-y-2">{links}</div>}
     </div>
   )

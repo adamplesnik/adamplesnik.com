@@ -9,7 +9,7 @@ const WorkComparator = () => {
       text="A conceptual UI for an application dedicated to displaying before and after photographs of various spaces and places within our cities and nature."
     >
       <div className="bg-teal-200 p-4 sm:p-8 dark:bg-teal-800">
-        <div className="relative">
+        <div className="relative mx-auto max-w-screen-xl">
           <img src={macbook} alt="" />
           <div className="absolute left-[21%] top-[13%] w-[58%] overflow-hidden">
             <video loop autoPlay playsInline muted className="-mt-[2px]">
