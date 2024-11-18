@@ -5,9 +5,15 @@ import Paragraph from './Paragraph'
 
 const WorkTile = ({ children, title, links, className, text }: WorkTileWrapperProps) => {
   return (
-    <div className={clsx('flex w-full flex-col gap-8 px-6 py-12 sm:px-8 md:px-12', className)}>
+    <div
+      className={clsx(
+        'flex w-full flex-col gap-8 px-6 pb-12 sm:px-8 md:px-12',
+        title ? 'pt-6' : 'pt-12',
+        className
+      )}
+    >
       {title && (
-        <Heading size={2} className="sticky top-8 z-50">
+        <Heading size={2} className="sticky top-0 z-50 -mx-2 bg-gradient-to-b from-white px-2 pt-6">
           {title}
         </Heading>
       )}
