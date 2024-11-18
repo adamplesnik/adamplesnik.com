@@ -13,7 +13,10 @@ const WorkTile = ({ children, title, links, className, text }: WorkTileWrapperPr
       )}
     >
       {title && (
-        <Heading size={2} className="sticky top-0 z-50 -mx-2 bg-gradient-to-b from-white px-2 pt-6">
+        <Heading
+          size={2}
+          className="sticky top-0 z-50 -mx-2 bg-gradient-to-b from-white px-2 pt-6 dark:from-zinc-900"
+        >
           {title}
         </Heading>
       )}
