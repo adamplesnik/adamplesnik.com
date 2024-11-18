@@ -26,7 +26,7 @@ const WorkScrollDriven = () => {
       text="Explore the possibilities of CSS scroll-driven animations. Powered by my own Tailwind CSS plugin, no animation JS libs used. Some browsers might have been harmed during the process."
     >
       <div className="bg-slate-200 p-4 sm:p-6 md:p-8 dark:bg-slate-700">
-        <div className="relative mx-auto max-w-screen-xl">
+        <div className="relative mx-auto max-w-[990px]">
           <img src={mockWindow} alt="" />
           <div className="absolute bottom-[5.6%] left-[2.6%] right-[2.6%] top-[4.8%] overflow-hidden rounded-b sm:rounded-b-md md:rounded-b-xl">
             <video loop autoPlay playsInline muted className="-mt-px">
