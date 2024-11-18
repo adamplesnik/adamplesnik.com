@@ -1,8 +1,8 @@
 import Link from '@/components/Link'
 import WorkTile from '@/components/WorkTile'
 import MasonryWrapper from '@/partials/MasonryWrapper'
+import kolbordDemo from './images/kolbord-demo.mp4'
 import kolbordFashion from './images/kolbord-fashion.jpg'
-import kolbordIpad from './images/kolbord-ipad.png'
 import kolbordMacbook from './images/kolbord-macbook.jpg'
 
 const Links = () => {
@@ -23,7 +23,11 @@ const WorkKolbord = () => {
         Drawn and prototyped in Figma, coded in React, Payload CMS, with user management in Clerk. WIP as of November 2024."
     >
       <div className="bg-fuchsia-100 p-4 sm:p-8">
-        <img src={kolbordIpad} alt="" />
+        <div className="relative mx-auto max-w-screen-lg overflow-hidden before:absolute before:bottom-0 before:right-0 before:top-0 before:z-10 before:w-2 before:bg-fuchsia-100">
+          <video loop autoPlay playsInline muted className="-m-1">
+            <source src={kolbordDemo} type="video/mp4"></source>
+          </video>
+        </div>
       </div>
       <MasonryWrapper>
         <img src={kolbordFashion} alt="" />
