@@ -3,7 +3,7 @@ import WorkTile from '@/components/WorkTile'
 import MasonryWrapper from '@/partials/MasonryWrapper'
 import kolbordFashion from './images/kolbord-fashion.jpg'
 import kolbordDemo from './images/kolbord-ipad.mp4'
-import kolbordMacbook from './images/kolbord-macbook.jpg'
+import kolbordMacbook from './images/kolbord-macbook.png'
 import kolbordSidebar from './images/kolbord-sidebar.png'
 import kolbordWatch from './images/kolbord-watch.png'
 
