@@ -127,7 +127,7 @@ const Chart = () => {
             )
           })}
         </div>
-        <div className="relative z-20 flex min-h-svh w-full flex-col justify-between gap-8 p-12">
+        <div className="relative z-20 flex min-h-svh w-full flex-col justify-between gap-8 px-6 py-12 sm:px-8 md:px-12">
           <div className="flex max-w-80 flex-col items-baseline gap-12 md:max-w-full md:flex-row">
             {skills.map((skill, i) => (
               <ChartItem
