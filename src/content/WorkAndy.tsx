@@ -1,10 +1,8 @@
 import WorkTile from '@/components/WorkTile'
 import MasonryWrapper from '@/partials/MasonryWrapper'
 import andyAlt from './images/andy-alt.jpg'
-import andyBadge from './images/andy-badge.jpg'
 import andyMain from './images/andy-main.jpg'
 import andyStreet from './images/andy-street.jpg'
-import andyWall from './images/andy-wall.jpg'
 
 const WorkAndy = () => {
   return (
@@ -16,8 +14,6 @@ const WorkAndy = () => {
       <MasonryWrapper>
         <img src={andyMain} className="mb-4" />
         <img src={andyAlt} className="mb-4" />
-        <img src={andyBadge} className="mb-4" />
-        <img src={andyWall} className="mb-4" />
       </MasonryWrapper>
     </WorkTile>
   )
