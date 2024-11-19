@@ -17,7 +17,9 @@ const Intro = () => {
           <Link href="mailto:adam@adamplesnik.com">adam@adamplesnik.com</Link>
           <span className="block pt-2">Bratislava, Slovakia</span>
         </div>
-        <ChevronsDown className="animate-bounce" strokeWidth={1.5} />
+        <a href="#skills" className="cursor-pointer">
+          <ChevronsDown className="animate-bounce" strokeWidth={1.5} />
+        </a>
       </div>
     </div>
   )
