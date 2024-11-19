@@ -3,7 +3,7 @@ import { HTMLAttributes, ReactNode } from 'react'
 import Heading from './Heading'
 import Paragraph from './Paragraph'
 
-const WorkTile = ({ children, title, links, className, text }: WorkTileWrapperProps) => {
+const WorkTile = ({ children, title, links, className, text, top }: WorkTileWrapperProps) => {
   return (
     <div
       className={clsx(
@@ -12,14 +12,8 @@ const WorkTile = ({ children, title, links, className, text }: WorkTileWrapperPr
         className
       )}
     >
-      {title && (
-        <Heading
-          size={2}
-          className="sticky top-0 z-50 -mx-2 bg-gradient-to-b from-white px-2 pt-6 dark:from-zinc-900"
-        >
-          {title}
-        </Heading>
-      )}
+      {top && <>{top}</>}
+      {title && <Heading size={2}>{title}</Heading>}
       {text && <Paragraph>{text}</Paragraph>}
       <div className="flex flex-col gap-4 md:flex-1">{children}</div>
       {links && <div className="flex flex-col gap-y-2">{links}</div>}
@@ -29,6 +23,7 @@ const WorkTile = ({ children, title, links, className, text }: WorkTileWrapperPr
 
 type WorkTileWrapperProps = {
   links?: ReactNode
+  top?: ReactNode
   title?: string
   text?: string
 } & HTMLAttributes<HTMLDivElement>
