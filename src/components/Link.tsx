@@ -12,10 +12,7 @@ const Link = ({
     <a
       href={href}
       target={target}
-      className={clsx(
-        'inline-block w-fit underline decoration-zinc-400 decoration-1 underline-offset-[3px] hover:decoration-current dark:decoration-zinc-500',
-        className
-      )}
+      className={clsx('inline-block w-fit underline hover:no-underline', className)}
       {...props}
     >
       {children}

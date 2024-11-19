@@ -4,7 +4,8 @@ import TimelineItem from '@/components/TimelineItem'
 
 const AboutMe = () => {
   return (
-    <div className="min-h-svh gap-12 bg-[#FEC84B] px-6 pb-12 pt-6 text-black sm:px-8 md:px-12">
+    <div className="min-h-svh gap-12 bg-[#FEC84B] px-6 pb-12 text-black sm:px-8 md:px-12">
+      <div id="cv" className="pt-12" />
       <Heading size={2} className="pt-8">
         CV
       </Heading>

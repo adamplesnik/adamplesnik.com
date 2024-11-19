@@ -99,6 +99,7 @@ const Chart = () => {
 
   return (
     <div className="relative min-h-svh w-full">
+      <span id="skills" />
       <div className="absolute inset-0 z-10 min-h-[120svh] bg-white/10 backdrop-blur-[60px] dark:bg-zinc-900/20"></div>
       <div className="absolute inset-0 overflow-hidden">
         {circles.map((circle, i) => {
@@ -126,7 +127,7 @@ const Chart = () => {
           )
         })}
       </div>
-      <div className="relative z-20 flex min-h-svh w-full flex-col justify-between gap-8 px-6 py-24 sm:px-8 md:px-12">
+      <div className="relative z-20 flex min-h-svh w-full flex-col justify-between gap-8 px-6 pb-20 pt-32 sm:px-8 md:px-12">
         <div className="flex max-w-80 flex-col items-baseline gap-12 md:max-w-full md:flex-row">
           {skills.map((skill, i) => (
             <ChartItem

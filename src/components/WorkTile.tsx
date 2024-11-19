@@ -13,12 +13,14 @@ const WorkTile = ({ children, title, links, className, text, top }: WorkTileWrap
       )}
     >
       {top && <>{top}</>}
-      {title && (
-        <Heading size={2} className="pt-2">
-          {title}
-        </Heading>
-      )}
-      {text && <Paragraph>{text}</Paragraph>}
+      <div className="flex flex-col gap-3">
+        {title && (
+          <Heading size={2} className="pt-2">
+            {title}
+          </Heading>
+        )}
+        {text && <Paragraph>{text}</Paragraph>}
+      </div>
       <div className="flex flex-col gap-4 md:flex-1">{children}</div>
       {links && <div className="flex flex-col gap-y-2">{links}</div>}
     </div>
