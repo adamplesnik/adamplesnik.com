@@ -100,7 +100,7 @@ const Chart = () => {
   return (
     <div className="relative min-h-svh w-full">
       <span id="skills" />
-      <div className="absolute inset-0 z-10 min-h-[120svh] bg-white/10 backdrop-blur-[60px] dark:bg-zinc-900/20"></div>
+      <div className="absolute inset-0 z-10 min-h-[120svh] bg-white/10 backdrop-blur-[60px] dark:bg-zinc-800/25"></div>
       <div className="absolute inset-0 overflow-hidden">
         {circles.map((circle, i) => {
           const isActive = activeItems[circle.for] === true
@@ -140,7 +140,7 @@ const Chart = () => {
           ))}
           <div className="hidden flex-1 lg:block"></div>
         </div>
-        <div className="flex flex-row justify-center gap-6 text-white/80 md:items-center md:gap-12 dark:text-zinc-900/80">
+        <div className="flex flex-row justify-center gap-6 text-white/80 md:items-center md:gap-12 dark:text-zinc-800/80">
           <div className="hidden flex-1 lg:block"></div>
           <div className="my-12 flex flex-1 items-center gap-2">
             <ArrowUp strokeWidth={1.5} className="-rotate-45" />
