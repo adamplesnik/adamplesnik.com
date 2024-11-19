@@ -7,7 +7,7 @@ const Heading = ({ size = 1, className, children }: TitleProps) => {
   } else if (size === 2) {
     return <h2 className={clsx(className, 'text-2xl font-semibold lg:text-3xl')}>{children}</h2>
   } else if (size === 3) {
-    return <h3 className={clsx(className, 'text-2xl font-semibold')}>{children}</h3>
+    return <h3 className={clsx(className, 'font-semibold')}>{children}</h3>
   }
 }
 

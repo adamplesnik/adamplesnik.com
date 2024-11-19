@@ -1,4 +1,3 @@
-import Heading from '@/components/Heading'
 import Paragraph from '@/components/Paragraph'
 import clsx from 'clsx'
 
@@ -21,22 +20,18 @@ const ChartItem = ({
       )}
       onClick={onClick}
     >
-      <Heading size={3} className={clsx('relative mb-2 inline-block text-nowrap')}>
-        {title}
-        <div
-          className={clsx(
-            'absolute left-0 top-1/2 h-0.5 w-full bg-current transition-[max-width] duration-300 ease-in-out',
-            isActive ? 'max-w-0' : 'max-w-full delay-500'
-          )}
-        />
-        <div
-          className={clsx(
-            'absolute bottom-1 left-0 h-0.5 w-full bg-transparent transition-[max-width] duration-300 ease-in-out',
-            isActive ? 'max-w-full delay-500' : 'max-w-0'
-          )}
-        />
-      </Heading>
-      <Paragraph>{desc}</Paragraph>
+      <Paragraph>
+        <span className="relative mr-2.5 font-semibold">
+          {title}
+          <span
+            className={clsx(
+              'absolute left-0 top-2 h-0.5 w-full bg-current transition-[max-width] duration-300 ease-in-out',
+              isActive ? 'max-w-0' : 'max-w-full delay-500'
+            )}
+          />
+        </span>
+        {desc}
+      </Paragraph>
     </div>
   )
 }
