@@ -13,7 +13,7 @@ const WorkTile = ({ children, title, links, className, text, top }: WorkTileWrap
       )}
     >
       {top && <>{top}</>}
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-4">
         {title && (
           <Heading size={2} className="pt-2">
             {title}
