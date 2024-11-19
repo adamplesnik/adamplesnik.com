@@ -23,7 +23,7 @@ const TimelineItem = ({
       )}
     >
       <div className="absolute top-[1.65rem] z-0 h-px w-full bg-gradient-to-r from-black to-black sm:to-black/10"></div>
-      <div className="relative z-10 w-full font-serif italic sm:w-40 md:w-52">
+      <div className="relative z-10 w-full font-semibold sm:w-40 md:w-52">
         <span className="inline-block bg-[#FEC84B] pr-2">{year}</span>
       </div>
       <Paragraph

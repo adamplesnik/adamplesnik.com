@@ -25,13 +25,13 @@ const ChartItem = ({
         {title}
         <div
           className={clsx(
-            'absolute left-0 top-1/2 h-px w-full bg-current transition-[max-width] duration-300 ease-in-out',
+            'absolute left-0 top-1/2 h-0.5 w-full bg-current transition-[max-width] duration-300 ease-in-out',
             isActive ? 'max-w-0' : 'max-w-full delay-500'
           )}
         />
         <div
           className={clsx(
-            'absolute bottom-1 left-0 h-px w-full bg-current transition-[max-width] duration-300 ease-in-out',
+            'absolute bottom-1 left-0 h-0.5 w-full bg-transparent transition-[max-width] duration-300 ease-in-out',
             isActive ? 'max-w-full delay-500' : 'max-w-0'
           )}
         />
