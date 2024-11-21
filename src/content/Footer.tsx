@@ -7,8 +7,7 @@ const Footer = () => {
       Bratislava, Slovakia
       <Link href="mailto:adam@adamplesnik.com">adam@adamplesnik.com</Link>
       <Link href="https://github.com/adamplesnik">github.com/adamplesnik</Link>
-      <Link href="https://www.linkedin.com/in/adamplesnik/">linkedin.com/in/adamplesnik</Link>
-    </div>
+   </div>
   )
 }
 
