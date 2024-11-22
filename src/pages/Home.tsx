@@ -1,8 +1,8 @@
 import Heading from '@/components/Heading'
 import AboutMe from '@/content/AboutMe'
-import Chart from '@/content/Chart'
 import Footer from '@/content/Footer'
 import Intro from '@/content/Intro'
+import Skills from '@/content/Skills'
 import WorkAndy from '@/content/WorkAndy'
 import WorkComparator from '@/content/WorkComparator'
 import WorkKolbord from '@/content/WorkKolbord'
@@ -17,7 +17,7 @@ const Home = () => {
         <Heading size={1}>Adam Plesník</Heading>
         <div className="hidden flex-1 justify-end gap-4 sm:flex">
           <a className="cursor-pointer hover:underline" href="#skills">
-            Skills & tech
+            Skills
           </a>
           <a className="cursor-pointer hover:underline" href="#work">
             Work
@@ -28,8 +28,8 @@ const Home = () => {
         </div>
       </div>
       <Intro />
-      <Chart />
-      <div id="work" className="relative top-32" />
+      <Skills />
+      <div id="work" className="relative top-[8.5rem]" />
       <WorkKolbord />
       <WorkThankful />
       <WorkScrollDriven />
