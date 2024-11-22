@@ -1,9 +1,12 @@
 import { clsx } from 'clsx'
-import { HTMLAttributes, ReactNode } from 'react'
+import { HTMLAttributes, ReactNode, useState } from 'react'
 import Heading from './Heading'
+import Link from './Link'
 import Paragraph from './Paragraph'
 
-const WorkTile = ({ children, title, links, className, text, top }: WorkTileWrapperProps) => {
+const WorkTile = ({ children, title, links, className, text, top, more }: WorkTileWrapperProps) => {
+  const [moreVisible, setMoreVisible] = useState(false)
+
   return (
     <div
       className={clsx(
@@ -20,6 +23,21 @@ const WorkTile = ({ children, title, links, className, text, top }: WorkTileWrap
           </Heading>
         )}
         {text && <Paragraph>{text}</Paragraph>}
+        {more && (
+          <>
+            <div
+              className={clsx(
+                'overflow-hidden transition-[max-height] duration-500',
+                moreVisible ? 'max-h-[1000px] ease-in' : 'max-h-0 ease-out'
+              )}
+            >
+              {more}
+            </div>
+            <Link className="cursor-pointer" onClick={() => setMoreVisible(!moreVisible)}>
+              {moreVisible ? 'Hide details...' : 'Show details...'}
+            </Link>
+          </>
+        )}
       </div>
       <div className="flex flex-col gap-4 md:flex-1">{children}</div>
       {links && <div className="flex flex-col gap-y-2">{links}</div>}
@@ -32,6 +50,7 @@ type WorkTileWrapperProps = {
   top?: ReactNode
   title?: string
   text?: string
+  more?: ReactNode
 } & HTMLAttributes<HTMLDivElement>
 
 export default WorkTile

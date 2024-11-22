@@ -5,21 +5,23 @@ import andyAlt from './images/andy-alt.jpg'
 import andyMain from './images/andy-main.jpg'
 import andyStreet from './images/andy-street.jpg'
 
-const More = () => (
-  <Paragraph>
-    The logo is constructed with four words: Andy, Warhol, Museum and Medzilaborce. Each word can be
-    displayed either in full or as its initial letter. However, at least two words must always
-    appear in full.
-  </Paragraph>
-)
+const More = () => {
+  return (
+    <Paragraph>
+      This is me dipping toes into logo waters. Nobody actually asked for it, it just struck me,
+      after visiting the museum, that it should have a more solid identity, given the greatness of
+      the king of pop art.
+    </Paragraph>
+  )
+}
 
-const WorkAndy = () => {
+const WorkMHD = () => {
   return (
     <WorkTile
       title="Andy Warhol museum logo"
+      more={<More />}
       text="This is me dipping toes into logo waters. Nobody actually asked for it, it just struck me, after visiting the museum, that it should have a more solid identity, given the greatness of the king of pop art."
       top={<img src={andyStreet} />}
-      more={<More />}
     >
       <MasonryWrapper>
         <img src={andyMain} className="mb-4" />
@@ -29,4 +31,4 @@ const WorkAndy = () => {
   )
 }
 
-export default WorkAndy
+export default WorkMHD
