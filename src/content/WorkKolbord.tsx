@@ -21,7 +21,7 @@ const WorkKolbord = () => {
     <WorkTile
       title="Kolbord: the smoothest space booking"
       links={<Links />}
-      text="Opinionated, free to use, and open source app reservation of anything. This is a one-man-project: I take care of everything from brand to code.
+      text="Opinionated, free to use, and open source app for reservation of anything. This is a one-man-project: I take care of everything from brand to code.
         Drawn and prototyped in Figma, coded in React, Payload CMS, with user management in Clerk. WIP as of November 2024."
       top={
         <div className="bg-[#E2BEC0] p-4 sm:p-8">
