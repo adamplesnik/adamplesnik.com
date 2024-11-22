@@ -1,4 +1,3 @@
-import Em from '@/components/Em'
 import Heading from '@/components/Heading'
 import Link from '@/components/Link'
 import Paragraph from '@/components/Paragraph'
