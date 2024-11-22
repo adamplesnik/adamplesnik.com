@@ -22,7 +22,7 @@ const Skills = () => {
           strong typography, thoughtful colors, and visual clarity.
         </Paragraph>
       </div>
-      <div className="flex flex-1 items-center bg-[#E3BFD6] p-8 dark:bg-[#513446]">
+      <div className="group flex flex-1 items-center bg-[#E3BFD6] p-8 transition-all duration-1000 ease-in-out lg:hover:flex-[2] dark:bg-[#513446]">
         <Paragraph>And a touch of playfulness.</Paragraph>
       </div>
     </div>
