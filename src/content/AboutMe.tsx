@@ -5,7 +5,7 @@ import TimelineItem from '@/components/TimelineItem'
 const AboutMe = () => {
   return (
     <div className="flex min-h-svh flex-col gap-1 lg:flex-row">
-      <div className="bg-[#FEC84B] p-6 sm:p-8 md:flex-1 md:p-12 dark:bg-[#5a574e]">
+      <div className="bg-cv-light dark:bg-cv-dark p-6 sm:p-8 md:flex-1 md:p-12">
         <Heading size={2}>CV</Heading>
         <Paragraph className="mb-6 mt-8">
           I spend quality time with my family—or alone when needed—preferably in nature, mountain
@@ -19,7 +19,7 @@ const AboutMe = () => {
           TSX/HTML, or pure CSS.
         </Paragraph>
       </div>
-      <div className="bg-[#FEC84B] p-6 sm:p-8 md:flex-[2] dark:bg-[#5a574e]">
+      <div className="bg-cv-light dark:bg-cv-dark p-6 sm:p-8 md:flex-[2]">
         <div className="flex flex-col gap-2">
           <TimelineItem year={'A long time ago'} desc="Han shot first!" className="mb-72" right />
           <TimelineItem year={1985} desc="Born" className="mb-12" />
