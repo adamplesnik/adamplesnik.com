@@ -11,9 +11,9 @@ import mhd from './images/mhd.mp4'
 const More = () => {
   return (
     <Paragraph>
-      The original application was very complex and poorly designed. I simplified and polished the
+      The original application is very complex and poorly designed. I simplified and polished the
       user journey to make it more intuitive and less prone to errors. The new UI aims to be clear,
-      highly readable, and easy to use while in transit.
+      highly readable, and easy to use while in transit. 100% guerilla.
     </Paragraph>
   )
 }
