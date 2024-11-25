@@ -16,28 +16,30 @@ const WorkTile = ({ children, title, links, className, text, top, more }: WorkTi
       )}
     >
       {top && <>{top}</>}
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 md:flex-row">
         {title && (
-          <Heading size={2} className="pt-2">
+          <Heading size={2} className="pt-2 md:flex-1">
             {title}
           </Heading>
         )}
-        {text && <Paragraph>{text}</Paragraph>}
-        {more && (
-          <>
-            <div
-              className={clsx(
-                'overflow-hidden transition-[max-height] duration-500',
-                moreVisible ? 'max-h-[1000px] ease-in' : 'max-h-0 ease-out'
-              )}
-            >
-              {more}
-            </div>
-            <Link className="cursor-pointer" onClick={() => setMoreVisible(!moreVisible)}>
-              {moreVisible ? 'Hide details...' : 'Show details...'}
-            </Link>
-          </>
-        )}
+        <div className="flex flex-1 flex-col gap-4">
+          {text && <Paragraph>{text}</Paragraph>}
+          {more && (
+            <>
+              <div
+                className={clsx(
+                  'overflow-hidden transition-[max-height] duration-500',
+                  moreVisible ? 'max-h-[1000px] ease-in' : 'max-h-0 ease-out'
+                )}
+              >
+                {more}
+              </div>
+              <Link className="cursor-pointer" onClick={() => setMoreVisible(!moreVisible)}>
+                {moreVisible ? 'Hide details...' : 'Show details...'}
+              </Link>
+            </>
+          )}
+        </div>
       </div>
       <div className="flex flex-col gap-4 md:flex-1">{children}</div>
       {links && <div className="flex flex-col gap-y-2">{links}</div>}
