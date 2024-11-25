@@ -6,8 +6,8 @@ import Skills from '@/content/Skills'
 import WorkAndy from '@/content/WorkAndy'
 import WorkComparator from '@/content/WorkComparator'
 import WorkKolbord from '@/content/WorkKolbord'
+import WorkMHD from '@/content/WorkMHD'
 import WorkPhoto from '@/content/WorkPhoto'
-import WorkScrollDriven from '@/content/WorkScrollDriven'
 import WorkThankful from '@/content/WorkThankful'
 
 const Home = () => {
@@ -30,9 +30,9 @@ const Home = () => {
       <Intro />
       <Skills />
       <div id="work" className="relative top-[8.5rem]" />
+      <WorkMHD />
       <WorkKolbord />
       <WorkThankful />
-      <WorkScrollDriven />
       <WorkComparator />
       <WorkAndy />
       <WorkPhoto />

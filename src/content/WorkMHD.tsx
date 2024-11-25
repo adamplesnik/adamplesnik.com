@@ -3,14 +3,14 @@ import WorkTile from '@/components/WorkTile'
 import MasonryWrapper from '@/partials/MasonryWrapper'
 import andyAlt from './images/andy-alt.jpg'
 import andyMain from './images/andy-main.jpg'
-import andyStreet from './images/andy-street.jpg'
+import mhdMain from './images/mhd-main.jpg'
 
 const More = () => {
   return (
     <Paragraph>
-      This is me dipping toes into logo waters. Nobody actually asked for it, it just struck me,
-      after visiting the museum, that it should have a more solid identity, given the greatness of
-      the king of pop art.
+      The original application was very complex and poorly designed. I simplified and polished the
+      user journey to make it more intuitive and less prone to errors. The new UI aims to be clear,
+      highly readable, and easy to use while in transit.
     </Paragraph>
   )
 }
@@ -18,10 +18,10 @@ const More = () => {
 const WorkMHD = () => {
   return (
     <WorkTile
-      title="Andy Warhol museum logo"
+      title="Ticket-buying redesign"
       more={<More />}
-      text="This is me dipping toes into logo waters. Nobody actually asked for it, it just struck me, after visiting the museum, that it should have a more solid identity, given the greatness of the king of pop art."
-      top={<img src={andyStreet} />}
+      text="A complete redesign of the ticket-buying experience for Bratislava public transport, from an completely new UX to a simpler, more intuitive ticket machine interface."
+      top={<img src={mhdMain} />}
     >
       <MasonryWrapper>
         <img src={andyMain} className="mb-4" />
