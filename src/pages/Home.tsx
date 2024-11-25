@@ -36,6 +36,7 @@ const Home = () => {
       <WorkComparator />
       <WorkAndy />
       <WorkPhoto />
+      <div id="cv" className="relative top-[7rem]" />
       <AboutMe />
       <Footer />
     </div>
