@@ -15,7 +15,7 @@ const AboutMe = () => {
           I enjoy photography, playing piano as a hobby, and reading.
         </Paragraph>
         <Paragraph>
-          On the tech side, I'm proficient in Figma and code with React, using Tailwind CSS,
+          On the tech side, I'm proficient in Figma and I code in React, using Tailwind CSS,
           TSX/HTML, or pure CSS.
         </Paragraph>
       </div>
