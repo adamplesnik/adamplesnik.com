@@ -1,25 +1,37 @@
 import Heading from '@/components/Heading'
 import Link from '@/components/Link'
 import Paragraph from '@/components/Paragraph'
+import { ReactNode } from 'react'
 import CvTimeline from './CvTimeline'
+
+const Item = ({ title, children }: { title: string; children: ReactNode }) => {
+  return (
+    <div className="mt-16 flex flex-col items-baseline gap-4 md:flex-row md:gap-8">
+      <Heading size={2} className="w-32 shrink-0">
+        {title}
+      </Heading>
+      <div>{children}</div>
+    </div>
+  )
+}
 
 const CvPrint = () => {
   return (
-    <div className="p-14 pt-20 text-base">
-      <div className="flex justify-between">
+    <div className="mx-auto max-w-screen-lg p-8 pt-16 text-base sm:p-14 sm:pt-24">
+      <div className="flex flex-col justify-between md:flex-row">
         <Heading size={1}>Adam Plesník</Heading>
-        <Heading size={1}>UX&ndash;UI designer</Heading>
-      </div>
-      <div className="mt-4 flex w-full items-center gap-2">
-        <Link href="https://adamplesnik.com">adamplesnik.com</Link> /
-        <Link href="mailto:adam@adamplesnik.com">adam@adamplesnik.com</Link>
-        <div className="flex-1 justify-end text-right">Bratislava, Slovakia</div>
-      </div>
-      <div className="mt-16 flex items-baseline gap-8">
-        <Heading size={2} className="w-32 shrink-0">
-          About me
+        <Heading size={2} className="mt-12 md:mt-0">
+          UX&ndash;UI designer
         </Heading>
-        <div>
+      </div>
+      <div className="mt-2 flex w-full flex-col md:mt-4 md:flex-row md:items-center md:gap-2 md:pb-12">
+        <Link href="https://adamplesnik.com">adamplesnik.com</Link>{' '}
+        <span className="hidden md:block">/</span>
+        <Link href="mailto:adam@adamplesnik.com">adam@adamplesnik.com</Link>
+        <div className="flex-1 md:text-right">Bratislava, Slovakia</div>
+      </div>
+      <Item title="About me">
+        <>
           <Paragraph className="mb-4">
             I spend quality time with my family&mdash;or alone when needed&mdash;preferably in
             nature, mountain biking, traveling, or exploring around town.
@@ -28,13 +40,10 @@ const CvPrint = () => {
             I speak English fluently. I also enjoy photography, playing piano as a hobby, and
             reading.
           </Paragraph>
-        </div>
-      </div>
-      <div className="mt-16 flex flex-1 items-baseline gap-8">
-        <Heading size={2} className="w-32 shrink-0">
-          Skills
-        </Heading>
-        <div>
+        </>
+      </Item>
+      <Item title="Skills">
+        <>
           <Paragraph className="mb-4">
             I create, polish, and improve user experiences and interfaces.
           </Paragraph>
@@ -44,22 +53,16 @@ const CvPrint = () => {
             sorted, I do my best to create clean layouts with strong typography, thoughtful colors,
             and visual clarity. And a touch of playfulness.
           </Paragraph>
-        </div>
-      </div>
-      <div className="mt-16 flex items-baseline gap-8">
-        <Heading size={2} className="w-32 shrink-0">
-          Tech
-        </Heading>
+        </>
+      </Item>
+      <Item title="Tech">
         <Paragraph>Figma, React+Typescript, TSX, Tailwind CSS</Paragraph>
-      </div>
-      <div className="mt-16 flex items-baseline gap-8">
-        <Heading size={2} className="w-32 shrink-0">
-          CV
-        </Heading>
+      </Item>
+      <Item title="CV">
         <div className="flex flex-col gap-2 print:gap-1">
           <CvTimeline print />
         </div>
-      </div>
+      </Item>
     </div>
   )
 }
