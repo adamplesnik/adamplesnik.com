@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/react'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import AboutMe from './content/AboutMe.tsx'
 import './index.css'
 import Figma from './pages/Figma.tsx'
 import Home from './pages/Home.tsx'
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
       },
     ],
   },
-  {},
+  { element: <AboutMe print />, path: '/cv' },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

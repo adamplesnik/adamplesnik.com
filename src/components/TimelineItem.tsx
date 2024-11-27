@@ -17,18 +17,20 @@ const TimelineItem = ({
   return (
     <div
       className={clsx(
-        'relative z-10 flex flex-col items-baseline gap-1 py-3 sm:flex-row sm:gap-4',
+        'relative z-10 flex flex-col items-baseline gap-1 py-3 sm:flex-row sm:gap-4 print:py-1',
         className,
-        right && 'justify-between'
+        right && 'justify-between print:hidden'
       )}
     >
-      <div className="absolute top-[1.65rem] z-0 h-px w-full bg-current opacity-50"></div>
-      <div className="relative z-10 w-full shrink-0 font-semibold sm:w-40 md:w-52">
-        <span className="bg-cv-light dark:bg-cv-dark inline-block pr-2">{year}</span>
+      <div className="absolute top-[1.65rem] z-0 h-px w-full bg-current opacity-50 print:hidden"></div>
+      <div className="relative z-10 w-full shrink-0 font-semibold sm:w-40 md:w-52 print:w-24">
+        <span className="inline-block bg-cv-light pr-2 dark:bg-cv-dark print:bg-transparent">
+          {year}
+        </span>
       </div>
       <Paragraph
         className={clsx(
-          'bg-cv-light dark:bg-cv-dark relative z-10 !w-fit sm:px-2',
+          'relative z-10 !w-fit bg-cv-light sm:px-2 dark:bg-cv-dark print:bg-transparent',
           em && 'font-semibold',
           right && 'text-right'
         )}
