@@ -7,32 +7,47 @@ const TimelineItem = ({
   className,
   em,
   right,
+  print,
 }: {
   year: number | string
   desc: string
   className?: string
   em?: boolean
   right?: boolean
+  print?: boolean
 }) => {
   return (
     <div
       className={clsx(
-        'relative z-10 flex flex-col items-baseline gap-1 py-3 sm:flex-row sm:gap-4 print:py-1',
+        'relative z-10 flex flex-col items-baseline gap-1 sm:flex-row sm:gap-4',
         className,
-        right && 'justify-between print:hidden'
+        right && 'justify-between',
+        right && print && 'hidden',
+        print ? 'py-1' : 'py-3'
       )}
     >
-      <div className="absolute top-[1.65rem] z-0 h-px w-full bg-current opacity-50 print:hidden"></div>
-      <div className="relative z-10 w-full shrink-0 font-semibold sm:w-40 md:w-52 print:w-28">
-        <span className="inline-block bg-cv-light pr-2 dark:bg-cv-dark print:bg-transparent">
+      <div
+        className={clsx(
+          'absolute top-[1.65rem] z-0 h-px w-full bg-current opacity-50',
+          print && 'hidden'
+        )}
+      ></div>
+      <div
+        className={clsx(
+          'relative z-10 shrink-0 font-semibold',
+          print ? 'w-28' : 'w-full sm:w-40 md:w-52'
+        )}
+      >
+        <span className={clsx('inline-block pr-2', !print && 'bg-cv-light dark:bg-cv-dark')}>
           {year}
         </span>
       </div>
       <Paragraph
         className={clsx(
-          'relative z-10 !w-fit bg-cv-light sm:px-2 dark:bg-cv-dark print:bg-transparent',
+          'relative z-10 !w-fit sm:px-2',
           em && 'font-semibold',
-          right && 'text-right sm:pr-0'
+          right && 'text-right sm:pr-0',
+          !print && 'bg-cv-light dark:bg-cv-dark'
         )}
       >
         {desc}
