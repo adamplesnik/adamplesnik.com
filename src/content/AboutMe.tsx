@@ -5,7 +5,7 @@ import TimelineItem from '@/components/TimelineItem'
 
 const AboutMe = ({ print }: { print?: boolean }) => {
   return (
-    <div className="flex min-h-svh flex-col lg:flex-row print:block print:p-16 print:text-base">
+    <div className="flex min-h-svh flex-col lg:flex-row print:block print:p-16 print:pt-20 print:text-base">
       <div className="bg-cv-light p-6 sm:p-8 md:flex-1 md:p-12 dark:bg-cv-dark print:bg-transparent print:p-0">
         {print ? (
           <div className="flex justify-between">
@@ -16,16 +16,15 @@ const AboutMe = ({ print }: { print?: boolean }) => {
           <Heading size={2}>CV</Heading>
         )}
         {print && (
-          <>
-            <Paragraph className="mt-4 flex w-full gap-2">
-              <Link href="https://adamplesnik.com">adamplesnik.com</Link> /
-              <Link href="mailto:adam@adamplesnik.com">adam@adamplesnik.com</Link>
-            </Paragraph>
-          </>
+          <div className="mt-5 flex w-full gap-2">
+            <Link href="https://adamplesnik.com">adamplesnik.com</Link> /
+            <Link href="mailto:adam@adamplesnik.com">adam@adamplesnik.com</Link>
+            <div className="flex-1 justify-end text-right">Bratislava, Slovakia</div>
+          </div>
         )}
         <div className="flex items-baseline gap-8 print:mt-16">
           {print && (
-            <Heading size={2} className="mt-12 w-32 shrink-0">
+            <Heading size={2} className="w-32 shrink-0">
               About me
             </Heading>
           )}
