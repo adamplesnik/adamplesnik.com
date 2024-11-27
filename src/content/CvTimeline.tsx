@@ -20,7 +20,7 @@ const CvTimeline = ({ print }: { print?: boolean }) => {
         print={print}
       />
       <TimelineItem year={'2008\u20132010'} desc="Freelance web designer" em print={print} />
-      <TimelineItem year={2010} desc="Master of Architecture" print={print} />
+      <TimelineItem year={2010} desc="Master of Architecture, Bratislava" print={print} />
       <TimelineItem year={'2011\u20132012'} desc="Web designer in Websupport" em print={print} />
       <TimelineItem
         year={'2013\u2013now'}
@@ -33,7 +33,7 @@ const CvTimeline = ({ print }: { print?: boolean }) => {
       <TimelineItem
         year={'Occasionally'}
         desc="Portrait photographer"
-        className="mb-80"
+        className={clsx(!print && 'mb-80')}
         em
         print={print}
       />
