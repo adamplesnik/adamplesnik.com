@@ -23,7 +23,7 @@ const TimelineItem = ({
       )}
     >
       <div className="absolute top-[1.65rem] z-0 h-px w-full bg-current opacity-50 print:hidden"></div>
-      <div className="relative z-10 w-full shrink-0 font-semibold sm:w-40 md:w-52 print:w-24">
+      <div className="relative z-10 w-full shrink-0 font-semibold sm:w-40 md:w-52 print:w-28">
         <span className="inline-block bg-cv-light pr-2 dark:bg-cv-dark print:bg-transparent">
           {year}
         </span>
@@ -32,7 +32,7 @@ const TimelineItem = ({
         className={clsx(
           'relative z-10 !w-fit bg-cv-light sm:px-2 dark:bg-cv-dark print:bg-transparent',
           em && 'font-semibold',
-          right && 'text-right'
+          right && 'text-right sm:pr-0'
         )}
       >
         {desc}
