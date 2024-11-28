@@ -35,7 +35,7 @@ const TimelineItem = ({
       <div
         className={clsx(
           'relative z-10 shrink-0 font-medium',
-          print ? 'w-28' : 'w-full sm:w-40 md:w-52'
+          print ? 'w-32' : 'w-full sm:w-40 md:w-52'
         )}
       >
         <span className={clsx('inline-block pr-2', !print && 'bg-cv-light dark:bg-cv-dark')}>

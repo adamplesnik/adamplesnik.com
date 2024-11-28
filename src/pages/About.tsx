@@ -12,8 +12,8 @@ const About = () => {
       </Paragraph>
       <Paragraph big className="mb-16 px-6 sm:px-8 md:px-12">
         I value both creative and personal freedom, preferring remote, flexible, and non-corporate
-        work environments. Family time is a non-negotiable, and I put high priority in my time off,
-        embracing mountain bike, hiking and travel—whether with family or solo when needed.
+        work. Family time is a non-negotiable, and I put high priority in my time off, enjoying
+        mountain bike, hiking and travel—whether with family or solo when needed.
       </Paragraph>
       <Paragraph big className="mb-16 px-6 sm:px-8 md:px-12">
         <Link href="mailto:adam@adamplesnik.com">adam@adamplesnik.com</Link> &mdash; Bratislava,
