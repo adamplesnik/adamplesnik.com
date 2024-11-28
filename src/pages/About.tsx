@@ -8,7 +8,7 @@ const About = () => {
       <Paragraph big className="mb-16 px-6 sm:px-8 md:px-12">
         I create nice and functional things across multiple platforms. Although I have an extensive
         experience with UX–UI design and coding, I can tackle assignments ranging from branding and
-        UI design to print and photography.
+        UI to print and photography.
       </Paragraph>
       <Paragraph big className="mb-16 px-6 sm:px-8 md:px-12">
         I value both creative and personal freedom, preferring remote, flexible, and non-corporate
