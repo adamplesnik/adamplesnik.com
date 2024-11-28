@@ -4,7 +4,16 @@ import Heading from './Heading'
 import Link from './Link'
 import Paragraph from './Paragraph'
 
-const WorkTile = ({ children, title, links, className, text, top, more }: WorkTileWrapperProps) => {
+const WorkTile = ({
+  children,
+  title,
+  links,
+  className,
+  text,
+  top,
+  more,
+  id,
+}: WorkTileWrapperProps) => {
   const [moreVisible, setMoreVisible] = useState(false)
 
   return (
@@ -15,14 +24,15 @@ const WorkTile = ({ children, title, links, className, text, top, more }: WorkTi
         className
       )}
     >
+      <span id={id} />
       {top && <>{top}</>}
-      <div className="flex flex-col gap-4 md:flex-row">
+      <div className="flex flex-col gap-4 md:flex-row md:gap-12">
         {title && (
-          <Heading size={2} className="pt-2 md:flex-1">
+          <Heading size={2} className="flex-1 shrink-0">
             {title}
           </Heading>
         )}
-        <div className="flex flex-1 flex-col gap-4">
+        <div className="flex flex-col gap-4 md:flex-[2]">
           {text && <Paragraph>{text}</Paragraph>}
           {more && (
             <>

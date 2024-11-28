@@ -2,8 +2,8 @@ import photo from '/assets/adam-plesnik.jpg'
 
 const Photo = () => {
   return (
-    <div className="flex size-32 flex-shrink-0 justify-center overflow-hidden rounded-full shadow-xl">
-      <img src={photo} alt="Portrait photo." className="h-full max-w-fit opacity-80" />
+    <div className="flex h-[30rem] items-center justify-center overflow-hidden px-6 sm:px-8 md:px-12">
+      <img src={photo} alt="Portrait photo." className="h-unset min-h-fit w-full" />
     </div>
   )
 }

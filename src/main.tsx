@@ -4,8 +4,9 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import CvPrint from './content/CvPrint.tsx'
 import './index.css'
-import Figma from './pages/Figma.tsx'
+import About from './pages/About.tsx'
 import Home from './pages/Home.tsx'
+import Work from './pages/Work.tsx'
 import Layout from './partials/Layout.tsx'
 
 const router = createBrowserRouter([
@@ -18,8 +19,14 @@ const router = createBrowserRouter([
         errorElement: <Home />,
       },
       {
-        path: '/figma',
-        element: <Figma />,
+        path: '/work',
+        element: <Work />,
+        errorElement: <Work />,
+      },
+      {
+        path: '/about',
+        element: <About />,
+        errorElement: <About />,
       },
     ],
   },

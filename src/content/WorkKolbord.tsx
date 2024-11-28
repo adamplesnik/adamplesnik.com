@@ -28,6 +28,7 @@ const Links = () => {
 const WorkKolbord = () => {
   return (
     <WorkTile
+      id="kolbord"
       title="Kolbord: the smoothest space booking"
       links={<Links />}
       text="A prototype of an opinionated, free to use, and open source app for reservation of anything. It is meant to provide an alternative to corporate-oriented, heavy, and expensive booking apps."
