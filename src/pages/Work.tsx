@@ -1,9 +1,9 @@
 import WorkAndy from '@/content/andy'
+import WorkKolbord from '@/content/kolbord'
 import WorkMHD from '@/content/mhd'
+import WorkThankful from '@/content/thankful'
 import WorkComparator from '@/content/WorkComparator'
-import WorkKolbord from '@/content/WorkKolbord'
 import WorkPhoto from '@/content/WorkPhoto'
-import WorkThankful from '@/content/WorkThankful'
 
 const Work = () => {
   return (
