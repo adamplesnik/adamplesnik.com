@@ -6,6 +6,7 @@ import thankfulVideo from './images/thank.mp4'
 const Thankful = () => {
   return (
     <WorkTile
+      id="thankful"
       title="Simple gratitude journal"
       text="This app concept aims to find a simple, lean, and nice gratitude journaling experience."
     >

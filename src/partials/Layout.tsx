@@ -1,5 +1,6 @@
 import Heading from '@/components/Heading'
 import Footer from '@/content/Footer'
+import clsx from 'clsx'
 import { NavLink, Outlet, ScrollRestoration } from 'react-router-dom'
 
 const Layout = () => {
@@ -11,10 +12,20 @@ const Layout = () => {
           <Heading size={1}>Adam Plesník</Heading>
         </a>
         <div className="hidden flex-1 justify-end gap-4 sm:flex">
-          <NavLink className="cursor-pointer text-2xl font-medium hover:underline" to="/work">
+          <NavLink
+            className={({ isActive }) =>
+              clsx('cursor-pointer text-2xl font-medium hover:underline', isActive && 'underline')
+            }
+            to="/work"
+          >
             Work
           </NavLink>
-          <NavLink className="cursor-pointer text-2xl font-medium hover:underline" to="/about">
+          <NavLink
+            className={({ isActive }) =>
+              clsx('cursor-pointer text-2xl font-medium hover:underline', isActive && 'underline')
+            }
+            to="/about"
+          >
             About
           </NavLink>
         </div>

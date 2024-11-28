@@ -1,7 +1,7 @@
-import WorkAndy from '@/content/WorkAndy'
+import WorkAndy from '@/content/andy'
+import WorkMHD from '@/content/mhd'
 import WorkComparator from '@/content/WorkComparator'
 import WorkKolbord from '@/content/WorkKolbord'
-import WorkMHD from '@/content/WorkMHD'
 import WorkPhoto from '@/content/WorkPhoto'
 import WorkThankful from '@/content/WorkThankful'
 

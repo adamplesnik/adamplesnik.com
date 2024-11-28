@@ -24,7 +24,7 @@ const WorkTile = ({
         className
       )}
     >
-      <span id={id} />
+      <span id={id} className="relative -top-12 block" />
       {top && <>{top}</>}
       <div className="flex flex-col gap-4 md:flex-row md:gap-12">
         {title && (

@@ -21,6 +21,7 @@ const More = () => {
 const WorkMHD = () => {
   return (
     <WorkTile
+      id="mhd"
       title="Ticket-buying redesign"
       more={<More />}
       text="A complete redesign of the ticket-buying experience for Bratislava public transport, from an completely new UX to a simpler, more intuitive ticket machine interface."
