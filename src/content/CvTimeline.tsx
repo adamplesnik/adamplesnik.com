@@ -31,11 +31,11 @@ const CvTimeline = ({ print }: { print?: boolean }) => {
       <TimelineItem year={2014} desc="Married" print={print} />
       <TimelineItem year={'2015 & 2021'} desc="Kids" print={print} />
       <TimelineItem
-        year={'Occasionally'}
-        desc="Portrait photographer"
-        className={clsx(!print && 'mb-80')}
-        em
+        year={'from 2024'}
+        desc="Freelance graphic and UI designer"
         print={print}
+        em
+        className={clsx(!print && 'mb-80')}
       />
       <TimelineItem
         year={12067}
