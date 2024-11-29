@@ -25,7 +25,10 @@ const Layout = () => {
         <div className="flex flex-1 justify-end gap-4">
           <NavLink
             className={({ isActive }) =>
-              clsx('cursor-pointer text-2xl font-medium hover:underline', isActive && 'underline')
+              clsx(
+                'cursor-pointer text-2xl font-medium hover:underline sm:text-3xl',
+                isActive && 'underline'
+              )
             }
             to="/"
           >
@@ -33,7 +36,10 @@ const Layout = () => {
           </NavLink>
           <NavLink
             className={({ isActive }) =>
-              clsx('cursor-pointer text-2xl font-medium hover:underline', isActive && 'underline')
+              clsx(
+                'cursor-pointer text-2xl font-medium hover:underline sm:text-3xl',
+                isActive && 'underline'
+              )
             }
             to="/about"
           >
