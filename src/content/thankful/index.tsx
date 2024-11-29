@@ -3,7 +3,7 @@ import MasonryWrapper from '@/partials/MasonryWrapper'
 import thankfulMain from './images/thank-main.jpg'
 import thankfulVideo from './images/thank.mp4'
 
-const Thankful = () => {
+const WorkThankful = () => {
   return (
     <WorkTile
       id="thankful"
@@ -22,4 +22,4 @@ const Thankful = () => {
   )
 }
 
-export default Thankful
+export default WorkThankful
