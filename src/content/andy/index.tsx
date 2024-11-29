@@ -1,6 +1,6 @@
+import GridWrapper from '@/components/GridWrapper'
 import Paragraph from '@/components/Paragraph'
 import WorkTile from '@/components/WorkTile'
-import GridWrapper from '@/partials/GridWrapper'
 import andyAlt from './images/andy-alt.jpg'
 import andyMain from './images/andy-main.jpg'
 import andyStreet from './images/andy-street.jpg'

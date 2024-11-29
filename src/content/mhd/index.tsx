@@ -1,6 +1,6 @@
+import GridWrapper from '@/components/GridWrapper'
 import Paragraph from '@/components/Paragraph'
 import WorkTile from '@/components/WorkTile'
-import GridWrapper from '@/partials/GridWrapper'
 import ReactBeforeSliderComponent from 'react-before-after-slider-component'
 import 'react-before-after-slider-component/dist/build.css'
 import mhdAfter from './images/mhd-after.jpg'

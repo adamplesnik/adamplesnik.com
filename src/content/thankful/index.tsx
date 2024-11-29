@@ -1,5 +1,5 @@
+import GridWrapper from '@/components/GridWrapper'
 import WorkTile from '@/components/WorkTile'
-import GridWrapper from '@/partials/GridWrapper'
 import thankfulMain from './images/thank-main.jpg'
 import thankfulVideo from './images/thank.mp4'
 
