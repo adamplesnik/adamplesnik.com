@@ -1,12 +1,14 @@
 import { clsx } from 'clsx'
 import { HTMLAttributes } from 'react'
-import Paragraph from './Paragraph'
+import Heading from './Heading'
 
 const WorkPreviewTile = ({ children, title, className, link }: WorkPreviewTileProps) => {
   return (
     <a href={link} className={clsx('w-full', className)}>
       <div className="mb-4">{children}</div>
-      <Paragraph className="hover:underline">{title} &rarr;</Paragraph>
+      <Heading size={2} className="hover:underline">
+        {title} &rarr;
+      </Heading>
     </a>
   )
 }

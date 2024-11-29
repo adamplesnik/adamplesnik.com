@@ -3,10 +3,10 @@ import { HTMLAttributes } from 'react'
 
 const Heading = ({ size = 1, className, children }: TitleProps) => {
   if (size === 1) {
-    return <h1 className={clsx(className, 'text-3xl font-medium lg:text-4xl')}>{children}</h1>
+    return <h1 className={clsx(className, 'text-2xl font-medium sm:text-3xl')}>{children}</h1>
   } else if (size === 2) {
     return (
-      <h2 className={clsx(className, 'text-2xl font-medium !leading-snug sm:text-3xl lg:text-4xl')}>
+      <h2 className={clsx(className, 'text-2xl font-medium !leading-snug sm:text-3xl')}>
         {children}
       </h2>
     )

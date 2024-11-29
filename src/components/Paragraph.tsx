@@ -9,8 +9,8 @@ const Paragraph = ({
   return (
     <p
       className={clsx(
-        'w-full leading-[1.42] print:max-w-full',
-        big && 'text-2xl font-medium !leading-snug sm:text-3xl lg:text-4xl print:text-xl',
+        'w-full max-w-6xl leading-[1.42] print:max-w-full',
+        big && 'text-2xl font-medium !leading-snug sm:text-3xl print:text-xl',
         className
       )}
     >

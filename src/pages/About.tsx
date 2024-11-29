@@ -1,4 +1,3 @@
-import Link from '@/components/Link'
 import Paragraph from '@/components/Paragraph'
 import CvTimeline from '@/content/CvTimeline'
 
@@ -15,11 +14,7 @@ const About = () => {
         work. Family time is a non-negotiable, and I put high priority in my time off, enjoying
         mountain bike, hiking and travel—whether with family or solo when needed.
       </Paragraph>
-      <Paragraph big className="mb-24 px-6 sm:px-8 md:px-12">
-        <Link href="mailto:adam@adamplesnik.com">adam@adamplesnik.com</Link> &mdash; Bratislava,
-        Slovakia
-      </Paragraph>
-      <div className="mb-24 flex flex-col gap-2 bg-cv-light p-6 sm:p-8 md:p-12 dark:bg-cv-dark">
+      <div className="bg-cv-light dark:bg-cv-dark mb-24 flex flex-col gap-2 p-6 sm:p-8 md:p-12">
         <CvTimeline />
       </div>
     </>
