@@ -9,22 +9,22 @@ const CvPrint = () => {
       <div className="flex flex-col justify-between md:flex-row print:flex-row">
         <Heading size={1}>Adam Plesník</Heading>
         <Heading size={2} className="mt-3 md:mt-0 print:mt-0">
-          UX&ndash;UI designer
+          Graphic and UI designer
         </Heading>
       </div>
       <Paragraph className="my-10">
-        I create nice and functional things across multiple platforms. Although I have an extensive
-        experience with UX–UI design and coding, I can tackle assignments ranging from branding and
-        UI design to print and photography.
+        I create nice and functional things across multiple platforms. While I have extensive
+        experience with UX/UI design and coding, I can also tackle assignments in identity, print,
+        and photography.
       </Paragraph>
       <Paragraph className="mb-10">
         I value both creative and personal freedom, preferring remote, flexible, and non-corporate
         work. Family time is a non-negotiable, and I put high priority in my time off, enjoying
-        mountain bike, hiking and travel—whether with family or solo when needed.
+        mountain biking, hiking and travel—whether with family or solo when needed.
       </Paragraph>
       <Paragraph className="mb-10">
-        Proficient in Figma, coding in React+Typescript, TSX, Tailwind CSS. Speaking English,
-        French.
+        Proficient in Figma, Adobe Photoshop, InDesign, Lightroom. Coding in React+Typescript, TSX,
+        Tailwind CSS. Speaking English, French.
       </Paragraph>
       <div className="flex flex-col gap-2 print:gap-1">
         <CvTimeline print />
