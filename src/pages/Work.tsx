@@ -7,7 +7,7 @@ import WorkPhoto from '@/content/WorkPhoto'
 
 const Work = () => {
   return (
-    <div className="flex flex-col gap-16">
+    <div className="flex flex-col gap-32">
       <WorkMHD />
       <WorkKolbord />
       <WorkThankful />

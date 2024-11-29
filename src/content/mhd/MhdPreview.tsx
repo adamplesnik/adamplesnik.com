@@ -1,5 +1,5 @@
 import WorkPreviewTile from '@/components/WorkPreviewTile'
-import preview from './images/mhd-home.png'
+import preview from './images/mhd-home.jpg'
 
 const MhdPreview = () => {
   return (

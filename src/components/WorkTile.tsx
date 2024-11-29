@@ -18,13 +18,9 @@ const WorkTile = ({
 
   return (
     <div
-      className={clsx(
-        'flex w-full flex-col gap-8 px-6 pb-12 sm:px-8 md:px-12',
-        title ? 'pt-6' : 'pt-12',
-        className
-      )}
+      className={clsx('relative flex w-full flex-col gap-8 px-6 pb-12 sm:px-8 md:px-12', className)}
     >
-      <span id={id} className="relative -top-12 block" />
+      <span id={id} className="absolute -top-12 block" />
       {top && <>{top}</>}
       <div className="flex flex-col gap-4 md:flex-row md:gap-12">
         {title && (

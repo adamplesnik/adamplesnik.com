@@ -1,12 +1,22 @@
 import Paragraph from '@/components/Paragraph'
 import WorkTile from '@/components/WorkTile'
 import MasonryWrapper from '@/partials/MasonryWrapper'
+import ReactBeforeSliderComponent from 'react-before-after-slider-component'
+import 'react-before-after-slider-component/dist/build.css'
+import mhdAfter from './images/mhd-after.jpg'
+import mhdBefore from './images/mhd-before.jpg'
+import mhdHome from './images/mhd-home.jpg'
 import mhdLang from './images/mhd-lang.mp4'
-import mhdMain from './images/mhd-main.jpg'
-import mhdTest from './images/mhd-test.jpg'
 import mhdTrio from './images/mhd-trio.png'
 import mhdVideo from './images/mhd-video.png'
 import mhd from './images/mhd.mp4'
+
+const FIRST_IMAGE = {
+  imageUrl: mhdBefore,
+}
+const SECOND_IMAGE = {
+  imageUrl: mhdAfter,
+}
 
 const More = () => {
   return (
@@ -25,8 +35,9 @@ const WorkMHD = () => {
       title="Ticket-buying redesign"
       more={<More />}
       text="A complete redesign of the ticket-buying experience for Bratislava public transport, from an completely new UX to a simpler, more intuitive ticket machine interface."
-      top={<img src={mhdTrio} className="mb-4" />}
+      top={<img src={mhdHome} />}
     >
+      <img src={mhdTrio} className="mb-4" />
       <MasonryWrapper>
         <div className="relative mx-auto mb-4 max-w-screen-xl">
           <img src={mhdVideo} alt="" />
@@ -44,11 +55,14 @@ const WorkMHD = () => {
             </video>
           </div>
         </div>
-        <img src={mhdMain} className="mb-4" />
-        <div className="mb-4 bg-[#BBE2DA]">
-          <img src={mhdTest} className="opacity-90" />
-        </div>
       </MasonryWrapper>
+      <ReactBeforeSliderComponent
+        currentPercentPosition={69}
+        delimiterColor="#222"
+        delimiterIconStyles={{ border: '2px #fff solid', cursor: 'ew-resize' }}
+        firstImage={FIRST_IMAGE}
+        secondImage={SECOND_IMAGE}
+      ></ReactBeforeSliderComponent>
     </WorkTile>
   )
 }
