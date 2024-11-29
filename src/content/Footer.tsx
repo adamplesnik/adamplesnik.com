@@ -3,8 +3,9 @@ import Paragraph from '@/components/Paragraph'
 
 const Footer = () => {
   return (
-    <Paragraph className="mt-24 flex flex-col justify-end gap-1 bg-zinc-900 px-6 py-8 text-white sm:px-8 md:px-12 md:py-12">
-      <span className="font-medium">Adam Plesník, UX–UI designer</span>
+    <Paragraph className="mt-24 flex flex-col justify-end gap-1 bg-zinc-900 px-6 pb-8 pt-12 text-white sm:px-8 md:px-12">
+      Adam Plesník, UX–UI designer
+      <br />
       Bratislava, Slovakia
       <Link href="mailto:adam@adamplesnik.com" className="mt-12">
         adam@adamplesnik.com

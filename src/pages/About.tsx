@@ -14,7 +14,7 @@ const About = () => {
         work. Family time is a non-negotiable, and I put high priority in my time off, enjoying
         mountain bike, hiking and travel—whether with family or solo when needed.
       </Paragraph>
-      <div className="bg-cv-light dark:bg-cv-dark mb-24 flex flex-col gap-2 p-6 sm:p-8 md:p-12">
+      <div className="bg-cv-light dark:bg-cv-dark -mb-24 flex flex-col gap-2 p-6 sm:p-8 md:p-12">
         <CvTimeline />
       </div>
     </>
