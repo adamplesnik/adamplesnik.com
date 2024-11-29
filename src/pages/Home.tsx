@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <>
       <Intro />
-      <MhdPreview />
       <KolbordPreview />
+      <MhdPreview />
       <div className="flex flex-col md:flex-row">
         <AndyPreview />
         <ThankfulPreview />
