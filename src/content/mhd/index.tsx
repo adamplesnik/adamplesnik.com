@@ -12,10 +12,10 @@ import mhdVideo from './images/mhd-video.png'
 import mhd from './images/mhd.mp4'
 
 const FIRST_IMAGE = {
-  imageUrl: mhdBefore,
+  imageUrl: mhdAfter,
 }
 const SECOND_IMAGE = {
-  imageUrl: mhdAfter,
+  imageUrl: mhdBefore,
 }
 
 const More = () => {
