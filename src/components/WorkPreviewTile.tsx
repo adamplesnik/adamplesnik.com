@@ -4,8 +4,8 @@ import Heading from './Heading'
 
 const WorkPreviewTile = ({ children, title, className, link }: WorkPreviewTileProps) => {
   return (
-    <a href={link} className={clsx('flex w-full flex-col gap-6 p-6 sm:p-8 md:p-12', className)}>
-      <div className="flex flex-col gap-4 md:flex-1">{children}</div>
+    <a href={link} className={clsx('w-full', className)}>
+      <div className="mb-4">{children}</div>
       <Heading size={2} className="hover:underline">
         {title} &rarr;
       </Heading>

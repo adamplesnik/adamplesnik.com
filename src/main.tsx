@@ -2,7 +2,12 @@ import { Analytics } from '@vercel/analytics/react'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import WorkAndy from './content/andy/index.tsx'
 import CvPrint from './content/CvPrint.tsx'
+import WorkKolbord from './content/kolbord/index.tsx'
+import WorkMHD from './content/mhd/index.tsx'
+import Thankful from './content/thankful/index.tsx'
+import WorkPhoto from './content/WorkPhoto.tsx'
 import './index.css'
 import About from './pages/About.tsx'
 import Home from './pages/Home.tsx'
@@ -22,6 +27,26 @@ const router = createBrowserRouter([
         path: '/work',
         element: <Work />,
         errorElement: <Work />,
+      },
+      {
+        path: '/work/tickets',
+        element: <WorkMHD />,
+      },
+      {
+        path: '/work/kolbord',
+        element: <WorkKolbord />,
+      },
+      {
+        path: '/work/andy',
+        element: <WorkAndy />,
+      },
+      {
+        path: '/work/thankful',
+        element: <Thankful />,
+      },
+      {
+        path: '/work/photo',
+        element: <WorkPhoto />,
       },
       {
         path: '/about',

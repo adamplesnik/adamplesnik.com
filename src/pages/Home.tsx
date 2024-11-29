@@ -8,11 +8,13 @@ const Home = () => {
   return (
     <>
       <Intro />
-      <KolbordPreview />
-      <MhdPreview />
-      <div className="flex flex-col md:flex-row">
-        <AndyPreview />
-        <ThankfulPreview />
+      <div className="flex flex-col gap-8 p-6 sm:px-8 md:px-12">
+        <KolbordPreview />
+        <MhdPreview />
+        <div className="flex flex-col gap-8 md:flex-row">
+          <AndyPreview />
+          <ThankfulPreview />
+        </div>
       </div>
     </>
   )

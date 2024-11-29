@@ -1,19 +1,15 @@
-import WorkAndy from '@/content/andy'
-import WorkKolbord from '@/content/kolbord'
-import WorkMHD from '@/content/mhd'
-import WorkThankful from '@/content/thankful'
-import WorkComparator from '@/content/WorkComparator'
-import WorkPhoto from '@/content/WorkPhoto'
+import AndyPreview from '@/content/andy/AndyPreview'
+import KolbordPreview from '@/content/kolbord/KolbordPreview'
+import MhdPreview from '@/content/mhd/MhdPreview'
+import ThankfulPreview from '@/content/thankful/ThankfulPreview'
 
 const Work = () => {
   return (
-    <div className="flex flex-col gap-32">
-      <WorkMHD />
-      <WorkKolbord />
-      <WorkThankful />
-      <WorkComparator />
-      <WorkAndy />
-      <WorkPhoto />
+    <div className="grid grid-cols-1 gap-10 p-6 sm:px-8 md:grid-cols-2 md:px-12">
+      <MhdPreview />
+      <KolbordPreview />
+      <ThankfulPreview />
+      <AndyPreview />
     </div>
   )
 }

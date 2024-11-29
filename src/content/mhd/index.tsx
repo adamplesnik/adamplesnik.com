@@ -37,9 +37,9 @@ const WorkMHD = () => {
       text="A complete redesign of the ticket-buying experience for Bratislava public transport, from an completely new UX to a simpler, more intuitive ticket machine interface."
       top={<img src={mhdHome} />}
     >
-      <img src={mhdTrio} className="mb-4" />
+      <img src={mhdTrio} />
       <MasonryWrapper>
-        <div className="relative mx-auto mb-4 max-w-screen-xl">
+        <div className="relative mx-auto max-w-screen-xl">
           <img src={mhdVideo} alt="" />
           <div className="absolute left-[34.3%] top-[16.3%] w-[31.6%] overflow-hidden">
             <video loop autoPlay playsInline muted className="-mt-[2px]">
@@ -47,7 +47,7 @@ const WorkMHD = () => {
             </video>
           </div>
         </div>
-        <div className="relative mx-auto mb-4 max-w-screen-xl">
+        <div className="relative mx-auto max-w-screen-xl">
           <img src={mhdVideo} alt="" />
           <div className="absolute left-[34.3%] top-[16.3%] w-[31.6%] overflow-hidden">
             <video loop autoPlay playsInline muted className="-mt-[2px]">
