@@ -3,7 +3,7 @@ import preview from './images/andy-home.jpg'
 
 const AndyPreview = () => {
   return (
-    <WorkPreviewTile title="Andy Warhol museum logo" link="/work/andy">
+    <WorkPreviewTile title="Andy Warhol museum" link="/work/andy">
       <img src={preview} />
     </WorkPreviewTile>
   )

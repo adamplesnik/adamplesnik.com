@@ -3,7 +3,7 @@ import preview from './images/thank-home.jpg'
 
 const ThankfulPreview = () => {
   return (
-    <WorkPreviewTile title="Gratitude journal" link="/work/thankful">
+    <WorkPreviewTile title="Thankful" link="/work/thankful">
       <img src={preview} />
     </WorkPreviewTile>
   )

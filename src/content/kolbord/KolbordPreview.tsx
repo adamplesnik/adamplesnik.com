@@ -3,7 +3,7 @@ import preview from './images/kolbord-home.png'
 
 const KolbordPreview = () => {
   return (
-    <WorkPreviewTile title="Kolbord: space booking" link="/work/kolbord">
+    <WorkPreviewTile title="Kolbord" link="/work/kolbord">
       <img src={preview} />
     </WorkPreviewTile>
   )

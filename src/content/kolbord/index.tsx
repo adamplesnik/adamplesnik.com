@@ -1,7 +1,7 @@
 import Link from '@/components/Link'
 import Paragraph from '@/components/Paragraph'
 import WorkTile from '@/components/WorkTile'
-import MasonryWrapper from '@/partials/MasonryWrapper'
+import GridWrapper from '@/partials/GridWrapper'
 import kolbordFashion from './images/kolbord-fashion.jpg'
 import kolbordDemo from './images/kolbord-ipad.mp4'
 import kolbordMacbook from './images/kolbord-macbook.png'
@@ -43,12 +43,12 @@ const WorkKolbord = () => {
         </div>
       }
     >
-      <MasonryWrapper>
-        <img src={kolbordSidebar} className="mb-4" alt="" />
-        <img src={kolbordWatch} className="mb-4" alt="" />
-        <img src={kolbordFashion} className="mb-4" alt="" />
-        <img src={kolbordMacbook} className="mb-4" alt="" />
-      </MasonryWrapper>
+      <GridWrapper>
+        <img src={kolbordSidebar} alt="Kolbord sidebar" />
+        <img src={kolbordWatch} alt="Kolbord Apple Watch" />
+        <img src={kolbordFashion} alt="Kolbord t-shirt" />
+        <img src={kolbordMacbook} alt="Kolbord web" />
+      </GridWrapper>
     </WorkTile>
   )
 }

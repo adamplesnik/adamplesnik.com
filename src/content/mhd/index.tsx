@@ -1,6 +1,6 @@
 import Paragraph from '@/components/Paragraph'
 import WorkTile from '@/components/WorkTile'
-import MasonryWrapper from '@/partials/MasonryWrapper'
+import GridWrapper from '@/partials/GridWrapper'
 import ReactBeforeSliderComponent from 'react-before-after-slider-component'
 import 'react-before-after-slider-component/dist/build.css'
 import mhdAfter from './images/mhd-after.jpg'
@@ -38,7 +38,7 @@ const WorkMHD = () => {
       top={<img src={mhdHome} />}
     >
       <img src={mhdTrio} />
-      <MasonryWrapper>
+      <GridWrapper>
         <div className="relative mx-auto max-w-screen-xl">
           <img src={mhdVideo} alt="" />
           <div className="absolute left-[34.3%] top-[16.3%] w-[31.6%] overflow-hidden">
@@ -55,7 +55,7 @@ const WorkMHD = () => {
             </video>
           </div>
         </div>
-      </MasonryWrapper>
+      </GridWrapper>
       <ReactBeforeSliderComponent
         currentPercentPosition={69}
         delimiterColor="#222"

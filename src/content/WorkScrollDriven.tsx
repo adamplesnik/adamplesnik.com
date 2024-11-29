@@ -1,6 +1,6 @@
 import Link from '@/components/Link'
 import WorkTile from '@/components/WorkTile'
-import MasonryWrapper from '@/partials/MasonryWrapper'
+import GridWrapper from '@/partials/GridWrapper'
 import scrollImage from './images/scroll-1.png'
 import scrollPreview3 from './images/scroll-3.mp4'
 import scrollMain from './images/scroll-main.mp4'
@@ -37,8 +37,8 @@ const WorkScrollDriven = () => {
         </div>
       }
     >
-      <MasonryWrapper>
-        <div className="mb-4 flex aspect-square items-center bg-slate-200 p-4 sm:p-6 md:p-8 dark:bg-slate-700">
+      <GridWrapper>
+        <div className="flex aspect-square items-center bg-slate-200 p-4 sm:p-6 md:p-8 dark:bg-slate-700">
           <div className="relative">
             <img src={mockWindow} alt="" />
             <div className="absolute bottom-[6%] left-[2.7%] right-[2.6%] top-[4.8%] overflow-hidden rounded-b-xl">
@@ -53,7 +53,7 @@ const WorkScrollDriven = () => {
             </video>
           </div>
         </div>
-      </MasonryWrapper>
+      </GridWrapper>
     </WorkTile>
   )
 }
