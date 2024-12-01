@@ -13,9 +13,7 @@ const Layout = () => {
       <div className="sticky top-0 z-50 mb-12 flex w-full items-baseline gap-8 bg-gradient-to-b from-white/80 px-6 pt-5 sm:px-8 md:px-12 dark:from-zinc-800/80">
         <a href="/" className="cursor-pointer">
           {isWork ? (
-            <span className="flex size-12 items-center p-2 text-2xl font-medium hover:underline sm:text-3xl">
-              &larr;
-            </span>
+            <span className="text-2xl font-medium hover:underline sm:text-3xl">&larr;</span>
           ) : (
             <Heading size={1} className={clsx('transition-opacity', isWork && 'opacity-0')}>
               Adam Plesník

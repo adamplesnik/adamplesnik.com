@@ -2,9 +2,10 @@ import GridWrapper from '@/components/GridWrapper'
 import Link from '@/components/Link'
 import Paragraph from '@/components/Paragraph'
 import WorkTile from '@/components/WorkTile'
+import kolbordMacbook from './images/kolbord-assets.png'
 import kolbordFashion from './images/kolbord-fashion.jpg'
+import kolbordMac from './images/kolbord-home.jpg'
 import kolbordDemo from './images/kolbord-ipad.mp4'
-import kolbordMacbook from './images/kolbord-macbook.png'
 import kolbordSidebar from './images/kolbord-sidebar.png'
 import kolbordWatch from './images/kolbord-watch.png'
 
@@ -43,6 +44,7 @@ const WorkKolbord = () => {
         </div>
       }
     >
+      <img src={kolbordMac} alt="Kolbord sidebar" />
       <GridWrapper>
         <img src={kolbordSidebar} alt="Kolbord sidebar" />
         <img src={kolbordWatch} alt="Kolbord Apple Watch" />
