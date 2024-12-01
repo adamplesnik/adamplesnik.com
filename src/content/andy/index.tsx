@@ -1,9 +1,11 @@
 import GridWrapper from '@/components/GridWrapper'
 import Paragraph from '@/components/Paragraph'
 import WorkTile from '@/components/WorkTile'
-import andyAlt from './images/andy-alt.jpg'
+import andyAssets from './images/andy-assets.png'
+import andyBuild from './images/andy-build.jpg'
 import andyMain from './images/andy-main.jpg'
 import andyStreet from './images/andy-street.jpg'
+import andyTote from './images/andy-tote.jpg'
 
 const More = () => (
   <Paragraph>
@@ -18,13 +20,15 @@ const WorkAndy = () => {
     <WorkTile
       id="andy"
       title="Andy Warhol museum"
-      text="This is me dipping toes into logo waters. Nobody actually asked for it, it just struck me, after visiting the museum, that it should have a more solid identity, given the greatness of the king of pop art."
+      text="This is me dipping toes into logo and identity waters. Nobody actually asked for it, it just struck me, after visiting the museum, that it should have a more solid identity, given the greatness of the king of pop art."
       top={<img src={andyStreet} />}
       more={<More />}
     >
       <GridWrapper>
         <img src={andyMain} />
-        <img src={andyAlt} />
+        <img src={andyBuild} />
+        <img src={andyTote} />
+        <img src={andyAssets} />
       </GridWrapper>
     </WorkTile>
   )
