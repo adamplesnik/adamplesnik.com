@@ -7,6 +7,7 @@ import CvPrint from './content/CvPrint.tsx'
 import WorkKolbord from './content/kolbord/index.tsx'
 import WorkMHD from './content/mhd/index.tsx'
 import WorkThankful from './content/thankful/index.tsx'
+import WorkLibrary from './content/vkjb/index.tsx'
 import './index.css'
 import About from './pages/About.tsx'
 import Home from './pages/Home.tsx'
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: '/work/andy',
         element: <WorkAndy />,
+      },
+      {
+        path: '/work/library',
+        element: <WorkLibrary />,
       },
       {
         path: '/work/thankful',
