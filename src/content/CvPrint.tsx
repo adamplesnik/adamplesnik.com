@@ -18,9 +18,9 @@ const CvPrint = () => {
         and photography.
       </Paragraph>
       <Paragraph className="mb-10">
-        I value both creative and personal freedom, preferring remote, flexible, and non-corporate
-        work. Family time is a non-negotiable, and I put high priority in my time off, enjoying
-        mountain biking, hiking and travel—whether with family or solo when needed.
+        I value both creative and personal freedom, preferring remote and flexible work. Family time
+        is a non-negotiable, and I put high priority in my time off, enjoying mountain biking,
+        hiking and travel—whether with family or solo when needed.
       </Paragraph>
       <Paragraph className="mb-10">
         Proficient in Figma, Adobe Photoshop, InDesign, Lightroom. Coding in React+Typescript, TSX,
