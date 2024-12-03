@@ -20,7 +20,7 @@ const WorkAndy = () => {
     <WorkTile
       id="andy"
       title="Andy Warhol museum"
-      text="This is me dipping toes into logo and identity waters. Nobody actually asked for it, it just struck me, after visiting the museum, that it should have a more solid identity, given the greatness of the king of pop art."
+      text="Logo and identity for the Andy Warhol museum in Slovakia. Nobody actually asked for it, it just struck me, after visiting the museum, that it should have a more solid identity, given the greatness of the king of pop art."
       top={<img src={andyStreet} />}
       more={<More />}
     >
