@@ -6,9 +6,8 @@ const Footer = () => {
       Adam Plesník, graphic and UI designer
       <br />
       Bratislava, Slovakia
-      <Link href="mailto:adam@adamplesnik.com" className="mt-12">
-        adam@adamplesnik.com
-      </Link>
+      <span className="mt-12">+421 904 983 582</span>
+      <Link href="mailto:adam@adamplesnik.com">adam@adamplesnik.com</Link>
       <Link href="https://github.com/adamplesnik">github.com/adamplesnik</Link>
     </div>
   )
