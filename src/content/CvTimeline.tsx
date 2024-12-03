@@ -24,7 +24,7 @@ const CvTimeline = ({ print }: { print?: boolean }) => {
       <TimelineItem year={'2011\u20132012'} desc="Web designer in Websupport" em print={print} />
       <TimelineItem
         year={'2013\u2013now'}
-        desc="Design engineer in Expersoft Technologies"
+        desc="UI designer in Expersoft Technologies"
         em
         print={print}
       />
