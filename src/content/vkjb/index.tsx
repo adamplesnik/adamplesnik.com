@@ -6,8 +6,10 @@ import assets from './images/vkjb-assets.png'
 import bag from './images/vkjb-bag.jpg'
 import preview from './images/vkjb-home.png'
 import hours from './images/vkjb-hours.jpg'
+import paper from './images/vkjb-paper.jpg'
 import posterIn from './images/vkjb-poster-in.jpg'
 import poster from './images/vkjb-poster.jpg'
+import prices from './images/vkjb-prices.jpg'
 import shirt from './images/vkjb-shirt.jpg'
 
 const More = () => <Paragraph>A logo competition entry.</Paragraph>
@@ -24,6 +26,8 @@ const WorkLibrary = () => {
       <GridWrapper>
         <img src={posterIn} />
         <img src={hours} />
+        <img src={prices} />
+        <img src={paper} />
         <img src={assets} />
         <img src={assetsDetail} />
       </GridWrapper>
