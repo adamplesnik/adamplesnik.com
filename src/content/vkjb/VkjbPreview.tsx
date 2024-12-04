@@ -3,7 +3,7 @@ import preview from './images/vkjb-home.png'
 
 const VkjbPreview = () => {
   return (
-    <WorkPreviewTile title="Library identity" link="/work/library">
+    <WorkPreviewTile title="Public library in Košice" link="/work/library">
       <img src={preview} />
     </WorkPreviewTile>
   )
