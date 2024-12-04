@@ -1,9 +1,10 @@
 import Heading from '@/components/Heading'
 import Footer from '@/content/Footer'
 import clsx from 'clsx'
+import { ReactNode } from 'react'
 import { NavLink, Outlet, ScrollRestoration, useLocation } from 'react-router-dom'
 
-const Layout = () => {
+const Layout = ({ outlet }: { outlet?: ReactNode | null }) => {
   const location = useLocation()
   const isWork = location.pathname.split('/')[1] === 'work'
 
@@ -45,7 +46,7 @@ const Layout = () => {
           </NavLink>
         </div>
       </div>
-      <Outlet />
+      {outlet ? outlet : <Outlet />}
       <Footer />
     </div>
   )

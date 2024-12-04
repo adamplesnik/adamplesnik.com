@@ -16,11 +16,11 @@ import Layout from './partials/Layout.tsx'
 const router = createBrowserRouter([
   {
     element: <Layout />,
+    errorElement: <Layout outlet={<Home />} />,
     children: [
       {
         path: '/',
         element: <Home />,
-        errorElement: <Home />,
       },
       {
         path: '/work/tickets',
@@ -45,7 +45,6 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About />,
-        errorElement: <About />,
       },
     ],
   },
