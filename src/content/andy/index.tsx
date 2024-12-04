@@ -1,10 +1,13 @@
 import GridWrapper from '@/components/GridWrapper'
 import Paragraph from '@/components/Paragraph'
 import WorkTile from '@/components/WorkTile'
+import andyAd from './images/andy-ad.jpg'
 import andyAssets from './images/andy-assets.png'
 import andyBuild from './images/andy-build.jpg'
 import andyMain from './images/andy-main.jpg'
+import andyStickers from './images/andy-stickers.jpg'
 import andyStreet from './images/andy-street.jpg'
+import andyTshirt from './images/andy-t-shirt.jpg'
 import andyTote from './images/andy-tote.jpg'
 
 const More = () => (
@@ -29,6 +32,11 @@ const WorkAndy = () => {
         <img src={andyBuild} />
         <img src={andyTote} />
         <img src={andyAssets} />
+      </GridWrapper>
+      <img src={andyAd} />
+      <GridWrapper>
+        <img src={andyStickers} />
+        <img src={andyTshirt} />
       </GridWrapper>
     </WorkTile>
   )
