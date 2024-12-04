@@ -3,7 +3,7 @@ import preview from './images/mhd-home.jpg'
 
 const MhdPreview = () => {
   return (
-    <WorkPreviewTile title="Ticket-buying redesign" link="/work/tickets">
+    <WorkPreviewTile title="Bratislava public transport" link="/work/tickets">
       <img src={preview} />
     </WorkPreviewTile>
   )
