@@ -2,6 +2,7 @@ import Heading from '@/components/Heading'
 import Link from '@/components/Link'
 import Paragraph from '@/components/Paragraph'
 import CvTimeline from './CvTimeline'
+import { catchPhrase, freeTime, tech } from './phrases'
 
 const CvPrint = () => {
   return (
@@ -12,19 +13,9 @@ const CvPrint = () => {
           Graphic and UI designer
         </Heading>
       </div>
-      <Paragraph className="my-10">
-        I create nice and functional things across multiple platforms. While I have extensive
-        experience with UX/UI design and coding, I also work on projects related to brand identity.
-      </Paragraph>
-      <Paragraph className="mb-10">
-        I value both creative and personal freedom, preferring remote and flexible work. Family time
-        is a non-negotiable, and I put high priority in my time off, enjoying mountain biking,
-        hiking and travel—whether with family or solo when needed.
-      </Paragraph>
-      <Paragraph className="mb-10">
-        Proficient in Figma, Adobe Photoshop, InDesign, Lightroom. Coding in React+Typescript, TSX,
-        Tailwind CSS. Speaking English, French.
-      </Paragraph>
+      <Paragraph className="my-10">{catchPhrase}</Paragraph>
+      <Paragraph className="mb-10">{freeTime}</Paragraph>
+      <Paragraph className="mb-10">{tech}</Paragraph>
       <div className="flex flex-col gap-2 print:gap-1">
         <CvTimeline print />
       </div>
