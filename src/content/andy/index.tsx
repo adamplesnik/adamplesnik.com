@@ -12,9 +12,8 @@ import andyTote from './images/andy-tote.jpg'
 
 const More = () => (
   <Paragraph>
-    The logo is constructed with four words: Andy, Warhol, Museum and Medzilaborce. Each word can be
-    displayed either in full or as its initial letter. However, at least two words must always
-    appear in full.
+    The logo is constructed with the simplified museum name and the identity is supported by
+    distinctive type family, wordmark 'Andy!' and bold 'pop yellow' color.
   </Paragraph>
 )
 
@@ -24,7 +23,7 @@ const WorkAndy = () => {
       id="andy"
       title="Andy Warhol museum"
       text="Logo and identity for the Andy Warhol museum in Slovakia. Nobody actually asked for it, it just struck me, after visiting the museum, that it should have a more solid identity, given the greatness of the king of pop art."
-      top={<img src={andyStreet} />}
+      top={<img src={andyAd} />}
       more={<More />}
     >
       <GridWrapper>
@@ -33,7 +32,7 @@ const WorkAndy = () => {
         <img src={andyTote} />
         <img src={andyAssets} />
       </GridWrapper>
-      <img src={andyAd} />
+      <img src={andyStreet} />
       <GridWrapper>
         <img src={andyStickers} />
         <img src={andyTshirt} />
