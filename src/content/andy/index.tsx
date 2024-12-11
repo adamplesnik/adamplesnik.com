@@ -3,7 +3,7 @@ import Paragraph from '@/components/Paragraph'
 import WorkTile from '@/components/WorkTile'
 import andyAd from './images/andy-ad.jpg'
 import andyAssets from './images/andy-assets.png'
-import andyBuild from './images/andy-build.jpg'
+import andyBook from './images/andy-book.jpg'
 import andyMain from './images/andy-main.jpg'
 import andyStickers from './images/andy-stickers.jpg'
 import andyStreet from './images/andy-street.jpg'
@@ -28,7 +28,7 @@ const WorkAndy = () => {
     >
       <GridWrapper>
         <img src={andyMain} />
-        <img src={andyBuild} />
+        <img src={andyBook} />
         <img src={andyTote} />
         <img src={andyAssets} />
       </GridWrapper>
