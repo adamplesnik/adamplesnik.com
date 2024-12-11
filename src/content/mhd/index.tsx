@@ -4,9 +4,11 @@ import WorkTile from '@/components/WorkTile'
 import ReactBeforeSliderComponent from 'react-before-after-slider-component'
 import 'react-before-after-slider-component/dist/build.css'
 import mhdAfter from './images/mhd-after.jpg'
+import mhdAssets from './images/mhd-assets.png'
 import mhdBefore from './images/mhd-before.jpg'
 import mhdHome from './images/mhd-home.jpg'
 import mhdLang from './images/mhd-lang.mp4'
+import mhdScreens from './images/mhd-screens.png'
 import mhdTrio from './images/mhd-trio.png'
 import mhdVideo from './images/mhd-video.png'
 import mhd from './images/mhd.mp4'
@@ -64,6 +66,8 @@ const WorkMHD = () => {
         firstImage={FIRST_IMAGE}
         secondImage={SECOND_IMAGE}
       ></ReactBeforeSliderComponent>
+      <img src={mhdScreens} alt="MHD screens" />
+      <img src={mhdAssets} alt="MHD screens" />
     </WorkTile>
   )
 }
