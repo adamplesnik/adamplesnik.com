@@ -1,3 +1,4 @@
+import CustomImg from '@/components/CustomImg'
 import GridWrapper from '@/components/GridWrapper'
 import Paragraph from '@/components/Paragraph'
 import WorkTile from '@/components/WorkTile'
@@ -29,21 +30,21 @@ const WorkMartin = () => {
       title="Hospital in Martin"
       more={<More />}
       text="Identity for a new hospital in Martin. The whole idea behind the proposal is to create well working and easily recognizable visual system from logo, identity and wayfinding."
-      top={<img src={martinNav} />}
+      top={<CustomImg src={martinNav} />}
     >
-      <img src={martinNewborn} />
+      <CustomImg src={martinNewborn} />
       <GridWrapper>
-        <img src={martinLogo} />
-        <img src={martinNavDetail} />
-        <img src={martinMobile} />
-        <img src={martinIpad} />
-        <img src={martinPaper} />
-        <img src={martinAssets} />
+        <CustomImg src={martinLogo} />
+        <CustomImg src={martinNavDetail} />
+        <CustomImg src={martinMobile} />
+        <CustomImg src={martinIpad} />
+        <CustomImg src={martinPaper} />
+        <CustomImg src={martinAssets} />
       </GridWrapper>
-      <img src={martinKids} />
+      <CustomImg src={martinKids} />
       <GridWrapper>
-        <img src={martinStuff} />
-        <img src={martinSign} />
+        <CustomImg src={martinStuff} />
+        <CustomImg src={martinSign} />
       </GridWrapper>
     </WorkTile>
   )

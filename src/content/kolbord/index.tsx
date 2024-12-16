@@ -1,8 +1,9 @@
+import CustomImg from '@/components/CustomImg'
 import GridWrapper from '@/components/GridWrapper'
 import Link from '@/components/Link'
 import Paragraph from '@/components/Paragraph'
 import WorkTile from '@/components/WorkTile'
-import kolbordMacbook from './images/kolbord-assets.png'
+import kolbordAssets from './images/kolbord-assets.png'
 import kolbordFashion from './images/kolbord-fashion.jpg'
 import kolbordMac from './images/kolbord-home.jpg'
 import kolbordDemo from './images/kolbord-ipad.mp4'
@@ -44,12 +45,12 @@ const WorkKolbord = () => {
         </div>
       }
     >
-      <img src={kolbordMac} alt="Kolbord sidebar" />
+      <CustomImg src={kolbordMac} alt="Kolbord sidebar" />
       <GridWrapper>
-        <img src={kolbordSidebar} alt="Kolbord sidebar" />
-        <img src={kolbordWatch} alt="Kolbord Apple Watch" />
-        <img src={kolbordFashion} alt="Kolbord t-shirt" />
-        <img src={kolbordMacbook} alt="Kolbord web" />
+        <CustomImg src={kolbordSidebar} alt="Kolbord sidebar" />
+        <CustomImg src={kolbordWatch} alt="Kolbord Apple Watch" />
+        <CustomImg src={kolbordFashion} alt="Kolbord t-shirt" />
+        <CustomImg src={kolbordAssets} alt="Kolbord assets" />
       </GridWrapper>
     </WorkTile>
   )

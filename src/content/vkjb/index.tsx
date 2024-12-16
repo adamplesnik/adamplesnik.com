@@ -1,3 +1,4 @@
+import CustomImg from '@/components/CustomImg'
 import GridWrapper from '@/components/GridWrapper'
 import Paragraph from '@/components/Paragraph'
 import WorkTile from '@/components/WorkTile'
@@ -20,21 +21,21 @@ const WorkLibrary = () => {
       id="library"
       title="Public library in Košice"
       text="Identity for a library in Košice. Very heavy logo complemented with a straightforward typography. Both logo and type visually support the brand and they should become distinctive over time."
-      top={<img src={poster} />}
+      top={<CustomImg src={poster} />}
       more={<More />}
     >
       <GridWrapper>
-        <img src={posterIn} />
-        <img src={hours} />
-        <img src={prices} />
-        <img src={paper} />
-        <img src={assets} />
-        <img src={assetsDetail} />
+        <CustomImg src={posterIn} />
+        <CustomImg src={hours} />
+        <CustomImg src={prices} />
+        <CustomImg src={paper} />
+        <CustomImg src={assets} />
+        <CustomImg src={assetsDetail} />
       </GridWrapper>
-      <img src={preview} />
+      <CustomImg src={preview} />
       <GridWrapper>
-        <img src={shirt} />
-        <img src={bag} />
+        <CustomImg src={shirt} />
+        <CustomImg src={bag} />
       </GridWrapper>
     </WorkTile>
   )

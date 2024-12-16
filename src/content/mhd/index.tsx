@@ -1,3 +1,4 @@
+import CustomImg from '@/components/CustomImg'
 import GridWrapper from '@/components/GridWrapper'
 import Paragraph from '@/components/Paragraph'
 import WorkTile from '@/components/WorkTile'
@@ -38,9 +39,9 @@ const WorkMHD = () => {
       title="Bratislava public transport"
       more={<More />}
       text="A complete redesign of the ticket-buying experience for Bratislava public transport, from an completely new UX to a simpler, more intuitive ticket machine interface."
-      top={<img src={mhdHome} />}
+      top={<CustomImg src={mhdHome} />}
     >
-      <img src={mhdTrio} />
+      <CustomImg src={mhdTrio} />
       <GridWrapper>
         <div className="relative mx-auto max-w-screen-xl">
           <img src={mhdVideo} alt="" />

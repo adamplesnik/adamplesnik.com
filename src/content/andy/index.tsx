@@ -1,3 +1,4 @@
+import CustomImg from '@/components/CustomImg'
 import GridWrapper from '@/components/GridWrapper'
 import Paragraph from '@/components/Paragraph'
 import WorkTile from '@/components/WorkTile'
@@ -23,19 +24,19 @@ const WorkAndy = () => {
       id="andy"
       title="Andy Warhol museum"
       text="Logo and identity for the Andy Warhol museum in Slovakia. Nobody actually asked for it, it just struck me, after visiting the museum, that it should have a more solid identity, given the greatness of the king of pop art."
-      top={<img src={andyAd} />}
+      top={<CustomImg src={andyAd} />}
       more={<More />}
     >
       <GridWrapper>
-        <img src={andyMain} />
-        <img src={andyBook} />
-        <img src={andyTote} />
-        <img src={andyAssets} />
+        <CustomImg src={andyMain} />
+        <CustomImg src={andyBook} />
+        <CustomImg src={andyTote} />
+        <CustomImg src={andyAssets} />
       </GridWrapper>
-      <img src={andyStreet} />
+      <CustomImg src={andyStreet} />
       <GridWrapper>
-        <img src={andyStickers} />
-        <img src={andyTshirt} />
+        <CustomImg src={andyStickers} />
+        <CustomImg src={andyTshirt} />
       </GridWrapper>
     </WorkTile>
   )
