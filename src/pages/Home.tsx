@@ -4,7 +4,7 @@ import Intro from '@/content/Intro'
 import kolbordPreview from '@/content/kolbord/images/kolbord-home.jpg'
 import martinPreview from '@/content/martin/images/martin-home.jpg'
 import mhdPreview from '@/content/mhd/images/mhd-home.jpg'
-import vkjbPreview from '@/content/vkjb/images/vkjb-home.png'
+import vkjbPreview from '@/content/vkjb/images/vkjb-home.jpg'
 
 const Home = () => {
   return (
