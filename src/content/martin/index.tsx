@@ -16,10 +16,8 @@ import martinStuff from './images/martin-stuff.jpg'
 const More = () => {
   return (
     <Paragraph>
-      The original application is very complex and poorly designed. I simplified and polished the
-      user journey to make it more intuitive and less prone to errors. The new UI aims to be clear,
-      highly readable, and easy to use while in transit. This work is 100% guerilla, with a planned
-      pitch to the authorities.
+      It is based on a rather unusual—for a hospital—grotesk, combined with nice business serif,
+      bold logo, solid colors and icons to complement the whole. A logo competition entry.
     </Paragraph>
   )
 }
@@ -30,10 +28,10 @@ const WorkMartin = () => {
       id="martin"
       title="Hospital in Martin"
       more={<More />}
-      text="lala"
-      top={<img src={martinNewborn} />}
+      text="Identity for a new hospital in Martin. The whole idea behind the proposal is to create well working and easily recognizable visual system from logo, identity and wayfinding."
+      top={<img src={martinNav} />}
     >
-      <img src={martinNav} />
+      <img src={martinNewborn} />
       <GridWrapper>
         <img src={martinLogo} />
         <img src={martinNavDetail} />
