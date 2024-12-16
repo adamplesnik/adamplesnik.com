@@ -10,7 +10,7 @@ const CvPrint = () => {
       <div className="flex flex-col justify-between md:flex-row print:flex-row">
         <Heading size={1}>Adam Plesník</Heading>
         <Heading size={2} className="mt-3 md:mt-0 print:mt-0">
-          Graphic and UI designer
+          Graphic designer
         </Heading>
       </div>
       <Paragraph className="my-10">{catchPhrase}</Paragraph>
