@@ -10,7 +10,7 @@ import mhdBefore from './images/mhd-before.jpg'
 import mhdHome from './images/mhd-home.jpg'
 import mhdLang from './images/mhd-lang.mp4'
 import mhdScreens from './images/mhd-screens.png'
-import mhdTrio from './images/mhd-trio.png'
+import mhdTrio from './images/mhd-trio.jpg'
 import mhdVideo from './images/mhd-video.png'
 import mhd from './images/mhd.mp4'
 
