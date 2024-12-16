@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import WorkAndy from './content/andy/index.tsx'
 import CvPrint from './content/CvPrint.tsx'
 import WorkKolbord from './content/kolbord/index.tsx'
+import WorkMartin from './content/martin/index.tsx'
 import WorkMHD from './content/mhd/index.tsx'
 import WorkThankful from './content/thankful/index.tsx'
 import WorkLibrary from './content/vkjb/index.tsx'
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: '/work/library',
         element: <WorkLibrary />,
+      },
+      {
+        path: '/work/martin',
+        element: <WorkMartin />,
       },
       {
         path: '/work/thankful',
