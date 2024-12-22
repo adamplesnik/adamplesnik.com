@@ -1,4 +1,4 @@
-export const catchPhrase = `As a graphic designer, I help brands and products create consistent, effective, and seamless experiences across platforms—from identity to UI.`
+export const catchPhrase = `As a graphic designer, I help brands and products create consistent, effective, and seamless experiences—from identity to UI.`
 
 export const freeTime = `I value both creative and personal freedom, preferring remote, non-corporate, and flexible work. Family time is a non-negotiable, and I put high priority in my time off, enjoying mountain biking, hiking and travel—whether with family or solo when needed.`
 
