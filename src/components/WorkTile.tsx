@@ -1,5 +1,6 @@
 import { clsx } from 'clsx'
 import { HTMLAttributes, ReactNode, useState } from 'react'
+import Badge from './Badge'
 import Heading from './Heading'
 import Link from './Link'
 import Paragraph from './Paragraph'
@@ -13,6 +14,7 @@ const WorkTile = ({
   top,
   more,
   id,
+  badges,
 }: WorkTileWrapperProps) => {
   const [moreVisible, setMoreVisible] = useState(false)
 
@@ -30,6 +32,13 @@ const WorkTile = ({
         )}
         <div className="flex flex-col gap-4 md:flex-[2]">
           {text && <Paragraph>{text}</Paragraph>}
+          {badges && (
+            <div className="flex">
+              {badges.map((b) => (
+                <Badge value={b} />
+              ))}
+            </div>
+          )}
           {more && (
             <>
               <div
@@ -59,6 +68,7 @@ type WorkTileWrapperProps = {
   title?: string
   text?: string
   more?: ReactNode
+  badges?: string[]
 } & HTMLAttributes<HTMLDivElement>
 
 export default WorkTile
