@@ -4,7 +4,7 @@ import { Fade } from 'react-awesome-reveal'
 import CustomImg from './CustomImg'
 import Heading from './Heading'
 
-const WorkPreviewTile = ({ title, className, link, src }: WorkPreviewTileProps) => {
+const WorkPreviewTile = ({ title, className, link, src, titleRight }: WorkPreviewTileProps) => {
   return (
     <Fade triggerOnce className="group relative">
       <a
@@ -20,7 +20,10 @@ const WorkPreviewTile = ({ title, className, link, src }: WorkPreviewTileProps) 
         </div>
         <Heading
           size={2}
-          className="left-8 top-4 mt-4 hover:underline sm:max-w-64 md:absolute md:max-w-72 lg:max-w-full"
+          className={clsx(
+            'top-4 mt-4 hover:underline sm:max-w-64 md:absolute md:max-w-72 lg:max-w-full',
+            titleRight ? 'right-8' : 'left-8'
+          )}
         >
           {title} &rarr;
         </Heading>
@@ -33,6 +36,7 @@ type WorkPreviewTileProps = {
   title: string
   link: string
   src: string | undefined
+  titleRight?: boolean | undefined
 } & HTMLAttributes<HTMLDivElement>
 
 export default WorkPreviewTile
