@@ -7,7 +7,7 @@ import vkjbPreview from '@/content/vkjb/images/vkjb-home.jpg'
 
 const Home = () => {
   return (
-    <>
+    <div className="mx-auto w-full max-w-screen-2xl">
       <Intro />
       <div className="flex flex-col gap-12 p-6 sm:px-8 md:px-12">
         <WorkPreviewTile
@@ -24,7 +24,7 @@ const Home = () => {
           titleRight
         />
       </div>
-    </>
+    </div>
   )
 }
 

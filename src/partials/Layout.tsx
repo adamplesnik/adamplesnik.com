@@ -48,7 +48,7 @@ const Layout = ({ outlet }: { outlet?: ReactNode | null }) => {
           </div>
         </div>
       </div>
-      <div className="mx-auto w-full max-w-screen-2xl">{outlet ? outlet : <Outlet />}</div>
+      {outlet ? outlet : <Outlet />}
       <Footer />
     </div>
   )
