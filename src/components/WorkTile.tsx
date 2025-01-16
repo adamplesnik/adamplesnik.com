@@ -68,6 +68,7 @@ type WorkTileWrapperProps = {
   title?: string
   text?: string
   more?: ReactNode
+  badges?: string[]
 } & HTMLAttributes<HTMLDivElement>
 
 export default WorkTile
