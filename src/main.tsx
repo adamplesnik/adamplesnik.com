@@ -7,6 +7,7 @@ import CvPrint from './content/CvPrint.tsx'
 import WorkKolbord from './content/kolbord/index.tsx'
 import WorkMartin from './content/martin/index.tsx'
 import WorkMHD from './content/mhd/index.tsx'
+import WorkScrollDriven from './content/scrolldriven/index.tsx'
 import WorkThankful from './content/thankful/index.tsx'
 import WorkLibrary from './content/vkjb/index.tsx'
 import './index.css'
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: '/work/thankful',
         element: <WorkThankful />,
+      },
+      {
+        path: '/work/scroll',
+        element: <WorkScrollDriven />,
       },
       {
         path: '/about',
