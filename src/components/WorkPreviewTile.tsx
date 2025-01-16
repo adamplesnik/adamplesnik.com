@@ -7,13 +7,14 @@ const WorkPreviewTile = ({ title, className, link, src }: WorkPreviewTileProps) 
   return (
     <a
       href={link}
-      className={clsx(
-        'group relative w-full overflow-hidden rounded-lg transition-shadow duration-500 hover:shadow-lg md:rounded-2xl',
-        className
-      )}
+      className={clsx('group relative w-full overflow-hidden rounded-lg md:rounded-2xl', className)}
     >
-      <div className="aspect-[2/1] overflow-hidden rounded-lg transition-[transform,opacity] duration-[400ms] ease-in-out group-hover:scale-[1.02] group-hover:opacity-80 md:rounded-2xl">
-        <CustomImg src={src} alt={title} />
+      <div className="aspect-[2/1] overflow-hidden rounded-lg md:rounded-2xl">
+        <CustomImg
+          src={src}
+          alt={title}
+          className="transition-[transform,opacity] duration-[400ms] ease-in-out group-hover:scale-[1.02] group-hover:opacity-80"
+        />
       </div>
       <Heading
         size={2}
