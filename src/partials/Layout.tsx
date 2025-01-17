@@ -24,7 +24,7 @@ const Layout = ({ outlet }: { outlet?: ReactNode | null }) => {
               >
                 <path
                   d="M8.97561 12.5H4.97561L0 6.644V6.356L4.97561 0.5H8.97561L5.13821 4.948L32 4.948V8.052L5.13821 8.052L8.97561 12.5Z"
-                  fill="black"
+                  fill="currentColor"
                 />
               </svg>
             </span>
@@ -39,7 +39,7 @@ const Layout = ({ outlet }: { outlet?: ReactNode | null }) => {
             className={({ isActive }) =>
               clsx(
                 'relative cursor-pointer text-2xl font-medium sm:text-3xl',
-                'after:absolute after:bottom-1 after:left-0 after:h-[2px] after:w-full after:max-w-0 after:bg-black after:transition-[max-width] after:ease-in-out hover:after:max-w-full after:sm:h-[3px]',
+                'after:absolute after:bottom-1 after:left-0 after:h-[2px] after:w-full after:max-w-0 after:bg-current after:transition-[max-width] after:ease-in-out hover:after:max-w-full after:sm:h-[3px]',
                 isActive && 'after:max-w-full'
               )
             }
@@ -51,7 +51,7 @@ const Layout = ({ outlet }: { outlet?: ReactNode | null }) => {
             className={({ isActive }) =>
               clsx(
                 'relative cursor-pointer text-2xl font-medium sm:text-3xl',
-                'after:absolute after:bottom-1 after:left-0 after:h-[2px] after:w-full after:max-w-0 after:bg-black after:transition-[max-width] after:ease-in-out hover:after:max-w-full after:sm:h-[3px]',
+                'after:absolute after:bottom-1 after:left-0 after:h-[2px] after:w-full after:max-w-0 after:bg-current after:transition-[max-width] after:ease-in-out hover:after:max-w-full after:sm:h-[3px]',
                 isActive && 'after:max-w-full'
               )
             }
