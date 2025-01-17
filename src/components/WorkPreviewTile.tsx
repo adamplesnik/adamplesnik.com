@@ -21,12 +21,12 @@ const WorkPreviewTile = ({ title, className, link, src, titleRight }: WorkPrevie
         <Heading
           size={2}
           className={clsx(
-            'top-4 mt-4 sm:max-w-64 md:absolute md:max-w-72 lg:max-w-full',
-            'after:absolute after:bottom-1 after:left-0 after:h-[3px] after:w-full after:max-w-0 after:bg-black after:transition-[max-width] after:ease-out group-hover:after:max-w-[calc(100%_-_2rem)]',
+            'top-4 mt-4 flex items-baseline gap-2 sm:max-w-64 md:absolute md:max-w-72 lg:max-w-full',
+            'after:absolute after:bottom-1 after:left-0 after:h-[3px] after:w-full after:max-w-0 after:bg-black after:transition-[max-width] after:ease-out group-hover:after:max-w-full',
             titleRight ? 'right-8' : 'left-8'
           )}
         >
-          {title} &rarr;
+          {title}
         </Heading>
       </a>
     </Fade>

@@ -14,8 +14,19 @@ const Layout = ({ outlet }: { outlet?: ReactNode | null }) => {
       <div className="sticky top-0 z-50 mb-12 flex w-full items-baseline gap-8 bg-gradient-to-b from-white/80 px-6 pt-5 sm:px-8 md:px-12 dark:from-zinc-800/80">
         <a href="/" className="cursor-pointer">
           {isWork ? (
-            <span className="block w-24 text-2xl font-medium transition-transform ease-in-out hover:-translate-x-2 sm:text-3xl">
-              &larr;
+            <span className="flex w-20 items-center transition-transform ease-in-out hover:-translate-x-2">
+              <svg
+                width="32"
+                height="13"
+                viewBox="0 0 32 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.97561 12.5H4.97561L0 6.644V6.356L4.97561 0.5H8.97561L5.13821 4.948L32 4.948V8.052L5.13821 8.052L8.97561 12.5Z"
+                  fill="black"
+                />
+              </svg>
             </span>
           ) : (
             <Heading size={1} className={clsx('transition-opacity', isWork && 'opacity-0')}>
