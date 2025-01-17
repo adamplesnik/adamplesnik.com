@@ -1,11 +1,12 @@
 import Paragraph from '@/components/Paragraph'
 import CvTimeline from '@/content/CvTimeline'
 import { catchDetail, catchPhrase, freeTime, tech } from '@/content/phrases'
+import { Fade } from 'react-awesome-reveal'
 
 const About = () => {
   return (
     <>
-      <div className="mx-auto w-full max-w-screen-2xl">
+      <Fade triggerOnce cascade damping={0.09} className="mx-auto w-full max-w-screen-2xl">
         <Paragraph big className="mb-12 px-6 sm:px-8 md:px-12">
           {catchPhrase}
         </Paragraph>
@@ -18,12 +19,12 @@ const About = () => {
         <Paragraph big className="mb-24 px-6 sm:px-8 md:px-12">
           {freeTime}
         </Paragraph>
-      </div>
-      <div className="-mb-24 flex flex-col gap-2 bg-cv-light pb-12 dark:bg-cv-dark">
-        <div className="mx-auto w-full max-w-screen-2xl p-6 sm:p-8 md:p-12">
+      </Fade>
+      <Fade triggerOnce>
+        <div className="-mb-24 flex flex-col gap-2 bg-cv-light p-6 sm:p-8 md:p-12 dark:bg-cv-dark">
           <CvTimeline />
         </div>
-      </div>
+      </Fade>
     </>
   )
 }

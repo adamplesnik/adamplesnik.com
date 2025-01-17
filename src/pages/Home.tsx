@@ -16,7 +16,7 @@ const Home = () => {
           src={mhdPreview}
         />
         <WorkPreviewTile title="Kolbord" link="/work/kolbord" src={kolbordPreview} />
-        <WorkPreviewTile title="Public library in Košice" link="/work/library" src={vkjbPreview} />
+        <WorkPreviewTile title="Public library" link="/work/library" src={vkjbPreview} />
         <WorkPreviewTile
           title="Hospital in Martin"
           link="/work/martin"
