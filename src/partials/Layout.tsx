@@ -14,7 +14,9 @@ const Layout = ({ outlet }: { outlet?: ReactNode | null }) => {
       <div className="sticky top-0 z-50 mb-12 flex w-full items-baseline gap-8 bg-gradient-to-b from-white/80 px-6 pt-5 sm:px-8 md:px-12 dark:from-zinc-800/80">
         <a href="/" className="cursor-pointer">
           {isWork ? (
-            <span className="text-2xl font-medium hover:underline sm:text-3xl">&larr;</span>
+            <span className="block w-24 text-2xl font-medium transition-transform ease-in-out hover:-translate-x-2 sm:text-3xl">
+              &larr;
+            </span>
           ) : (
             <Heading size={1} className={clsx('transition-opacity', isWork && 'opacity-0')}>
               Adam Plesník
@@ -25,8 +27,9 @@ const Layout = ({ outlet }: { outlet?: ReactNode | null }) => {
           <NavLink
             className={({ isActive }) =>
               clsx(
-                'cursor-pointer text-2xl font-medium hover:underline sm:text-3xl',
-                isActive && 'underline'
+                'relative cursor-pointer text-2xl font-medium sm:text-3xl',
+                'after:absolute after:bottom-1 after:left-0 after:h-[3px] after:w-full after:max-w-0 after:bg-black after:transition-[max-width] after:ease-in-out hover:after:max-w-full',
+                isActive && 'after:max-w-full'
               )
             }
             to="/"
@@ -36,8 +39,9 @@ const Layout = ({ outlet }: { outlet?: ReactNode | null }) => {
           <NavLink
             className={({ isActive }) =>
               clsx(
-                'cursor-pointer text-2xl font-medium hover:underline sm:text-3xl',
-                isActive && 'underline'
+                'relative cursor-pointer text-2xl font-medium sm:text-3xl',
+                'after:absolute after:bottom-1 after:left-0 after:h-[3px] after:w-full after:max-w-0 after:bg-black after:transition-[max-width] after:ease-in-out hover:after:max-w-full',
+                isActive && 'after:max-w-full'
               )
             }
             to="/about"

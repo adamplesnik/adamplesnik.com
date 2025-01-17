@@ -9,7 +9,7 @@ const WorkPreviewTile = ({ title, className, link, src, titleRight }: WorkPrevie
     <Fade triggerOnce className="group relative">
       <a
         href={link}
-        className={clsx('w-full overflow-hidden rounded-lg md:rounded-2xl', className)}
+        className={clsx('group w-full overflow-hidden rounded-lg md:rounded-2xl', className)}
       >
         <div className="aspect-[2/1] overflow-hidden rounded-lg md:rounded-2xl">
           <CustomImg
@@ -21,7 +21,8 @@ const WorkPreviewTile = ({ title, className, link, src, titleRight }: WorkPrevie
         <Heading
           size={2}
           className={clsx(
-            'top-4 mt-4 hover:underline sm:max-w-64 md:absolute md:max-w-72 lg:max-w-full',
+            'top-4 mt-4 sm:max-w-64 md:absolute md:max-w-72 lg:max-w-full',
+            'after:absolute after:bottom-1 after:left-0 after:h-[3px] after:w-full after:max-w-0 after:bg-black after:transition-[max-width] after:ease-out group-hover:after:max-w-[calc(100%_-_2rem)]',
             titleRight ? 'right-8' : 'left-8'
           )}
         >
