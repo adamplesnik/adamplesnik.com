@@ -39,7 +39,7 @@ const Layout = ({ outlet }: { outlet?: ReactNode | null }) => {
             className={({ isActive }) =>
               clsx(
                 'relative cursor-pointer text-2xl font-medium sm:text-3xl',
-                'after:absolute after:bottom-1 after:left-0 after:h-[3px] after:w-full after:max-w-0 after:bg-black after:transition-[max-width] after:ease-in-out hover:after:max-w-full',
+                'after:absolute after:bottom-1 after:left-0 after:h-[2px] after:w-full after:max-w-0 after:bg-black after:transition-[max-width] after:ease-in-out hover:after:max-w-full after:sm:h-[3px]',
                 isActive && 'after:max-w-full'
               )
             }
@@ -51,7 +51,7 @@ const Layout = ({ outlet }: { outlet?: ReactNode | null }) => {
             className={({ isActive }) =>
               clsx(
                 'relative cursor-pointer text-2xl font-medium sm:text-3xl',
-                'after:absolute after:bottom-1 after:left-0 after:h-[3px] after:w-full after:max-w-0 after:bg-black after:transition-[max-width] after:ease-in-out hover:after:max-w-full',
+                'after:absolute after:bottom-1 after:left-0 after:h-[2px] after:w-full after:max-w-0 after:bg-black after:transition-[max-width] after:ease-in-out hover:after:max-w-full after:sm:h-[3px]',
                 isActive && 'after:max-w-full'
               )
             }
