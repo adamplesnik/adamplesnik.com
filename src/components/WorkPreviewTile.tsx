@@ -11,7 +11,7 @@ const WorkPreviewTile = ({ title, className, link, src, titleRight }: WorkPrevie
         href={link}
         className={clsx('group w-full overflow-hidden rounded-lg md:rounded-2xl', className)}
       >
-        <div className="aspect-[2/1] overflow-hidden rounded-lg md:rounded-2xl">
+        <div className="aspect-[2/1] overflow-hidden rounded-lg md:rounded-2xl lg:aspect-[2.5/1]">
           <CustomImg
             src={src}
             alt={title}
