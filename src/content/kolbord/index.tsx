@@ -35,7 +35,6 @@ const WorkKolbord = () => {
       links={<Links />}
       text="A prototype of an opinionated, free to use, and open source app for reservation of anything. It is meant to provide an alternative to corporate-oriented, heavy, and expensive booking apps."
       more={<More />}
-      badges={['Figma', 'React', 'Payload CMS']}
       top={
         <div className="bg-[#E2BEC0] p-4 sm:p-8">
           <div className="relative mx-auto max-w-screen-lg overflow-hidden before:absolute before:bottom-0 before:right-0 before:top-0 before:z-10 before:w-2 before:bg-[#E2BEC0]">

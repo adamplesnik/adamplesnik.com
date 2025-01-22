@@ -42,7 +42,6 @@ const WorkMHD = () => {
       more={<More />}
       text="A complete redesign of the ticket-buying experience for Bratislava public transport, from an completely new UX to a simpler, more intuitive ticket machine interface."
       top={<CustomImg src={mhdHome} />}
-      badges={['Figma']}
     >
       <CustomImg src={mhdTrio} />
       <GridWrapper>

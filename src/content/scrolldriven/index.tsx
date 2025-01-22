@@ -38,7 +38,6 @@ const WorkScrollDriven = () => {
           </div>
         </div>
       }
-      badges={['React', 'Tailwind CSS']}
     >
       <GridWrapper>
         <div className="mb-4 flex aspect-square items-center bg-slate-200 p-4 sm:p-6 md:p-8 dark:bg-slate-700">
