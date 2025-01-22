@@ -23,12 +23,14 @@ const SECOND_IMAGE = {
 
 const More = () => {
   return (
-    <Paragraph>
-      The original application is very complex and poorly designed. I simplified and polished the
-      user journey to make it more intuitive and less prone to errors. The new UI aims to be clear,
-      highly readable, and easy to use while in transit. This work is 100% guerilla, with a planned
-      pitch to the authorities.
-    </Paragraph>
+    <>
+      <Paragraph>
+        The original application is very complex and poorly designed. I simplified and polished the
+        user journey to make it more intuitive and less prone to errors. The new UI aims to be
+        clear, highly readable, and easy to use while in transit.
+      </Paragraph>
+      <Paragraph>This work is 100% guerilla, with a planned pitch to the authorities.</Paragraph>
+    </>
   )
 }
 

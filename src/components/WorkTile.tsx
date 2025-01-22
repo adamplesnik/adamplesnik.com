@@ -34,13 +34,13 @@ const WorkTile = ({
               {title}
             </Heading>
           )}
-          <div className="flex flex-col gap-4 md:flex-[2]">
+          <div className="flex flex-col gap-6 md:flex-[2]">
             {text && <Paragraph>{text}</Paragraph>}
             {more && (
               <>
                 <div
                   className={clsx(
-                    'overflow-hidden transition-[max-height] duration-500',
+                    'flex flex-col gap-6 overflow-hidden transition-[max-height] duration-500',
                     moreVisible ? 'max-h-[1000px] ease-in' : 'max-h-0 ease-out'
                   )}
                 >
