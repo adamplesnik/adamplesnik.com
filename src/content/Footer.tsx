@@ -3,7 +3,7 @@ import Link from '@/components/Link'
 const Footer = () => {
   return (
     <div className="mt-24 bg-zinc-900">
-      <div className="mx-auto flex w-full max-w-screen-2xl flex-col justify-end gap-1 px-6 pb-8 pt-12 text-white sm:px-8 md:px-12">
+      <div className="flex flex-col justify-end gap-1 px-6 pb-8 pt-12 text-white sm:px-8 md:px-12">
         Adam Plesník
         <span className="mt-4">UI designer with a strong coding background</span>
         <span className="mt-12">+421 904 983 582</span>
