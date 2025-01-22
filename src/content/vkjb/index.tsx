@@ -19,8 +19,8 @@ const WorkLibrary = () => {
   return (
     <WorkTile
       id="library"
-      title="Public library in Košice"
-      text="Identity for a library in Košice. Very heavy logo complemented with a straightforward typography. Both logo and type visually support the brand and they should become distinctive over time."
+      title="Public library"
+      text="Identity and UI for a public library. Very heavy logo complemented with a straightforward typography. Both logo and type visually support the brand and they should become distinctive over time."
       top={<CustomImg src={poster} />}
       more={<More />}
     >

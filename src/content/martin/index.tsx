@@ -29,7 +29,7 @@ const WorkMartin = () => {
       id="martin"
       title="Hospital in Martin"
       more={<More />}
-      text="Identity for a new hospital in Martin. The whole idea behind the proposal is to create well working and easily recognizable visual system from logo, identity and wayfinding."
+      text="Identity and UI for a new hospital in Martin. The whole idea behind the proposal is to create well working and easily recognizable visual system from logo, identity and wayfinding."
       top={<CustomImg src={martinNav} />}
     >
       <CustomImg src={martinNewborn} />
