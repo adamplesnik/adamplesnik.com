@@ -21,7 +21,7 @@ const About = () => {
         </Paragraph>
       </Fade>
       <Fade triggerOnce>
-        <div className="-mb-24 flex flex-col gap-2 bg-cv-light p-6 sm:p-8 md:p-12 dark:bg-cv-dark">
+        <div className="-mb-24 flex flex-col gap-4 bg-cv-light p-6 sm:p-8 md:p-12 dark:bg-cv-dark">
           <CvTimeline />
         </div>
       </Fade>
