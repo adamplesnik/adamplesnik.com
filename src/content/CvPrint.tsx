@@ -13,21 +13,23 @@ const CvPrint = () => {
           UI designer
         </Heading>
       </div>
-      <div className="flex gap-12">
-        <div>
-          <Paragraph className="my-10">{catchPhrase}</Paragraph>
-          <Paragraph className="my-10">{catchDetail}</Paragraph>
-          <Paragraph className="mb-10">{tech}</Paragraph>
-          <Paragraph className="mb-10">{freeTime}</Paragraph>
-          <Paragraph className="mt-14 flex flex-col gap-1">
-            <span>+421 904 983 582</span>
-            <Link href="https://adamplesnik.com">adamplesnik.com</Link>
-            <Link href="https://github.com/adamplesnik">github.com/adamplesnik</Link>
-            <Link href="mailto:adam@adamplesnik.com">adam@adamplesnik.com</Link>
-            <span className="mt-4">Bratislava, Slovakia</span>
-          </Paragraph>
+      <div className="flex items-stretch gap-24">
+        <div className="flex flex-1 flex-col gap-10">
+          <Paragraph className="mt-10">{catchPhrase}</Paragraph>
+          <Paragraph>{catchDetail}</Paragraph>
+          <Paragraph>{tech}</Paragraph>
+          <Paragraph>{freeTime}</Paragraph>
+          <div className="flex flex-1 items-end">
+            <Paragraph className="mt-14 flex flex-1 flex-col gap-1">
+              <span>+421 904 983 582</span>
+              <Link href="https://adamplesnik.com">adamplesnik.com</Link>
+              <Link href="https://github.com/adamplesnik">github.com/adamplesnik</Link>
+              <Link href="mailto:adam@adamplesnik.com">adam@adamplesnik.com</Link>
+              <span className="mt-4">Bratislava, Slovakia</span>
+            </Paragraph>
+          </div>
         </div>
-        <div className="mt-10 flex flex-col gap-4 print:gap-2">
+        <div className="mt-10 flex flex-1 flex-col gap-10 leading-[1.42]">
           <CvTimeline print />
         </div>
       </div>

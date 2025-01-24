@@ -21,11 +21,11 @@ const TimelineItem = ({
   return (
     <div
       className={clsx(
-        'relative z-10 flex flex-col items-baseline gap-1 sm:flex-row sm:gap-4',
+        'relative z-10 flex flex-col items-baseline gap-1 leading-snug sm:flex-row sm:gap-4',
         className,
         right && 'justify-between',
         right && print && 'hidden',
-        print ? 'py-1' : 'py-3'
+        !print && 'py-3'
       )}
     >
       <div
@@ -49,7 +49,7 @@ const TimelineItem = ({
         >
           {desc}
         </Paragraph>
-        <Paragraph className="pt-1 sm:px-2">{detail}</Paragraph>
+        <Paragraph className="sm:px-2">{detail}</Paragraph>
       </div>
     </div>
   )
