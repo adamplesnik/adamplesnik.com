@@ -1,8 +1,19 @@
 import Heading from '@/components/Heading'
 import Link from '@/components/Link'
 import Paragraph from '@/components/Paragraph'
+import CvTechSkills from './CvTechSkills'
 import CvTimeline from './CvTimeline'
-import { catchDetail, catchPhrase, freeTime, tech } from './phrases'
+import { catchPhraseCV } from './phrases'
+
+const Contact = () => (
+  <Paragraph className="mt-14 flex flex-1 flex-col gap-1">
+    <span>+421 904 983 582</span>
+    <Link href="https://adamplesnik.com">adamplesnik.com</Link>
+    <Link href="https://github.com/adamplesnik">github.com/adamplesnik</Link>
+    <Link href="mailto:adam@adamplesnik.com">adam@adamplesnik.com</Link>
+    <span className="mt-4">Bratislava, Slovakia</span>
+  </Paragraph>
+)
 
 const CvPrint = () => {
   return (
@@ -13,25 +24,20 @@ const CvPrint = () => {
           UI designer
         </Heading>
       </div>
-      <div className="flex items-stretch gap-24">
-        <div className="flex flex-1 flex-col gap-10">
-          <Paragraph className="mt-10">{catchPhrase}</Paragraph>
-          <Paragraph>{catchDetail}</Paragraph>
-          <Paragraph>{tech}</Paragraph>
-          <Paragraph>{freeTime}</Paragraph>
-          <div className="flex flex-1 items-end">
-            <Paragraph className="mt-14 flex flex-1 flex-col gap-1">
-              <span>+421 904 983 582</span>
-              <Link href="https://adamplesnik.com">adamplesnik.com</Link>
-              <Link href="https://github.com/adamplesnik">github.com/adamplesnik</Link>
-              <Link href="mailto:adam@adamplesnik.com">adam@adamplesnik.com</Link>
-              <span className="mt-4">Bratislava, Slovakia</span>
-            </Paragraph>
+      <div className="flex flex-col items-stretch gap-16 lg:flex-row lg:gap-32">
+        <div className="flex flex-1 flex-col gap-5">
+          <Paragraph className="mb-6 mt-12">{catchPhraseCV}</Paragraph>
+          <CvTechSkills />
+          <div className="hidden flex-1 items-end lg:flex">
+            <Contact />
           </div>
         </div>
-        <div className="mt-10 flex flex-1 flex-col gap-10 leading-[1.42]">
+        <div className="mt-12 flex flex-1 flex-col gap-[3.7rem] leading-normal">
           <CvTimeline print />
         </div>
+      </div>
+      <div className="flex lg:hidden">
+        <Contact />
       </div>
     </div>
   )

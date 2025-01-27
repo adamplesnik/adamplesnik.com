@@ -7,7 +7,7 @@ const CvTimeline = ({ print }: { print?: boolean }) => {
       <TimelineItem
         year={'A long time ago'}
         desc="Han shot first!"
-        className="mb-72"
+        className="mb-72 [&_.w-40]:w-72"
         right
         print={print}
       />

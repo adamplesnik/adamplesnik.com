@@ -28,23 +28,15 @@ const TimelineItem = ({
         !print && 'py-3'
       )}
     >
-      <div
-        className={clsx(
-          'relative z-10 shrink-0 font-medium',
-          print ? 'w-32' : 'w-full sm:w-40 md:w-52'
-        )}
-      >
-        <span className={clsx('inline-block pr-2', !print && 'bg-cv-light dark:bg-cv-dark')}>
-          {year}
-        </span>
+      <div className={clsx('relative z-10 w-40 shrink-0 font-medium')}>
+        <span className={clsx('inline-block pr-2')}>{year}</span>
       </div>
       <div>
         <Paragraph
           className={clsx(
             'relative z-10 !w-fit sm:px-2',
             em && 'font-medium',
-            right && 'text-right sm:pr-0',
-            !print && 'bg-cv-light dark:bg-cv-dark'
+            right && 'text-right sm:pr-0'
           )}
         >
           {desc}
