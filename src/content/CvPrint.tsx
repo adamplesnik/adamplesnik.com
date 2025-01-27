@@ -24,11 +24,11 @@ const CvPrint = () => {
           UI designer
         </Heading>
       </div>
-      <div className="flex flex-col items-stretch gap-16 lg:flex-row lg:gap-32">
+      <div className="flex flex-col items-stretch gap-16 lg:flex-row lg:gap-32 print:flex-row print:gap-32">
         <div className="flex flex-1 flex-col gap-5">
           <Paragraph className="mb-6 mt-12">{catchPhraseCV}</Paragraph>
           <CvTechSkills />
-          <div className="hidden flex-1 items-end lg:flex">
+          <div className="hidden flex-1 items-end lg:flex print:flex">
             <Contact />
           </div>
         </div>
@@ -36,7 +36,7 @@ const CvPrint = () => {
           <CvTimeline print />
         </div>
       </div>
-      <div className="flex lg:hidden">
+      <div className="flex lg:hidden print:hidden">
         <Contact />
       </div>
     </div>
