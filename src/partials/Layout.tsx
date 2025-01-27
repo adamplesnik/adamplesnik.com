@@ -11,7 +11,7 @@ const Layout = ({ outlet }: { outlet?: ReactNode | null }) => {
   return (
     <div className="flex flex-col pt-8">
       <ScrollRestoration />
-      <div className="sticky top-0 z-50 mb-12 flex w-full items-baseline gap-8 bg-gradient-to-b from-white/80 px-6 pt-5 sm:px-8 md:px-12 dark:from-zinc-800/80">
+      <div className="sticky top-0 z-50 mb-12 flex w-full items-baseline gap-8 bg-linear-to-b from-white/80 px-6 pt-5 sm:px-8 md:px-12 dark:from-zinc-800/80">
         <a href="/" className="cursor-pointer">
           {isWork ? (
             <span className="flex w-20 items-center transition-transform ease-in-out hover:-translate-x-2">
@@ -39,7 +39,7 @@ const Layout = ({ outlet }: { outlet?: ReactNode | null }) => {
             className={({ isActive }) =>
               clsx(
                 'relative cursor-pointer text-2xl font-medium sm:text-3xl',
-                'after:absolute after:bottom-1 after:left-0 after:h-[2px] after:w-full after:max-w-0 after:bg-current after:transition-[max-width] after:ease-in-out hover:after:max-w-full after:sm:h-[3px]',
+                'after:absolute after:bottom-1 after:left-0 after:h-[2px] after:w-full after:max-w-0 after:bg-current after:transition-[max-width] after:ease-in-out hover:after:max-w-full sm:after:h-[3px]',
                 isActive && 'after:max-w-full'
               )
             }
@@ -51,7 +51,7 @@ const Layout = ({ outlet }: { outlet?: ReactNode | null }) => {
             className={({ isActive }) =>
               clsx(
                 'relative cursor-pointer text-2xl font-medium sm:text-3xl',
-                'after:absolute after:bottom-1 after:left-0 after:h-[2px] after:w-full after:max-w-0 after:bg-current after:transition-[max-width] after:ease-in-out hover:after:max-w-full after:sm:h-[3px]',
+                'after:absolute after:bottom-1 after:left-0 after:h-[2px] after:w-full after:max-w-0 after:bg-current after:transition-[max-width] after:ease-in-out hover:after:max-w-full sm:after:h-[3px]',
                 isActive && 'after:max-w-full'
               )
             }

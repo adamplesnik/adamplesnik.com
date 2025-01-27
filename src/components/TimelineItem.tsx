@@ -34,7 +34,7 @@ const TimelineItem = ({
       <div>
         <Paragraph
           className={clsx(
-            'relative z-10 !w-fit sm:px-2',
+            'relative z-10 w-fit! sm:px-2',
             em && 'font-medium',
             right && 'text-right sm:pr-0'
           )}

@@ -46,7 +46,7 @@ const WorkMHD = () => {
     >
       <CustomImg src={mhdTrio} />
       <GridWrapper>
-        <div className="relative mx-auto max-w-screen-xl">
+        <div className="relative mx-auto max-w-(--breakpoint-xl)">
           <img src={mhdVideo} alt="" />
           <div className="absolute left-[34.3%] top-[16.3%] w-[31.6%] overflow-hidden">
             <video loop autoPlay playsInline muted className="-mt-[2px]">
@@ -54,7 +54,7 @@ const WorkMHD = () => {
             </video>
           </div>
         </div>
-        <div className="relative mx-auto max-w-screen-xl">
+        <div className="relative mx-auto max-w-(--breakpoint-xl)">
           <img src={mhdVideo} alt="" />
           <div className="absolute left-[34.3%] top-[16.3%] w-[31.6%] overflow-hidden">
             <video loop autoPlay playsInline muted className="-mt-[2px]">

@@ -38,7 +38,7 @@ const WorkKolbord = () => {
       badges={['Figma', 'React', 'Payload CMS']}
       top={
         <div className="bg-[#E2BEC0] p-4 sm:p-8">
-          <div className="relative mx-auto max-w-screen-lg overflow-hidden before:absolute before:bottom-0 before:right-0 before:top-0 before:z-10 before:w-2 before:bg-[#E2BEC0]">
+          <div className="relative mx-auto max-w-(--breakpoint-lg) overflow-hidden before:absolute before:bottom-0 before:right-0 before:top-0 before:z-10 before:w-2 before:bg-[#E2BEC0]">
             <video loop autoPlay playsInline muted className="-m-1">
               <source src={kolbordDemo} type="video/mp4"></source>
             </video>
