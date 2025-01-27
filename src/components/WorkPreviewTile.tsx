@@ -15,7 +15,7 @@ const WorkPreviewTile = ({ title, className, link, src, titleRight }: WorkPrevie
           <CustomImg
             src={src}
             alt={title}
-            className="transition-[transform,opacity] duration-[400ms] ease-in-out group-hover:scale-[1.02]"
+            className="transition-transform duration-[400ms] ease-in-out group-hover:scale-[1.02]"
           />
         </div>
         <Heading
