@@ -1,8 +1,34 @@
-@import url('https://use.typekit.net/geh8ryt.css');
+@import url('https://use.typekit.net/geh8ryt.css') layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --color-cv-light: #fec84d;
+  --color-cv-dark: #333;
+
+  --color-skills-light: #e9cde8;
+  --color-skills-dark: #463946;
+
+  --font-sans: elza, sans-serif;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 @page {
   margin: 0;

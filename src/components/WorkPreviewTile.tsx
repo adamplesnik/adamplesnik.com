@@ -11,18 +11,18 @@ const WorkPreviewTile = ({ title, className, link, src, titleRight }: WorkPrevie
         href={link}
         className={clsx('group w-full overflow-hidden rounded-lg md:rounded-2xl', className)}
       >
-        <div className="aspect-[2/1] overflow-hidden rounded-lg md:rounded-2xl lg:aspect-[2.5/1]">
+        <div className="aspect-2/1 overflow-hidden rounded-lg md:rounded-2xl lg:aspect-[2.5/1]">
           <CustomImg
             src={src}
             alt={title}
-            className="transition-[transform,opacity] duration-[400ms] ease-in-out group-hover:scale-[1.02]"
+            className="transition-transform duration-[400ms] ease-in-out group-hover:scale-[1.02]"
           />
         </div>
         <Heading
           size={2}
           className={clsx(
             'relative mt-4 inline-flex items-baseline gap-2 md:absolute md:top-4 md:max-w-72 lg:max-w-full',
-            'after:absolute after:bottom-1 after:left-0 after:h-[2px] after:w-full after:max-w-0 after:bg-current after:transition-[max-width] after:ease-out group-hover:after:max-w-full after:md:h-[3px]',
+            'after:absolute after:bottom-1 after:left-0 after:h-[2px] after:w-full after:max-w-0 after:bg-current after:transition-[max-width] after:ease-out group-hover:after:max-w-full md:after:h-[3px]',
             titleRight ? 'md:right-8' : 'md:left-8'
           )}
         >

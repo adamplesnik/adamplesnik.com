@@ -34,7 +34,7 @@ const WorkTile = ({
               {title}
             </Heading>
           )}
-          <div className="flex flex-col gap-6 md:flex-[2]">
+          <div className="flex flex-col gap-6 md:flex-2">
             {text && <Paragraph>{text}</Paragraph>}
             {more && (
               <>
