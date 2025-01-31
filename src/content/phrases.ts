@@ -1,4 +1,4 @@
-export const catchPhrase = `I am a UI designer with a strong coding background. With over 15 years of professional experience, I specialize in seamlessly connecting design with implementation.`
-export const catchPhraseCV = `UI designer with a strong coding background. Specializing in seamlessly connecting design with implementation, backed by over 15\u00A0years of professional experience.`
+export const catchPhrase = `I am a UI designer with a strong coding background. I help companies and brands elevate their interfaces by seamlessly connecting design and development.`
+export const catchPhraseCV = `UI designer with a strong coding background. Helping companies and brands elevate their interfaces by seamlessly connecting design and development, backed by over 15\u00A0years of professional experience.`
 export const tech = `Proficient in Figma and Adobe CC, I code in React + Typescript, Tailwind\u00A0CSS. I\u00A0speak English and\u00A0French.`
 export const freeTime = `I value both creative and personal freedom, preferring hybrid, purpose-driven, and flexible work. Family time is a non-negotiable, and I put high priority in my time off, enjoying mountain biking, hiking and travel—whether with family or solo when needed.`
